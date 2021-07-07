@@ -1,0 +1,103 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!-- WIDERPLANET PURCHASE SCRIPT START 2020.8.5 -->
+<div id="wp_tg_cts" style="display:none;"></div>
+<script type="text/javascript">
+var wptg_tagscript_vars = wptg_tagscript_vars || [];
+wptg_tagscript_vars.push(
+(function() {
+	return {
+		wp_hcuid:"",  		     /*고객넘버 등 Unique ID (ex. 로그인  ID, 고객넘버 등 )를 암호화하여 대입.
+					      *주의 : 로그인 하지 않은 사용자는 어떠한 값도 대입하지 않습니다.*/
+		ti:"49924",            	     /*광고주 코드 */
+		ty:"PurchaseComplete",       /*트래킹태그 타입 */
+		device:"web",                /*디바이스 종류  (web 또는  mobile)*/
+		items:[{i:"비용상담 ",	     /*전환 식별 코드  (한글 , 영어 , 번호 , 공백 허용 )*/
+			t:"비용상담 ",         /*전환명  (한글 , 영어 , 번호 , 공백 허용 )*/
+			p:"1",		     /*전환가격  (전환 가격이 없을경우 1로 설정 )*/
+			q:"1"		     /*전환수량  (전환 수량이 고정적으로 1개 이하일 경우 1로 설정 )*/
+		}]
+	};
+}));
+</script>
+<script type="text/javascript" src="//cdn-aitg.widerplanet.com/js/wp_astg_4.0.js"></script>
+<!-- // WIDERPLANET PURCHASE SCRIPT END 2020.8.5 -->
+
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>회원 가입 완료</strong></li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2> WELCOME</h2>
+</div>
+
+<div module="member_joinComplete">
+    <!--@css(/css/module/member/joincomplete.css)-->
+    <div class="joinComplete">
+        <div class="ec-base-box typeMember gMessage">
+            <strong class="message">저희 쇼핑몰을 이용해 주셔서 감사합니다.</strong>
+            <div class="information">
+                <p class="thumbnail"><img src="{$group_image}" alt="{$group_name}" onerror="this.src='//img.echosting.cafe24.com/skin/base/member/img_member_default.gif';" /></p>
+                <div class="description">
+                    <dl class="ec-base-desc gBlank5">
+                        <dt>아이디</dt><dd>{$member_id}</dd>
+                        <dt>이름</dt><dd>{$member_name}</dd>
+                        <dt>이메일</dt><dd>{$member_email}</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="memberSpecial" module="member_BenefitJoin">
+            <p><strong>{$member_name} 님</strong>쿠오카 회원가입을 환영합니다.</p>
+             </div>
+        <p class="memberEmail {$display_email_auth|display}">이메일 주소로 발송된 인증 메일을 통해 인증하신 후에 로그인이 가능합니다.</p>
+        <p class="memberAge {$under_fourteen_display|display}">
+            <strong>{$member_name} 님</strong>은 14세 미만 회원이므로 <br />관리자 인증 후 아이디 사용이 가능합니다.
+        </p>
+        <div class="ec-base-button gBlank20">
+            <a href="{$redirect_function}" class="btnLogin_bk">SUBMIT</a>
+        </div>
+    </div>
+</div>
+
+<div module="coupon_join">
+    <!--@css(/css/module/coupon/join.css)-->
+    <div class="couponSkinArea">
+        <ul class="grid3">
+            <li>
+                <div class="coupon {$background_class}" style="background-image:url('{$background_url}')">
+                    <strong class="title" style="color:#483b1b; font-family:Arial; font-size:11px;">{$coupon_name}</strong>
+                    <p class="discount" style="color:#d07b01; font-family:Dotum;"><span style="font-family:Verdana;">{$coupon_content}</span></p>
+                    <p class="period" style="color:#685219; font-family:Dotum;">{$coupon_period}</p>
+                </div>
+            </li>
+            <li>
+                <div class="coupon {$background_class}" style="background-image:url('{$background_url}')">
+                    <strong class="title" style="color:#483b1b; font-family:Arial; font-size:11px;">{$coupon_name}</strong>
+                    <p class="discount" style="color:#d07b01; font-family:Dotum;"><span style="font-family:Verdana;">{$coupon_content}</span></p>
+                    <p class="period" style="color:#685219; font-family:Dotum;">{$coupon_period}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    dataLayer.push({
+        'event': 'signup',
+    });
+</script>
+
+<!-- NAVER SCRIPT -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script> 
+<script type="text/javascript"> 
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_1ff99cc8a408";
+if (!_nasa) var _nasa={};
+_nasa["cnv"] = wcs.cnv("2","1"); 
+wcs_do(_nasa);
+</script>
+<!-- NAVER SCRIPT END -->

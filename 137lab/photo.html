@@ -1,0 +1,63 @@
+	<div style="width:1160px; margin:0 auto 0 auto; ">
+ 
+ 
+<div module="Board_ListPackage_4">
+
+<style>
+    .list-thumb-wrap1{width:270px; height:410px !important; float:left; text-align:left; border:1px solid #ddd; margin:10px 3px; box-sizing:border-box; line-height:1.8; font-size:13px; letter-spacing:0;}
+    </style>
+
+ 
+
+<!-- 인스타그램 -->
+<div id="instagram" style="width:100%; margin:0 auto 0 auto; padding-bottom:30px; overflow:hidden; ">
+	<div style="width:1160px; margin:0 auto 0 auto; ">
+		<div class="board" module="board_listpackage_8">
+			<h3 class="fs" style="font-size:16px; padding:40px 0 30px 20px;">REVIEW</h3>
+			<div class="galleryList main_roll_box" module="board_notice_4">
+            <!--
+                $count = 6
+                $product_name_cut = 30
+                $login_page_url = /member/login.html
+                $deny_access_url = /index.html
+            -->
+				<div class="swiper-container main-swipe-roll">
+					<ul class="prdList roll_product swiper-wrapper" style="margin-bottom:10px; ">
+						<li onclick="location.href='/board/product/read.html{$param_read}'"class="btn-example list-thumb-wrap1 swiper-slide" style="height:auto; background:#fff; overflow:hidden;">
+						<a href="#none" target="sns-inner" style="width:100%; overflow:hidden; display:inline-block; "><img src="{$img_src|replace:gallery,}" alt="" width="100%" height="267px" style="padding:10px; box-sizing:border-box;"/></a>
+                <span style="display:inline-block; width:240px; padding:0 10px 10px 10px; position:relative; overflow:hidden;">
+                <span><a href="{$link_product_detail}" style="text-decoration:none; padding-bottom:10px; color:#898989 ;">{$product_name|cut:25,...}</a></span> 
+                 <div style="padding:0 0; margin:5px 0 0 0; height:50px; line-height:20px; ">   
+                <a href="{$link_board_detail}" style="{$link_color}">{$subject}</a> <span class="txtEm">{$comment_count}</span>
+                   </div>  
+                <span class="txtNum">{$writer}</span><br>
+                <span class="txtNum">{$write_date|date:Y-m-d}</span>
+                 <span style="position:absolute; right:0; bottom:10px; "><img src="/SkinImg/ico_point{$point_count}.png" alt="{$point_count}점"></span
+                   </span>
+						</li>
+						<li onclick="location.href='/board/product/read.html{$param_read}'" class="btn-example list-thumb-wrap1 swiper-slide" style="height:auto; background:#fff; overflow:hidden;">
+						<a href="#none" target="sns-inner" style="width:100%; overflow:hidden; display:inline-block;"><img src="{$img_src|replace:gallery,}" alt="" width="100%" height="267px" style="padding:10px; box-sizing:border-box;"/></a>
+                <span style="display:inline-block; width:240px; padding:0 10px 10px 10px; position:relative; overflow:hidden;">
+                <span><a href="{$link_product_detail}" style="text-decoration:none; padding-bottom:10px; color:#898989 ;">{$product_name|cut:25,...}</a></span> 
+                 <div style="padding:0 0; margin:5px 0 0 0; height:50px; line-height:20px; ">   
+                <a href="{$link_board_detail}" style="{$link_color}">{$subject}</a> <span class="txtEm">{$comment_count}</span>
+                   </div>  
+                <span class="txtNum">{$writer}</span><br>
+                <span class="txtNum">{$write_date|date:Y-m-d}</span>
+                 <span style="position:absolute; right:0; bottom:10px; "><img src="/SkinImg/ico_point{$point_count}.png" alt="{$point_count}점"></span
+                   </span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //인스타그램 -->
+
+ 	</div>
+	<div style="clear:both; width:100%; padding:20px 0 50px 0; text-align:center;">
+		<a href="/board/상품-사용후기/4/" class="black-btn -mov fs" style="margin-top:30px; padding:10px 30px; font-size:16px;">더보기 <i class="xi-angle-right-thin"></i></a>
+	</div>
+</div>
+

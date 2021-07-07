@@ -1,0 +1,322 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+	#container {
+		width: 100% !important;
+	}
+
+	#contents {
+		float: none;
+		width: 100% !important;
+		min-height: 750px;
+		margin: 0 auto;
+	}
+
+	#ps-banner {
+		background: url(SkinImg/public/top-bg.jpg);
+		background-size: cover;
+		max-width: 100%;
+		margin: 0 auto;
+		height: 920px;
+	}
+
+	.ps-mid-banner {
+		height: 100px;
+		background-color: #af7c7c;
+		color: #fff;
+		text-align: center;
+		display: block;
+	}
+
+	.ps-mid-banner span {
+		display: inline-block;
+		padding: 23px 0;
+	}
+
+	.ps-mid-banner {
+		font-size: 42px;
+		height: 100px;
+	}
+
+	#context-sale {
+		width: 760px;
+		text-align: left;
+		padding-top: 290px;
+		padding-left: 280px;
+	}
+
+	#context-sale h1 {
+		font-size: 35px;
+		letter-spacing: 1px;
+		color: #fff;
+	}
+
+	#context-sale h2 {
+		color: #fff;
+		font-size: 32px;
+		letter-spacing: 2px;
+		margin-top: 15px;
+	}
+
+	#pm-code-box {
+		margin: 0 auto;
+		padding: 80px;
+		background: #FBF3EC;
+		font-family: "Marcellus", "Nanum Myeongjo" !important;
+	}
+
+	#pm-code-box > div {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#pm-code-box > div > h1,
+	#pm-code-box > div > p {
+		color: #A26F6F;
+	}
+
+	#pm-code-box > div > h1 {
+		font-size: 26px;
+	}
+
+	#pm-code-box > div > p {
+		font-size: 16px;
+		line-height: 2em;
+	}
+
+	#pm-code-box > .container {
+		width: 460px;
+		background: #fff;
+		border: 1px solid #F1E3DD;
+		margin-top: 30px;
+	}
+
+	#pm-code-box > .container > div {
+		height: 100px;
+	}
+
+	#pm-code-box .notice {
+		margin-top: 30px;
+	}
+
+	#pm-code-box span > * {
+		display: inline-block;
+		color: #A26F6F;
+		vertical-align: baseline;
+		margin-top: 30px;
+	}
+
+	#pm-code-input {
+		height: 50px;
+		background: rgba(0, 0, 0, 0);
+		font-size: 20px;
+		width: 150px;
+		padding: 25px 10px;
+		border: 1px solid #986C6E;
+		letter-spacing: 2px;
+		display: inline;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-top: -5px;
+	}
+
+	#pm-code-box button {
+		font-size: 16px;
+		padding: 14px 30px;
+		cursor: pointer;
+		letter-spacing: 5px;
+		display: inline;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-top: 20px;
+		font-family: "Marcellus", "Nanum Myeongjo" !important;
+
+	}
+
+	#pm-code-box button:disabled {
+		color: #707070;
+		background: #fff;
+	}
+
+	#ps-prod-list {
+		padding: 60px 0;
+		background:#fcf5ef;
+	}
+
+	.ps-container {
+		display: block;
+		width: 1280px;
+		margin: 0 auto;
+	}
+
+	.ps-container > .ps-prod {
+		width: 600px;
+		margin: 7px 0;
+		padding: 50px 0 0 0;
+		background: #fcf5ef;
+		text-align: center;
+		position: relative;
+		display: inline-block;
+		border: 1px solid #986C6E;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	.ps-container > .ps-prod > .top-title {
+		font-size: 1.6rem;
+		color: #a76d6d;
+	}
+
+	.ps-container > .ps-prod > div {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.ps-container > .ps-prod > div > img {
+		margin-right: -10px;
+	}
+
+	.ps-prod-name {
+		font-size: 24px;
+		letter-spacing: 1.2px;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	.ps-prod-name h3 {
+		display: inline-block;
+	}
+
+	.ps-prod-name p {
+		color: #949495;
+		font-size: 20px;
+		display: inline-block;
+	}
+
+	.ps-prod-sale {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	.ps-prod-sale > p {
+		margin: 20px 0 0;
+		font-size: 14px;
+	}
+
+	.ps-prod-badge {
+		background-color: #a76d6d;
+		color: #fff;
+		font-size: 20px;
+		border-radius: 20px;
+		display: block;
+		padding: 8px 15px;
+		margin: 0 auto;
+		width: 90px;
+	}
+
+	div.ps-prod:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+		width: 170px;
+	}
+
+	.ps-prod-price {
+		font-size: 20px;
+		display: block;
+		margin: 15px 0 20px;
+		color: #767676;
+	}
+
+	.ps-prod-price p {
+		font-size: 18px;
+		display: inline;
+	}
+
+	.notice h3 {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.notice {
+		padding-top: 50px;
+		display: block;
+	}
+
+
+</style>
+
+<div id="ps-banner" class="bg-cover">
+	<div id="context-sale">
+		<h1 class="fs">TRUFFLE MOISTURIZING DUO</h1>
+		<h2>차원이 다른 보습<br>쿠오카 트러플 보습 듀오</h2>
+	</div>
+</div>
+<div class="ps-mid-banner">
+	<span>극신선 스킨케어 쿠오카 X 김성은 [<img src="/SkinImg/public/insta.png" width="35" style="margin: 10px 0 0 10px"> ssung916 ]</span>
+</div>
+<div>
+	<div id="ps-prod-list" style="width:100%; margin:0 auto;">
+		<div class="ps-container">
+
+			<div class="ps-prod" style="margin-right: 30px">
+				<span class="top-title">SPECIAL PRICE 1</span>
+				<div style="margin: 20px 0 0 0;">
+					<img src="/SkinImg/public/cream.jpg" width="460">
+				</div>
+
+				<div style="padding-bottom:60px;">
+
+					<div class="fs ps-prod-name">
+						<h3>CREAM BLEND</h3>
+						<p>40ml</p>
+					</div>
+
+					<div class="ps-prod-badge">탄력 케어</div>
+
+					<span class="ps-prod-sale">
+						<p>*주름 개선 기능성 인증</p>
+                        <div class="ps-prod-price">
+                            <p>102,000원</p>
+							<p style="text-decoration: line-through; margin-bottom: 0; color: #949495">120,000원</p>
+                        </div>
+                    </span>
+
+					<a href="/product/detail.html?product_no=42" class="big-btn red-btn -mov fsk">자세히 보기
+						<i class="xi-angle-right-thin"></i> </a>
+				</div>
+			</div>
+
+			<div class="ps-prod" style="margin-left: 30px">
+				<span class="top-title">SPECIAL PRICE 2</span>
+
+				<div style="margin: 30px 0 -10px 0;">
+					<img src="/SkinImg/public/duo.jpg" width="460">
+				</div>
+
+				<div style="padding-bottom:60px;">
+
+					<div class="fs ps-prod-name">
+						<h3>TRUFFLE MOISTURIZING DUO</h3>
+					</div>
+
+					<div class="ps-prod-badge">고보습 + 탄력케어</div>
+
+					<span class="ps-prod-sale">
+						<p>*주름 개선 기능성 인증</p>
+                        <div class="ps-prod-price">
+                            <p>184,000원</p>
+							<p style="text-decoration: line-through; margin-bottom: 0; color: #949495">230,000원</p>
+                        </div>
+                    </span>
+
+					<a href="/product/detail.html?product_no=43" class="big-btn red-btn -mov fsk">자세히 보기
+						<i class="xi-angle-right-thin"></i> </a>
+				</div>
+			</div>
+
+			<span class="notice">
+				<h3>*본 공구 구매 상품은 2월 1일(월)부터 순차 배송됩니다.</h3>
+			</span>
+			<div class="clearfix"></div>
+		</div>

@@ -1,0 +1,346 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+	#container {
+		width: 100% !important;
+	}
+
+	#contents {
+		float: none;
+		width: 100% !important;
+		min-height: 800px;
+		margin: 0 auto;
+	}
+
+	.about-wrapper {
+		text-align: center;
+		padding: 75px 0 85px 0;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.about-wrapper h1.title {
+		display: inline-block;
+		padding: 13px 0 0 0;
+		margin: 0 0 30px 0;
+		font-size: 35px;
+		line-height: 1.5em;
+		font-weight: bold;
+		letter-spacing: 0;
+	}
+
+	p.context, .panel p {
+		font-size: 20px;
+		line-height: 1.7em;
+	}
+
+	.wrap h3.context {
+		font-size: 35px;
+		line-height: 1.6em;
+		font-weight: bold;
+		padding: 20px 0 60px 0;
+		color: #3D3A39;
+	}
+
+	.panel h3.context {
+		font-size: 35px;
+		color: #3D3A39;
+		font-weight: bold;
+		padding: 0;
+		white-space: nowrap;
+	}
+
+	span.nor {
+		font-weight: normal;
+	}
+
+	.wrap {
+		width: 100%;
+		text-align: center;
+	}
+
+	.wrap > div {
+		padding: 5px 0 10px 0;
+	}
+
+	.wrap:before,
+	.wrap:after {
+		content: '';
+		width: 1280px;
+		height: 1px;
+		background: #bfbfbf50;
+		display: block;
+		margin: 0 auto;
+	}
+
+	div.wrap:nth-child(8):after {
+		display: none;
+	}
+
+	div.wrap:nth-child(11):before {
+		height: 0;
+	}
+
+	.wrap a {
+		display: inline-block;
+		font-size: 0.8rem;
+		margin: 20px 0;
+		padding: 11px 45px;
+		border: 1px solid #BC8383;
+		color: #BC8383;
+		background-color: unset;
+	}
+
+	img.handText {
+		width: 450px;
+		display: inline-block;
+		margin: 0;
+		padding: 10px 0 0 5px;
+	}
+
+	.wrap img {
+		padding: 15px 0 0 7px;
+		width: 460px;
+	}
+
+	/*fine dining for my skin adjust*/
+	div.wrap:nth-child(11) > img:nth-child(1) {
+		width: 586px;
+		padding: 12px 0 0 8px;
+		margin-bottom: -5px;
+	}
+
+	div.wrap:nth-child(11) > img:nth-child(3) {
+		padding-bottom: 45px;
+	}
+
+	.wrap .m-banner-img {
+		width: 1000px;
+		display: block;
+		margin: 20px auto 120px;
+		padding: 0;
+	}
+
+	.accordion {
+		width: 1280px;
+		display: block;
+		margin: 0 auto;
+		padding: 25px 0 15px 0;
+		background: none;
+		text-align: center;
+		border: solid #BFBFBF50;
+		border-width: 1px 0 0 0;
+		transition: 0.4s;
+		cursor: pointer;
+	}
+
+	.panel {
+		padding: 0;
+		max-width: 1280px;
+		text-align: center;
+		height: 600px;
+		overflow: hidden;
+		transition: height 0.5s ease-in-out;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		margin: 0 auto;
+	}
+
+	.panel > div.context-cover {
+		display: inline-block;
+		width: 580px;
+		margin: 185px 70px auto 50px;
+	}
+
+	.panel > div.context-cover.right-position {
+		margin: 230px 0 auto 85px;
+	}
+
+	.panel p {
+		padding: 30px 0;
+	}
+
+	.wrap p {
+		font-size: 20px;
+		line-height: 1.7em;
+		text-align: center;
+		padding: 0.3rem 0 2.5rem;
+	}
+
+	.btn-container.about-us {
+		position: relative;
+		float: right;
+		right: 20px;
+		margin-top: 40px;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+
+	/*Plus Icon Animation*/
+	.aboutBtn {
+		position: relative;
+		width: 10px;
+		height: 10px;
+		/* Vertical line */
+		/* horizontal line */
+	}
+
+	.aboutBtn:before, .aboutBtn:after {
+		content: "";
+		position: absolute;
+		background-color: #4f4f4f50;
+		transition: transform 0.25s ease-out;
+	}
+
+	.aboutBtn:before {
+		top: -15px;
+		left: 15px;
+		width: 1px;
+		height: 30px;
+		margin-left: 0;
+	  transform: rotate(90deg);
+	}
+
+	.aboutBtn:after {
+		top: 0;
+		left: 0;
+		width: 30px;
+		height: 1px;
+		margin-top: 0;
+	  transform: rotate(180deg);
+	}
+
+	.active .aboutBtn:before {
+		transform: rotate(0deg);
+	}
+
+	.active .aboutBtn:after {
+		transform: rotate(0deg);
+	}
+
+</style>
+<div class="bg-cover" style="height:640px; background-image:url(/web/upload/asset/aboutus/about-us-top-banner.jpg); background-size:cover;">
+	<div style="width:1280px; padding:590px 0 0 20px; margin:0 auto;">
+
+		<!--<p class="fs" style="font-size:30px; letter-spacing:1px; color:#fff;">
+			ABOUT US
+		</p>-->
+
+	</div>
+</div>
+
+<div class="about-wrapper">
+	<h1 class="title">
+		파인다이닝의 철학으로 <br>화장품을 만들면 어떨까?
+	</h1>
+
+	<p class="context">
+	  화장품도 신선할수록 효능이 좋습니다.<br>
+	  보다 건강하고 아름다운 피부를 위해<br>
+	  쿠오카는 자연 유래 원료를 사용,<br>
+	  제조 후 30일 이내의 신선한 제품만을 제공합니다.
+	</p>
+
+</div>
+
+<div class="accordion-wrapper">
+	<button class="accordion">
+		<img class="handText" src="/web/upload/asset/aboutus/ingredient.png">
+		<div class="btn-container about-us">
+			<div class="aboutBtn"></div>
+		</div>
+	</button>
+	<div class="panel">
+		<div class="context-cover">
+			<h3 class="context"><span class="nor">Fine Dining</span>의 시작, 신선한 원료</h3>
+			<p>
+				엄격한 재료의 선별, 창의적인 레시피,<br>
+				그리고 작은 디테일에도 완벽함을 추구하는<br>
+				파인 다이닝의 철학.<br>
+				쿠오카는 이런 상상력에서 시작됐습니다.
+			</p>
+		</div>
+		<div class="bg-cover" style="width: 500px; height:430px; margin: 80px 0 110px; background-image:url(/web/upload/asset/aboutus/ingredient-img-re.jpg); background-size:cover;"></div>
+	</div>
+</div>
+
+<div class="accordion-wrapper">
+	<button class="accordion">
+		<img class="handText" style="padding: 3px 0 2px 5px;" src="/web/upload/asset/aboutus/blending.png">
+		<div class="btn-container about-us">
+			<div class="aboutBtn"></div>
+		</div>
+	</button>
+	<div class="panel">
+		<div class="bg-cover" style="width: 500px; height:430px; margin: 120px 0 120px 80px; background-image:url(/web/upload/asset/aboutus/blending-img.jpg); background-size:cover;"></div>
+		<div class="context-cover right-position">
+			<h3 class="context"><span class="nor">Fine Dining</span>의 핵심, 창의성과 테크닉</h3>
+			<p>
+				원재료의 효능을 극대화시키는 쿠오카의 독자적인 배합 기술과<br>
+				혁신적인 원료 가공 방식으로 피부 3대 유해 물질<br>
+				(화학 방부제, 인공 색소, 실리콘 오일)을 100% 배제하면서도<br>
+				피부에 바르는 순간부터 만족스러운 사용감을 구현합니다.<br>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="accordion-wrapper">
+	<button class="accordion">
+		<img class="handText" style="padding: 3px 0 2px 5px;" src="/web/upload/asset/aboutus/experience.png">
+		<div class="btn-container about-us">
+			<div class="aboutBtn"></div>
+		</div>
+	</button>
+	<div class="panel">
+		<div class="context-cover" style="margin: 225px 75px 0 40px;">
+			<h3 class="context"><span class="nor">Fine Dining</span>의 감각적이고 아름다운 경험</h3>
+			<p>
+				쿠오카는 자연 유래 원료의 탁월한 효능, 그 이상의<br>
+				아름다운 경험을 선사합니다. 제조 후 30일 이내의<br>
+				신선한 제품으로 최고의 효능을 추구하고, 자연 원료에서<br>
+				유기농 방식으로 추출한 향을 담아 탁월한 사용감을 완성했습니다.
+			</p>
+		</div>
+		<div class="bg-cover" style="width: 500px; height:430px; margin: 120px 0; background-image:url(/web/upload/asset/aboutus/experience-img-re.jpg); background-size:cover;"></div>
+	</div>
+</div>
+
+<!--<div class="wrap">
+	<img class="handText" src="/web/upload/asset/aboutus/share-love.png">
+	<h3 class="context" style="padding: 20px 0;">쿠오카와 함께 사랑을 전하세요.</h3>
+	<p>쿠오카는 소비자가 최고의 제품을 경험하는 것 이상으로<br>사회 공동체적 가치를 함께 공유하기를 바랍니다.</p>
+	<img class="m-banner-img" src="/web/upload/asset/aboutus/share-love-img.jpg" alt="Kuoca Love Project">
+</div>
+
+<div class="wrap">
+	<img class="handText" src="/web/upload/asset/aboutus/fine-dining.png" style="width: 580px; padding: 30px 0 0 7px;">
+	<h3 class="context" style="padding: 40px 0 60px 0;">
+		내 피부를 위한 파인다이닝.<br>
+		극신선 스킨케어, 쿠오카에서 경험해보세요.
+	</h3>
+	<img class="m-banner-img" src="/web/upload/asset/aboutus/fine-dining.jpg" alt="Kuoca Love Project" style="margin: 0 auto 120px;">
+</div>-->
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var z;
+
+	for (z = 0; z < acc.length; z++) {
+
+		acc[z].addEventListener("click", function () {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.height) {
+				panel.style.height = null;
+			} else {
+				panel.style.height = "0px";
+			}
+		});
+	}
+
+	$(document).ready(function () {
+		$(".accordion").click(function () {
+			$(".aboutBtn").toggleClass('active');
+		});
+	});
+</script>

@@ -1,0 +1,49 @@
+<script>
+    $(document).ready(function(){
+		$( ".detail-add" ).click(function() {
+			$( ".detail-add-inner" ).slideDown(300);
+			$( ".detail-add" ).hide();
+			$( ".detail-add2" ).show();
+		});
+	});
+	$(document).ready(function(){
+		$( ".detail-add2" ).click(function() {
+			$( ".detail-add-inner" ).slideUp(300);
+			$( ".detail-add" ).show();
+			$( ".detail-add2" ).hide();
+		});
+	});
+</script>
+
+<style>
+	#holiday-notice {
+		display: none;
+	}
+	.detail-add-inner p {
+		padding: 0;
+		margin: 0 !important;
+	}
+    #not-d { font-size: 12px; display: inline-block; margin-left: 10px; }
+    
+</style>
+<div class="detail-add-wrap" style="text-align:left; margin:0 auto 30px auto; width: 750px;">
+<div class="detail-add" style="width: 750px; font-size:20px; padding-left:50px; background:#F9F9F9; height:76px; line-height:76px; cursor:pointer;  display:none;">이벤트 안내
+    <div style="display:inline-block; padding:0 0; border:1px solid #333;"><i class="xi-angle-down-min"></i></div>
+</div>
+<div class="detail-add2" style="font-size:20px; padding-left:50px; background:#F4EBEB; height:76px; line-height:76px; cursor:pointer;   ">이벤트 안내
+     <div style="display:inline-block; padding:0 0; border:1px solid #333; background:#333; color:#fff;"><i class="xi-angle-up-min"></i></div>
+</div>
+ <div class="detail-add-inner" style="background:#F4EBEB; padding:0 50px 50px 50px; font-size:16px; line-height:2;">
+	 <i class="xi-check-min detail-add-content"></i>구매 금액별 사은품
+     <p id="holiday-notice">- 본 홀리데이 세트는 다이어리와 함께 12월 22일(화)부터 순차 배송됩니다.</p>
+     <p>- 전 구매 고객 : 2만 5천원 상당의 쿠오카 체험 키트</p>
+     <!--<span><p>- 15만원 이상 구매 고객 : 쿠오카 X 김미영 작가 2021 다이어리 증정<small id="not-d">(한정 수량 / 중복 적용 불가)</small></p></span>-->
+     <p>- 20만원 이상 구매 고객 : 4만원 상당 2021 한정판 쿠오카 트래블 키트 (한정 수량)</p>
+     <p>- 30만원 이상 구매 고객 : 4만원 상당 2021 한정판 쿠오카 트래블 키트 (한정 수량)<br>& 쿠오카 시그니처 스파 타올</p>
+</div>
+</div>
+
+<script>
+    if (( window.location.pathname == '/' )||( window.location.pathname == '/detail.html?product_no=11' )) { document.write( '<style>.detail-add-wrap{display:none !important;}</style>' ); }
+	if (( window.location.pathname == '/' )||( window.location.pathname == '/detail.html?product_no=41' )) { document.write( '<style>#holiday-notice{display:none !important;}</style>' ); }
+</script>

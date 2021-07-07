@@ -1,0 +1,710 @@
+<!--@layout(/layout/basic/layout.html)-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script><!--@css(/137lab/css/gnb-white.css)-->
+<style>
+	/*	.clearfix {
+			display: block;
+		}
+
+		.red-btn {
+			color: #986C6E;
+			background: #F1E3DD;
+			border: 1px solid #986C6E;
+		}
+
+		.big-btn {
+			line-height: 40px;
+			height: 40px;
+		}*/
+
+	#container {
+		width: 100% !important;
+	}
+
+	#contents {
+		float: none;
+		width: 100% !important;
+		min-height: 750px;
+		margin: 0 auto;
+	}
+
+	#fm-banner {
+		background: url(SkinImg/fm-banner.jpg);
+		background-size: cover;
+		max-width: 100%;
+		margin: 0 auto;
+		height: 750px;
+	}
+
+	#context-invite, #context-sale {
+		width: 760px;
+		text-align: center;
+		padding-top: 250px;
+		padding-left: 90px;
+	}
+
+	#context-invite h1, #context-sale h1 {
+		font-size: 46px;
+		letter-spacing: 1px;
+		color: #fff;
+	}
+
+	#context-invite h2 {
+		font-size: 30px;
+		color: #fff;
+		margin: 30px 0 0;
+	}
+
+	#context-invite p {
+		margin: 0;
+	}
+
+	#context-invite div {
+		color: #fff;
+		font-size: 20px;
+		line-height: 2em;
+	}
+
+	#context-sale {
+		display: none;
+	}
+
+	#pm-code-box {
+		margin: 0 auto;
+		padding: 80px;
+		background: #FBF3EC;
+		font-family: "Marcellus", "Nanum Myeongjo" !important;
+	}
+
+	#pm-code-box > div {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#pm-code-box > div > h1,
+	#pm-code-box > div > p {
+		color: #A26F6F;
+	}
+
+	#pm-code-box > div > h1 {
+		font-size: 26px;
+	}
+
+	#pm-code-box > div > p {
+		font-size: 16px;
+		line-height: 2em;
+	}
+
+	#pm-code-box > .container {
+		width: 460px;
+		background: #fff;
+		border: 1px solid #F1E3DD;
+		margin-top: 30px;
+	}
+
+	#pm-code-box > .container > div {
+		height: 100px;
+	}
+
+	#pm-code-box .notice {
+		margin-top: 30px;
+	}
+
+	#pm-code-box span > * {
+		display: inline-block;
+		color: #A26F6F;
+		vertical-align: baseline;
+		margin-top: 30px;
+	}
+
+	#pm-code-input {
+		height: 50px;
+		background: rgba(0, 0, 0, 0);
+		font-size: 20px;
+		width: 150px;
+		padding: 25px 10px;
+		border: 1px solid #986C6E;
+		letter-spacing: 2px;
+		display: inline;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-top: -5px;
+	}
+
+	#pm-code-box button {
+		font-size: 16px;
+		padding: 14px 30px;
+		cursor: pointer;
+		letter-spacing: 5px;
+		display: inline;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-top: 20px;
+		font-family: "Marcellus", "Nanum Myeongjo" !important;
+
+	}
+
+	#pm-code-box button:disabled {
+		color: #707070;
+		background: #fff;
+	}
+
+	#fm-prod-list {
+		display: none;
+		padding: 60px 0;
+		background: #FBF3EC;
+	}
+
+	.fm-container {
+		display: block;
+		width: 1280px;
+		margin: 0 auto;
+	}
+
+	.fm-container > .fm-prod {
+		width: 633px;
+		margin: 7px 0;
+		background: #FBF3EC;
+		text-align: center;
+		position: relative;
+		display: inline-block;
+		border: 1px solid #986C6E;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	.fm-container > .fm-prod > div {
+		width: 300px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.fm-container > .fm-prod > div > img {
+		margin-left: -50px;
+	}
+
+	.fm-prod-name {
+		font-size: 26px;
+		letter-spacing: 1.2px;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	.fm-prod-name h3 {
+		display: inline-block;
+	}
+
+	.fm-prod-name p {
+		color: #949495;
+		font-size: 20px;
+		display: inline-block;
+	}
+
+	.fm-prod-sale {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	.fm-prod-sale > p {
+		margin: 10px 0;
+		font-size: 14px;
+	}
+
+	.fm-prod-badge {
+		background-color: #D6B09D;
+		color: #fff;
+		font-size: 16px;
+		border-radius: 20px;
+		display: inline-block;
+		padding: 8px 15px;
+		margin-bottom: 10px;
+	}
+
+	.fm-prod-price {
+		font-size: 20px;
+		display: block;
+		margin: 15px 0 20px;
+		color: #3e3a39;
+	}
+
+	.fm-prod-price p {
+		font-size: 18px;
+		display: inline;
+	}
+
+</style>
+<div id="fm-banner" class="bg-cover">
+	<div id="context-invite">
+		<h1 class="fs">
+			KUOCA INVITES YOU! </h1>
+		<h2>1년에 단 하루!</h2>
+		<div>
+			<p>쿠오카 공식몰 회원에게만 주어지는 온라인 패밀리 세일</p>
+			<p>*기간: 11월 27일 (금)</p>
+		</div>
+	</div>
+	<div id="context-sale">
+		<h1 class="fs">KUOCA ONLINE FAMILY SALE </h1>
+	</div>
+</div>
+<div id="pm-code-box">
+	<div>
+		<h1>KUOCA ONLINY FAMILY SALE</h1>
+	</div>
+	<div class="container">
+        <span>
+            <h1>PROMOTION CODE</h1>
+        </span>
+		<div>
+			<input id="pm-code-input" type="text" name="promotion" required value="#########">
+			<button id="confirm-code" class="red-btn -mov fsk" onclick="location.href='/family-product.html'">확인</button>
+		</div>
+	</div>
+	<div class="notice">
+		<p>*프로모션 코드는 자동 입력된 상태이며, 확인 버튼 클릭시 세일 페이지로 이동됩니다.</p>
+		<p>*패밀리 세일 링크는 오직 쿠오카 자사몰 회원에게만 공개됩니다.</p>
+	</div>
+</div>
+<div>
+	<div id="fm-prod-list" style="width:100%; margin:0 auto;">
+		<div class="fm-container">
+
+			<div class="fm-prod" style="margin-right: 5px">
+				<div>
+					<img src="SkinImg/fm-toner.png" width="415">
+				</div>
+
+				<div style="padding-bottom:60px;">
+
+					<div class="fs fm-prod-name">
+						<h3>TONER BLEND</h3>
+						<p>130ml</p>
+					</div>
+
+					<div class="fm-prod-badge">
+						피부 정화
+					</div>
+
+					<span class="fm-prod-sale">
+						<p>*미백, 보습, 항산화, 원료 함유</p>
+                        <div class="fm-prod-price">
+                            <p>33,000원</p>
+							<p style="text-decoration: line-through; margin-bottom: 0; color: #949495">55,000원</p>
+                        </div>
+                    </span>
+
+					<a href="/product/detail.html?product_no=32" class="big-btn red-btn -mov fsk">자세히 보기
+						<i class="xi-angle-right-thin"></i> </a>
+				</div>
+			</div>
+
+			<div class="fm-prod" style="margin-left: 5px">
+
+				<div>
+					<img src="SkinImg/fm-repair.png" width="415">
+				</div>
+
+				<div style="padding-bottom:60px;">
+
+					<div class="fs fm-prod-name">
+						<h3>REPAIR BLEND</h3>
+						<p>30ml</p>
+					</div>
+
+					<div class="fm-prod-badge">
+						항노화 케어
+					</div>
+
+					<span class="fm-prod-sale">
+						<p>*미백 & 주름 개선 기능성 인증</p>
+                        <div class="fm-prod-price">
+                            <p>72,000원</p>
+							<p style="text-decoration: line-through; margin-bottom: 0; color: #949495">120,000원</p>
+                        </div>
+                    </span>
+
+					<a href="/product/detail.html?product_no=30" class="big-btn red-btn -mov fsk">자세히 보기
+						<i class="xi-angle-right-thin"></i> </a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="fm-container" style="margin-bottom: 10px;">
+
+			<div class="fm-prod" style="margin-right: 5px;">
+
+				<div>
+					<img src="SkinImg/fm-serum.png" width="415">
+				</div>
+
+				<div style="padding-bottom:60px;">
+
+					<div class="fs fm-prod-name">
+						<h3>SERUM BLEND</h3>
+						<p>30ml</p>
+					</div>
+
+					<div class="fm-prod-badge">
+						항산화 효과
+					</div>
+
+					<span class="fm-prod-sale">
+						<p>*미백 & 주름 개선 기능성 인증</p>
+                        <div class="fm-prod-price">
+                            <p>66,000원</p>
+							<p style="text-decoration: line-through; margin-bottom: 0; color: #949495">110,000원</p>
+                        </div>
+                    </span>
+
+					<a href="/product/detail.html?product_no=33" class="big-btn red-btn -mov fsk">자세히 보기
+						<i class="xi-angle-right-thin"></i></a>
+				</div>
+			</div>
+
+			<div class="fm-prod" style="margin-left: 5px">
+				<div>
+					<img src="SkinImg/fm-cream.png" width="415" style="margin-top: 20px; margin-bottom: -20px;">
+				</div>
+				<div style="padding-bottom:60px;">
+
+					<div class="fs fm-prod-name">
+						<h3>CREAM BLEND</h3>
+						<p>40ml</p>
+					</div>
+
+					<div class="fm-prod-badge">
+						탄력케어
+					</div>
+
+					<span class="fm-prod-sale">
+						<p>*주름 개선 기능성 인증</p>
+                        <div class="fm-prod-price">
+                            <p>72,000원</p>
+							<p style="text-decoration: line-through; margin-bottom: 0; color: #949495">72,000원</p>
+                        </div>
+                    </span> <a href="/product/detail.html?product_no=31" class="big-btn red-btn -mov fsk">자세히 보기
+					<i class="xi-angle-right-thin"></i> </a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+
+		</div>
+
+
+		<div style="width:1280px; margin:0 auto 20px auto; height:530px;background-image:url(/SkinImg/fa-anti-duo.jpg); background-size:cover;">
+			<div style="width:1180px; margin:0 auto; position:relative;">
+
+				<ul>
+					<li style="float:left; padding:125px 0 0 30px;">
+
+						<p class="fs" style="font-size:28px; padding-bottom:50px; padding-top:15px; letter-spacing:1.2px;">
+							TRUFFLE<br>ANTI-AGING DUO</p>
+						<span style="font-size: 18px;">리페어 30ml / 크림 40ml</span>
+						<p class="fsk" style="font-size:18px; line-height:48px;">쿠오카 트러플 안티에이징 듀오 </p>
+						<div style="margin-bottom: 20px; font-size: 18px;">
+							<p style="color: #949495; text-decoration: line-through; margin-bottom: 0; display: inline;">240,000원</p>
+							<p style="display:inline; margin-left: 5px;">144,000원</p>
+						</div>
+						<a href="/product/detail.html?product_no=35" class="big-btn black-btn -mov fsk red-btn">자세히 보기
+							<i class="xi-angle-right-thin"></i></a>
+					</li>
+
+				</ul>
+				<div class="clearfix"></div><!--@layout(/layout/basic/layout.html)-->
+				<script src="http://code.jquery.com/jquery-latest.min.js"></script><!--@css(/137lab/css/gnb-white.css)-->
+				<style>
+					/*	.clearfix {
+							display: block;
+						}
+
+						.red-btn {
+							color: #986C6E;
+							background: #F1E3DD;
+							border: 1px solid #986C6E;
+						}
+
+						.big-btn {
+							line-height: 40px;
+							height: 40px;
+						}*/
+
+					#container {
+						width: 100% !important;
+					}
+
+					#contents {
+						float: none;
+						width: 100% !important;
+						min-height: 750px;
+						margin: 0 auto;
+					}
+
+					#fm-banner {
+						background: url(SkinImg/fm-banner.jpg);
+						background-size: cover;
+						max-width: 100%;
+						margin: 0 auto;
+						height: 750px;
+					}
+
+					#context-invite, #context-sale {
+						width: 760px;
+						text-align: center;
+						padding-top: 250px;
+						padding-left: 90px;
+					}
+
+					#context-invite h1, #context-sale h1 {
+						font-size: 46px;
+						letter-spacing: 1px;
+						color: #fff;
+					}
+
+					#context-invite h2 {
+						font-size: 30px;
+						color: #fff;
+						margin: 30px 0 0;
+					}
+
+					#context-invite p {
+						margin: 0;
+					}
+
+					#context-invite div {
+						color: #fff;
+						font-size: 20px;
+						line-height: 2em;
+					}
+
+					#context-sale {
+						display: none;
+					}
+
+					#pm-code-box {
+						margin: 0 auto;
+						padding: 80px;
+						background: #FBF3EC;
+						font-family: "Marcellus", "Nanum Myeongjo" !important;
+					}
+
+					#pm-code-box > div {
+						margin: 0 auto;
+						text-align: center;
+					}
+
+					#pm-code-box > div > h1,
+					#pm-code-box > div > p {
+						color: #A26F6F;
+					}
+
+					#pm-code-box > div > h1 {
+						font-size: 26px;
+					}
+
+					#pm-code-box > div > p {
+						font-size: 16px;
+						line-height: 2em;
+					}
+
+					#pm-code-box > .container {
+						width: 460px;
+						background: #fff;
+						border: 1px solid #F1E3DD;
+						margin-top: 30px;
+					}
+
+					#pm-code-box > .container > div {
+						height: 100px;
+					}
+
+					#pm-code-box .notice {
+						margin-top: 30px;
+					}
+
+					#pm-code-box span > * {
+						display: inline-block;
+						color: #A26F6F;
+						vertical-align: baseline;
+						margin-top: 30px;
+					}
+
+					#pm-code-input {
+						height: 50px;
+						background: rgba(0, 0, 0, 0);
+						font-size: 20px;
+						width: 150px;
+						padding: 25px 10px;
+						border: 1px solid #986C6E;
+						letter-spacing: 2px;
+						display: inline;
+						box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						margin-top: -5px;
+					}
+
+					#pm-code-box button {
+						font-size: 16px;
+						padding: 14px 30px;
+						cursor: pointer;
+						letter-spacing: 5px;
+						display: inline;
+						box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						margin-top: 20px;
+						font-family: "Marcellus", "Nanum Myeongjo" !important;
+
+					}
+
+					#pm-code-box button:disabled {
+						color: #707070;
+						background: #fff;
+					}
+
+					#fm-prod-list {
+						display: none;
+						padding: 60px 0;
+						background: #FBF3EC;
+					}
+
+					.fm-container {
+						display: block;
+						width: 1280px;
+						margin: 0 auto;
+					}
+
+					.fm-container > .fm-prod {
+						width: 633px;
+						margin: 7px 0;
+						background: #FBF3EC;
+						text-align: center;
+						position: relative;
+						display: inline-block;
+						border: 1px solid #986C6E;
+						box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+					}
+
+					.fm-container > .fm-prod > div {
+						width: 300px;
+						text-align: center;
+						margin: 0 auto;
+					}
+
+					.fm-container > .fm-prod > div > img {
+						margin-left: -50px;
+					}
+
+					.fm-prod-name {
+						font-size: 26px;
+						letter-spacing: 1.2px;
+						margin-bottom: 10px;
+						display: inline-block;
+					}
+
+					.fm-prod-name h3 {
+						display: inline-block;
+					}
+
+					.fm-prod-name p {
+						color: #949495;
+						font-size: 20px;
+						display: inline-block;
+					}
+
+					.fm-prod-sale {
+						font-size: 20px;
+						margin-top: 10px;
+					}
+
+					.fm-prod-sale > p {
+						margin: 10px 0;
+						font-size: 14px;
+					}
+
+					.fm-prod-badge {
+						background-color: #D6B09D;
+						color: #fff;
+						font-size: 16px;
+						border-radius: 20px;
+						display: inline-block;
+						padding: 8px 15px;
+						margin-bottom: 10px;
+					}
+
+					.fm-prod-price {
+						font-size: 20px;
+						display: block;
+						margin: 15px 0 20px;
+						color: #3e3a39;
+					}
+
+					.fm-prod-price p {
+						font-size: 18px;
+						display: inline;
+					}
+
+				</style>
+				<div id="fm-banner" class="bg-cover">
+					<div id="context-invite">
+						<h1 class="fs">
+							KUOCA INVITES YOU! </h1>
+						<h2>1년에 단 하루!</h2>
+						<div>
+							<p>쿠오카 공식몰 회원에게만 주어지는 온라인 패밀리 세일</p>
+							<p>*기간: 11월 27일 (금)</p>
+						</div>
+					</div>
+					<div id="context-sale">
+						<h1 class="fs">KUOCA ONLINE FAMILY SALE </h1>
+					</div>
+				</div>
+				<div id="pm-code-box">
+					<div>
+						<h1>KUOCA ONLINY FAMILY SALE</h1>
+					</div>
+					<div class="container">
+        <span>
+            <h1>PROMOTION CODE</h1>
+        </span>
+						<div>
+							<input id="pm-code-input" type="text" name="promotion" required value="#########">
+							<button id="confirm-code" class="red-btn -mov fsk" onclick="location.href='/family-product.html'">확인</button>
+						</div>
+					</div>
+					<div class="notice">
+						<p>*프로모션 코드는 자동 입력된 상태이며, 확인 버튼 클릭시 세일 페이지로 이동됩니다.</p>
+						<p>*패밀리 세일 링크는 오직 쿠오카 자사몰 회원에게만 공개됩니다.</p>
+					</div>
+				</div>
+
+
+				<script>
+					var gnbLogo = document.querySelector('div#header div.top_logo-w a');
+					gnbLogo.setAttribute('href','');
+
+					var $pmCodeInput = document.querySelector('#pm-code-input');
+					var $confirmCode = document.querySelector('#confirm-code');
+					var $pmCodeBox = document.querySelector('#pm-code-box');
+					var $fmProdList = document.querySelector('#fm-prod-list');
+					var $contextInvite = document.querySelector('#context-invite');
+					var $contextSale = document.querySelector('#context-sale');
+					$pmCodeInput.onkeyup = function (e) {
+						if (e.target.value !== '#########') $confirmCode.disabled = true;
+						else $confirmCode.disabled = false;
+					};
+					// $confirmCode.onclick = function (e) {
+					// 	$fmProdList.style.display = 'inline-block';
+					// 	$pmCodeBox.style.display = 'none';
+					// 	$contextInvite.style.display = 'none';
+					// 	$contextSale.style.display = 'block';
+					// };
+				</script>
+			</div>
+		</div>
+

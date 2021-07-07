@@ -1,0 +1,91 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<style>
+	#header {
+		background: transparent;
+	}
+
+	#wrap {
+		margin: 0 auto;
+		padding-top: 130px;
+	}
+</style>
+
+<!-- Instagram Widget -->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f9aff175-22f9-4382-aefc-9223c6ef58f2" style="width: 1280px; margin: 0 auto;"></div>
+<!-- end -->
+
+<!-- 인스타그램 -->
+<!--<div id="instagram" style="width:100%; margin:0 auto 0 auto; background:#fff; padding-bottom:30px; overflow:hidden; ">
+	<div style="width:1160px; margin:0 auto 0 auto; ">
+		<div class="board" module="board_listpackage_8">
+			<h3 class="fs" style="font-size:16px; padding:40px 0 30px 20px;">INSTAGRAM</h3>
+			<div class="galleryList main_roll_box" module="board_list_8">
+				&lt;!&ndash;
+                    $count = 8
+                    $main_list = yes
+                    $subject_cut = 25
+                &ndash;&gt;
+				<div class="swiper-container main-swipe-roll">
+					<ul class="prdList roll_product swiper-wrapper" style="margin-bottom:10px; ">
+						<li style="border: 1px solid #e2e2e2; width:30%; margin-right:10px !important;" href="#layer2" class="btn-example list-thumb-wrap1 swiper-slide" style="height:auto; background:#fff; overflow:hidden;">
+						<a href="{$link_board_detail}"  style="width:100%; overflow:hidden; display:inline-block; "><img src="{$img_src}" alt="" width="100%" height="386px" style="padding:10px; box-sizing:border-box;"/></a>
+						<p style="padding:10px; ">
+							@{$subject}
+						</p>
+						</li>
+						<li style="border: 1px solid #e2e2e2; width:30%; margin-right:10px !important;" href="#layer2" class="btn-example list-thumb-wrap1 swiper-slide" style="height:auto; background:#fff; overflow:hidden;">
+						<a href="{$link_board_detail}"  style="width:100%; overflow:hidden; display:inline-block;"><img src="{$img_src}" alt="" width="100%" height="386px" style="padding:10px; box-sizing:border-box;"/></a>
+						<p style="padding:10px; ">
+							@{$subject}
+						</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>-->
+<!-- //인스타그램 -->
+<!--<style>
+ .list-thumb-wrap1{ margin-right:1px; } .pop-layer .pop-container { padding: 20px 25px; } .pop-layer p.ctxt { color: #666; line-height: 25px; } .pop-layer .btn-r { width: 100%; margin: 10px 0 20px; padding-top: 10px; border-top: 1px solid #DDD; text-align: right; } .pop-layer { display: none; position: absolute; top: 50%; left: 50%; width: 610px; height: auto; background-color: #fff; border: 5px solid #a8594c; z-index: 9999999; } .dim-layer-wrap{position: fixed; z-index:99999;} .dim-layer { display: none; position: fixed; _position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; } .dim-layer .dimBg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: .5; filter: alpha(opacity=50); } .dim-layer .pop-layer { display: block; } a.btn-layerClose { display: inline-block; height: 25px; padding: 0 14px 0; border: 1px solid #a8594c; background-color: #a8594c; font-size: 13px; color: #fff; line-height: 25px; } a.btn-layerClose:hover { border: 1px solid #a8594c; background-color: #a8594c; color: #fff; }
+.list-thumb-wrap1 {
+    margin-right: 10px !important;
+}
+.roll_product{margin-left:-10px !important;}
+</style>-->
+    
+<!--
+<script>
+   $('.btn-example').click(function(){
+        var $href = $(this).attr('href');
+        layer_popup($href);
+    });
+    function layer_popup(el){
+        var $el = $(el);		//레이어의 id를 $el 변수에 저장
+        var isDim = $el.prev().hasClass('dimBg');	//dimmed 레이어를 감지하기 위한 boolean 변수
+        isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+        var $elWidth = ~~($el.outerWidth()),
+            $elHeight = ~~($el.outerHeight()),
+            docWidth = $(document).width(),
+            docHeight = $(document).height();
+        // 화면의 중앙에 레이어를 띄운다.
+        if ($elHeight < docHeight || $elWidth < docWidth) {
+            $el.css({
+                marginTop: -$elHeight /2,
+                marginLeft: -$elWidth/2
+            })
+        } else {
+            $el.css({top: 0, left: 0});
+        }
+        $el.find('a.btn-layerClose').click(function(){
+            isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+            return false;
+        });
+        $('.layer .dimBg').click(function(){
+            $('.dim-layer').fadeOut();
+            return false;
+        });
+    } 
+</script>-->

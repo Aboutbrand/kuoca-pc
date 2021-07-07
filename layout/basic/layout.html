@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<!-- PG크로스브라우징필수내용 -->
+	<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta http-equiv="Expires" content="0"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<!-- // PG크로스브라우징필수내용 -->
+
+	<title></title>
+
+
+	<!--@import(/137lab/setting.html)-->
+
+	<!------------- google analytics -------------->
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-KM3PF7X');</script>
+	<!-- End Google Tag Manager -->
+	<script>
+		var productList = [];
+		var productIdList = [];
+		var listname = '';
+		var cookieString = '';
+
+		var isNaverPaySending = false;
+		var naverPaySendingDelay = 10;
+
+
+		function setCookie(cName, cValue, cDay) {
+			var expire = new Date();
+			expire.setDate(expire.getDate() + cDay);
+			cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+			if (typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+			document.cookie = cookies;
+		}
+
+		// 쿠키 가져오기
+		function getCookie(cName) {
+			cName = cName + '=';
+			var cookieData = document.cookie;
+			var start = cookieData.indexOf(cName);
+			var cValue = '';
+			if (start != -1) {
+				start += cName.length;
+				var end = cookieData.indexOf(';', start);
+				if (end == -1) end = cookieData.length;
+				cValue = cookieData.substring(start, end);
+			}
+			return unescape(cValue);
+		}
+
+		function getCategoryCode(strCode) {
+			var strPCode = strCode;
+			strPCode = strPCode.match(/cate_no=\d+/);
+			strPCode = String(strPCode);
+			var intPCode = strPCode.match(/\d+/);
+			if (intPCode != null && intPCode.length > 0) {
+				return intPCode[0];
+			}
+			return '';
+		}
+
+
+		function getCategoryCodeDetailUrl(string) {
+			var stringArr = string.split('/');
+			if (stringArr.length > 0) {
+				for (var i in stringArr) {
+					if (stringArr[i] == 'category') {
+						return stringArr[parseInt(i) + 2];
+					}
+				}
+			}
+			return '';
+		}
+
+		function getProductCodeDetailUrl(string) {
+			var stringArr = string.split('/');
+			if (stringArr.length > 0) {
+				for (var i in stringArr) {
+					if (stringArr[i] == 'product') {
+						return stringArr[parseInt(i) + 2];
+					}
+				}
+			}
+			return '';
+		}
+
+
+		function getProductCode(strCode) {
+			var strPCode = strCode;
+			strPCode = strPCode.match(/product_no=\d+/);
+			strPCode = String(strPCode);
+			var intPCode = strPCode.match(/\d+/);
+			if (intPCode != null && intPCode.length > 0) {
+				return intPCode[0];
+			}
+			return '';
+		}
+
+
+		function getProductCodeDetailUrl(string) {
+			var stringArr = string.split('/');
+			if (stringArr.length > 0) {
+				for (var i in stringArr) {
+					if (stringArr[i] == 'product') {
+						return stringArr[parseInt(i) + 2];
+					}
+				}
+			}
+			return '';
+		}
+
+		function removeHtml(str) {
+			var removed_str = str.replace(/\<.*?\>/g, " ");
+			return removed_str;
+		}
+
+		function removeComma(str) {
+			var removed_str = parseInt(str.replace(/,/g, ""));
+			return removed_str;
+		}
+
+		function callbackIsVisible(selector, callback) {
+			var time = 0;
+			var interval = setInterval(function () {
+				if ($(selector).is(':visible')) {
+					// visible, do something
+					callback();
+					clearInterval(interval);
+				} else {
+					// not visible yet, do something
+					time += 100;
+				}
+			}, 200);
+		}
+
+		function callbackIsVisibleBasket(callback) {
+			var time = 0;
+			var interval = setInterval(function () {
+				if (typeof aBasketProductData !== 'undefined') {
+					// visible, do something
+					callback();
+					clearInterval(interval);
+				} else {
+					// not visible yet, do something
+					time += 100;
+				}
+			}, 200);
+		}
+
+		function facebookCallbackIsVisible(callback) {
+			var time = 0;
+			var interval = setInterval(function () {
+				if (typeof fbq !== 'undefined') {
+					// visible, do something
+					callback();
+					clearInterval(interval);
+				} else {
+					// not visible yet, do something
+					time += 100;
+				}
+			}, 200);
+		}
+
+		function productClick(goodsNo) {
+			if (typeof productList != 'undefined') {
+				for (var i in productList) {
+					if (goodsNo == productList[i].id) {
+						dataLayer.push({
+							'event': 'productClick',
+							'ecommerce': {
+								'click': {
+									'actionField': {'list': productList[i].list},      // Optional list property.
+									'products': [productList[i]]
+								}
+							},
+							'eventCallback': function () {
+							}
+						});
+
+						break;
+					}
+
+					if (i == (productList.length - 1)) break;
+				}
+			}
+		}
+
+
+	</script>
+	<!------------- google analytics -------------->
+	<!------------- google analytics -------------->
+
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM3PF7X"
+	        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="dim-layer-wrap">
+	<div class="dim-layer">
+		<div class="dimBg"></div>
+		<div id="layer2" class="pop-layer">
+			<div class="pop-container">
+				<div class="pop-conts">
+					<div style="float:right;">
+						<a href="#" class="btn-layerClose">Close</a>
+					</div>
+					<!--content //-->
+					<iframe src="/"
+					        width="570"
+					        height="600"
+					        name="sns-inner"
+					        frameborder=”0″>
+						<!--// content-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	.dim-layer {
+		display: none;
+		position: fixed;
+		_position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 100;
+	}
+</style>
+<!--@import(/137lab/top.html)-->
+
+<!--@import(/137lab/gnb.html)-->
+
+<hr class="layout"/>
+
+<div id="wrap">
+	<div id="container">
+		<div id="contents">
+			<!--@contents-->
+		</div>
+		<hr class="layout"/>
+	</div><!-- //container -->
+	<hr class="layout"/>
+
+	<div id="quick"></div>
+</div><!-- //wrap -->
+<hr class="layout"/>
+<!--@import(/137lab/footer.html)-->
+
+<!-- 결제를 위한 필수 영역 -->
+<div id="progressPaybar" style="display:none;">
+	<div id="progressPaybarBackground" class="layerProgress"></div>
+	<div id="progressPaybarView">
+		<div class="box">
+			<p class="graph">
+				<span><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/txt_progress.gif"
+				           alt="현재 결제가 진행중입니다."/></span>
+				<span><img src="//img.echosting.cafe24.com/skin/base/layout/img_loading.gif"
+				           alt=""/></span>
+			</p>
+			<p class="txt">
+				본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br/>
+				주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- //결제를 위한 필수 영역 -->
+
+<div module="Layout_multishopShipping">
+	<!--@css(/layout/basic/css/ec-base-layer.css)-->
+	<!--@css(/css/module/layout/multishopShipping.css)-->
+	<!--@js(/js/module/layout/multishopShipping.js)-->
+	<div class="dimmed"></div>
+	<div class="worldshipLayer ec-base-layer">
+		<div class="header">
+			<h3>WORLD SHIPPING</h3>
+		</div>
+		<div class="content">
+			<p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+			<div class="select">
+				<select module="Layout_multishopShippingCountrylist">
+					<option value="{$country_code}" {$country_default_selected}>SHIPPING
+					                                                            TO :
+					                                                            {$country_name}
+					</option>
+					<option value="{$country_code}" {$country_default_selected}>SHIPPING
+					                                                            TO :
+					                                                            {$country_name}
+					</option>
+				</select>
+			</div>
+			<div class="select">
+				<select module="Layout_multishopShippingLanguagelist">
+					<option value="{$shop_domain}" {$shop_default_selected}>LANGUAGE :
+					                                                        {$shop_language_name}
+					</option>
+					<option value="{$shop_domain}" {$shop_default_selected}>LANGUAGE :
+					                                                        {$shop_language_name}
+					</option>
+				</select>
+			</div>
+		</div>
+		<div class="ec-base-button">
+			<a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/link/btn_go.gif"
+			                     alt="GO"/></a>
+		</div>
+		<a href="#none"
+		   class="close"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif"
+		                      width="13"
+		                      height="13"
+		                      alt="close"/></a>
+	</div>
+</div>
+
+<div module="Layout_conversionPc">
+	<!--@css(/css/module/layout/conversionpc.css)-->
+	<a href="{$mobile_url}">모바일 화면보기</a>
+</div>
+
+<!--리뷰톡톡 공통파일-->
+<!--@import(/board/smartreview/provider/common.html)-->
+<!--//리뷰톡톡 공통파일-->
+
+
+    
+</body>
+</html>

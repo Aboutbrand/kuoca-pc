@@ -1,0 +1,255 @@
+<style>
+  .right_area .icon-magnifier::before, .right_area .icon-avatar::before, .right_area .icon-cart-bk::before {font-size: 25px;}
+
+  /*Language Switcher*/
+  .ui-dropdown-list {position: relative;}
+  p.ui-dropdown-list-trigger {margin-top: 0;}
+  .ui-dropdown-list-trigger strong {position: relative;z-index: 999;}
+  .ui-dropdown-list-trigger strong, .ui-dropdown-list ul a {display: block;width: 30px;cursor: pointer;padding: 6px 8px;font-size: 13px;line-height: 13px;color: #000;font-weight: normal;}
+  .ui-dropdown-list-trigger img {float: right;right: -45px;top: 9px;position: relative;}
+  .ui-dropdown-list ul {display: none;position: absolute;right: 0;top: 30px;margin-top: 0;padding: 0;z-index: 1000;border: 1px solid rgba(0, 0, 0, 0.3)}
+  .ui-dropdown-list li {list-style-type: none;}
+  .ui-dropdown-list ul a, .ui-dropdown-list ul a:link, .ui-dropdown-list ul a:visited {position: relative;display: block;float: right;background-color: transparent;}
+  .ui-dropdown-list ul a:hover, .ui-dropdown-list ul a:focus {border-bottom: none;background-color: transparent;color: #000;}
+  /* JS interactivity */
+  .no-js .ui-dropdown-list ul, .ui-dropdown-list.active ul {display: block;}
+  .ui-dropdown-list.active strong {background-color: transparent;color: #000;}
+  .ui-dropdown-list.active strong:after {border-top-color: #000;}
+  #lang-switcher strong {float: right;}
+  .btn-container {display: inline-block;padding-left: 0.5em;margin-bottom: -0.2em;cursor: pointer;position: relative;top: 2px;left: 8px;}
+  .t-sub-menus, .t-sub-active, .set-sub-menus, .set-sub-active {transition: background-color 500ms ease-in-out;}
+  .t-sub-menus li, .set-sub-menus li {height: 30px;}
+  .t-sub-menus li a, .set-sub-menus li a {display: block;padding: 0;color: #3D3A39;font-size: 14px;font-weight: 400;word-spacing: 0;text-decoration: none;line-height: 30px;letter-spacing: 1px;text-align: left;}
+
+  /*Plus Icon Animation*/
+  .plusBtn {position: relative;width: 15px;height: 15px;top: 0;right: 0; /* Vertical line *//* horizontal line */}
+  .plusBtn:before, .plusBtn:after {content: "";position: absolute;background-color: #4f4f4f50;transition: transform 0.25s ease-out;}
+  .plusBtn:before {top: 0;left: 49%;height: 15px;width: 1px;margin-left: 0;}
+  .plusBtn:after {left: 0;top: 49%;width: 15px;height: 1px;margin-top: 0;}
+  .plusBtn.active:before {transform: rotate(90deg);}
+  .plusBtn.active :after {transform: rotate(180deg);}
+</style>
+
+<div id="header">
+  <div class="top_logo"><a href="/">
+	<img src="/SkinImg/gnb-logo.png" width="180px"></a>
+  </div>
+  <!-- 좌측 로고 수정하는곳 -->
+  <div class="top_logo-w"><a href="/"><img src="/SkinImg/gnb-logo-w.png" width="180px"></a></div>
+  <!-- 좌측 로고 수정하는곳 -->
+
+  <div class="menu_wrapper">
+	<!-- 상단 메뉴 수정하는곳 -->
+	<div class="center_area">
+	  <div class="category_menu">
+		<a href="/about-us.html" class="move fs">ABOUT US</a></div>
+
+
+	  <div class="category_menu left_shop_btn" style="display:none;">
+		<a href="/product.html" class="move fs product-main">SHOP</a>
+		<div id="category" class="xans-element- xans-layout xans-layout-category xans-record-">
+		  <!--@js(/js/module/layout/category.js)-->
+		</div><!-- //Layout_category -->
+	  </div><!-- //left_shop_btn -->
+
+
+	  <div class="category_menu left_shop_btn3">
+		<a href="/product.html" class="move fs product-main">SHOP</a>
+		<div id="category" class="left3 xans-element- xans-layout xans-layout-category xans-record-" style="width:220px;">
+		  <div class="position">
+			<!-- 좌측 카테고리 자동출력 -->
+			<ul>
+				<li>
+					<a href="/product/detail.html?product_no=74">MIST BLEND</a>
+				</li>
+			  <li class="sub-menus-btn toner-sub">
+				<a href="javascript:void();">TONER BLEND</a>
+				<div class="btn-container">
+				  <div class="plusBtn"></div>
+				</div>
+			  </li>
+			  <ul class="t-sub-menus" style="display: none;">
+				<li>
+				  <a href="/product/detail.html?product_no=16">TONER BLEND NOURISHING</a>
+				</li>
+				<li>
+				  <a href="/product/detail.html?product_no=65">TONER BLEND PURIFYING</a>
+				</li>
+			  </ul>
+			  <li>
+				<a href="/product/detail.html?product_no=20">REPAIR BLEND</a>
+			  </li>
+			  <li>
+				<a href="/product/detail.html?product_no=10">SERUM BLEND</a>
+			  </li>
+			  <li>
+				<a href="/product/detail.html?product_no=11">CREAM BLEND</a>
+			  </li>
+			  <li>
+				<a href="/product/detail.html?product_no=49">LIP BALM BY KUOCA</a>
+			  </li>
+			  <li class="sub-menus-btn set-sub">
+				<a href="javascript:void();">KUOCA GIFT SET</a>
+				<div class="btn-container">
+				  <div class="plusBtn"></div>
+				</div>
+			  </li>
+			  <ul class="set-sub-menus" style="display: none;">
+				<!--<li>
+				  <a href="/product/detail.html?product_no=28">ANTI-AGING DUO</a>
+				</li>-->
+				<!--<li>
+				  <a href="/product/detail.html?product_no=21">PREMIUM BLENDS SET</a>
+				</li>-->
+				<li>
+				  <a href="/product/detail.html?product_no=55">KUOCA TRAVEL KIT</a>
+				</li>
+				<li>
+				  <a href="/product/detail.html?product_no=66">KUOCA PREMIUM GIFT SET</a>
+				</li>
+				<li>
+				  <a href="/product/detail.html?product_no=26">MOISTURIZING DUO</a>
+				</li>
+			  </ul>
+			</ul>
+		  </div>
+		</div>
+		<!-- //Layout_category -->
+	  </div>
+			<!-- //left_shop_btn -->
+
+
+	  <div class="category_menu">
+		<a href="/love.html" class="move fs">LOVE</a></div>
+	  <div class="category_menu">
+		<a href="/event.html" class="move fs">BENEFIT</a></div>
+
+	  <style>
+		.left2 {
+		  display: none;
+		}
+
+		.left_shop_btn2:hover >, left2 {
+		  display: inline-block !important;
+		}
+
+	  </style>
+
+	  <div class="category_menu left_shop_btn2">
+		<a href="/board/smartreview/list/list.html" class="move fs">REVIEW</a>
+		<div id="category" class="left2 xans-element- xans-layout xans-layout-category xans-record-" style="width:120px;">
+		  <div class="position"><!-- 좌측 카테고리 자동출력 -->
+			<ul>
+			  <li>
+				<a href="/board/smartreview/list/list.html">REVIEW</a>
+			  </li>
+			  <li>
+				<a href="https://www.instagram.com/kuoca.official"
+				   target="_blank">INSTAGRAM</a>
+			  </li>
+
+			</ul>
+		  </div>
+		</div><!-- //Layout_category -->
+	  </div><!-- //left_shop_btn -->
+
+	  <div class="category_menu">
+		<a href="/location.html" class="move fs">STORE</a></div>
+
+	  <div class="category_menu">
+		<a href="/board/smartreview/list/list.html"
+		   class="move fs"
+		   style="display:none;">REVIEW</a>
+	  </div>
+	  <div class="category_menu">
+		<a href="/product.html"
+		   class="move fs"
+		   style="display:none;">PRODUCT</a>
+	  </div>
+
+
+	</div>
+	<!-- //center_area -->
+
+	<!-- //right_area -->
+	<div class="right_area">
+	  <div id="lang-switcher" class="ui-dropdown-list">
+		<p class="ui-dropdown-list-trigger de">
+		  <strong>KR</strong>
+		  <img src="/web/upload/icon/arrow.png" width="8">
+		</p>
+		<ul>
+		  <li><a href="https://en.kuoca.com" title="" class="en">EN</a></li>
+		  <li><a href="#" title="" class="en">KR</a></li>
+		</ul>
+	  </div>
+	  <div><a href="#none" id="icon_search" class="move"><i class="icon-magnifier"></i></a></div>
+	  <div class="icon_menber" class="move" style="position:relative;">
+		<div class="pointicon move" module="Layout_statelogoff" style="position:absolute; border:1px solid #e2e2e2; padding:5px; font-size:10px; top:-35px; left:-25px; width:72px; text-align:center; border-radius:20px; display:block;">
+		  15% coupon
+		</div>
+		<i class="icon-avatar"></i>
+		<ul><!-- 상단 마이페이지 레이어 수정하는곳 -->
+		  <li module="Layout_statelogoff">
+			<a href="/member/login.html">로그인</a></li>
+		  <li module="Layout_statelogoff">
+			<a href="/member/join.html">회원가입</a></li>
+		  <li module="Layout_stateLogon">
+			<a href="{$action_logout}">로그아웃</a></li>
+		  <li module="Layout_stateLogon">
+			<a href="/member/modify.html">정보수정</a></li>
+		  <li><a href="/myshop/index.html">마이페이지</a></li>
+		  <li><a href="/myshop/order/list.html">주문조회</a></li>
+		  <li><a href="/customer.html">고객지원</a></li>
+
+		</ul>
+	  </div><!-- //icon_menber -->
+	  <div>
+		<a href="/order/basket.html"
+		   class="move"><i class="icon-cart-bk"></i><span module="Layout_orderBasketcount">{$basket_count}</span></a>
+	  </div>
+
+	</div>
+  </div>
+
+  <div id="quick_search">
+	<div class="quick_searchClose"><img src="/images/icon_close.png"
+										class="rotate"></div>
+	<div module="Layout_SearchHeader">
+	  <!--
+	  $product_page=/product/detail.html
+	  $category_page=/product/list.html
+	  -->
+	  <fieldset>
+		<legend>검색</legend>
+		{$form.keyword}<i class="icon-magnifier search_btn"
+						  lt="검색"
+						  onclick="{$action_search_submit}"></i>
+	  </fieldset>
+	</div>
+  </div><!-- //quick_search -->
+</div><!-- //header -->
+
+<script>
+  $(document).ready(function () {
+	$(".sub-menus-btn.toner-sub").click(function () {
+	  $(".t-sub-menus").slideToggle('fast');
+	  $(".t-sub-menus").toggleClass('sub-active');
+	  $("li.sub-menus-btn:nth-child(1) > div:nth-child(2) > div:nth-child(1)").toggleClass('active');
+	});
+  });
+  $(document).ready(function () {
+	$(".sub-menus-btn.set-sub").click(function () {
+	  $(".set-sub-menus").slideToggle('fast');
+	  $(".set-sub-menus").toggleClass('sub-active');
+	  $("li.sub-menus-btn:nth-child(7) > div:nth-child(2) > div:nth-child(1)").toggleClass('active');
+	});
+  });
+  // show language dropdowns
+  jQuery('#lang-switcher').find('.ui-dropdown-list-trigger').each(function () {
+	jQuery(this).click(function () {
+	  jQuery(this).parent().toggleClass('active');
+	});
+  });
+
+</script>

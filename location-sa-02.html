@@ -1,0 +1,82 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+#container{width:100% !important;}
+     #contents {
+    float: none;
+    width: 100% !important;
+    min-height: 800px;
+    margin: 0 auto;
+}
+.map-view-btn{display:inline-block; cursor:pointer; font-size:14px; position:absolute; right:0; top;0; color:#EF8585; border:1px solid #3E3A39; padding:5px 10px; color:#3E3A39;  border-radius:70px; -webkit-border-radius:70px; -moz-border-radius:70px;}
+.map-view-btn:hover{color:#fff; background:#3E3A39;}
+.map-view-btn-r{line-height:18px; display:inline-block; cursor:pointer; font-size:14px; position:relative; right:0; top;0; color:#EF8585; border:1px solid #3E3A39; padding:5px 10px; color:#3E3A39;  border-radius:70px; -webkit-border-radius:70px; -moz-border-radius:70px;}
+.map-view-btn-r:hover{color:#fff; background:#3E3A39;}
+.shop-title{font-size:18px; padding-bottom:10px;}
+.shop-subtitle{font-size:14px; line-height:18px; padding-bottom:10px;}
+.ku_col_2 .map-view-btn-r{margin-top:20px;}
+.ku_col_2 li{width:590px; float:left; padding:20px !important; text-align:left;}  
+.ku_col_2 li:nth-last-child( 2n ){float:right;}
+.ku_col_3{width:1280px;}     
+.ku_col_3 .map-view-btn-r{margin-top:20px;}
+.ku_col_3 li{width:370px; float:left;margin-right:20px;  padding:20px !important; text-align:left;}  
+.ku_col li{background:#FAF3EF; padding:20px 0; margin-bottom:20px; }
+.ku_col li:hover{background:#E9DCD5;}
+</style>
+<script>
+    $(document).ready(function(){  
+        $(function() {   
+             $('.map-view-btn').each(function() {      
+                 $(this).hover(       function() {  
+                     console.log("on");
+                     $('.ku_map_on').stop().animate({ opacity: 1.0 }, 500);},  
+                               function() { $('.ku_map_on').stop().animate({ opacity: 0.0 }, 500);     
+                     })   
+                 });
+        });
+     });  
+</script>
+
+<!--<div class="bg-cover" style="width:100%; height:640px; background-image:url(/web/upload/asset/location/store-top-banner.jpg);">
+</div>-->
+ 
+<div style="position:relative; width:1280px; margin:0 auto; border-top:1px solid #3D3A39; text-align:center; padding:88px 0 63px 0; font-size:17px; line-height:38px;">
+	<p class="fsk" style="font-size:30px; padding-bottom:20px;">
+		SHOP AT
+	</p>
+    <div id="shopat" style="position:absolute; top:-130px;"></div>
+	<p class="fsk" style="margin-top:30px; margin-bottom:30px;">
+		<span style="font-size:20px; line-height:1.8;">
+			상품 하나하나에 차별화된 가치를 담아 제안하는 큐레이션<br>
+			극신선 스킨케어 쿠오카를 오프라인 매장에서 만나보세요.<br>
+		</span>
+	</p>
+	<div class="ku_col -mov">
+		<ul>
+ 
+			<li class="-mov">
+			<h3 class="shop-title" style=" ">신세계백화점 센텀시티점 1F</h3>
+			<p class="shop-subtitle">
+				해운대구 센텀남대로 35
+			</p>
+                <div style="padding:0 20px;">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.515457815695!2d129.12755791552425!3d35.16870318031701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c6eb1e476b%3A0x7327e31259a87cc6!2z7Iug7IS46rOE67Cx7ZmU7KCQIOyEvO2FgOyLnO2LsA!5e0!3m2!1sko!2skr!4v1616417809515!5m2!1sko!2skr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+			</li>
+		</ul>
+	</div>
+</div> 
+<div class="clearfix">
+</div>
+ 
+
+<div style="position:relative; width:1280px; margin:0 auto; border-top:1px solid #3D3A39; text-align:center; padding:88px 0 63px 0; font-size:17px; line-height:38px;">
+	<p class="fsk" style="font-size:20px; padding-bottom:20px; cursor:pointer;" onclick="location.href='/location.html#shopat'">
+		BACK TO LIST
+	</p>
+    </div>
+<script>
+AOS.init({
+  duration: 1000,
+  easing: 'ease-in-out'
+});
+</script>

@@ -1,0 +1,457 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--Edit Main Css go to /137lab/css/main-pages.css-->
+<!--@css(/137lab/css/main-pages.css)-->
+<!--@js(/137lab/js/main_script.js)-->
+<!-- jQuery 1.8 or later, 33 KB -->
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<style>
+	#contents {
+		background: #fff;
+
+	}
+</style>
+
+<style >
+	.swiper-container.swiper-main {height: 880px;}
+	.swiper-main .swiper-container-horizontal > .swiper-pagination-bullets {bottom: 0;}
+	.swiper-main .swiper-pagination-bullet {opacity: 0.45;background: #fff;}
+	.swiper-main .swiper-pagination-bullet-active {background: #fff !important;opacity: 1;}
+	.swiper-main .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {margin: 0 7px;}
+	.swiper-main .context {width: 100%;height: 100%;display: block;}
+</style>
+
+
+<div class="swiper-container swiper-main">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" style="background-image: url(/SkinImg/ryu-banner.jpg); background-size: cover; background-position: center;">
+			<a class="context" href="/product/detail.html?product_no=10"><!--
+				<h3 style="color: #BC7568; border-color: rgba(188, 117, 104, 0.5);">류이서 LOVES KUOCA</h3>
+				<h1 style="color: #332A29">류이서의 맑고 투명한 피부 비밀<br>쿠오카 세럼 블렌드</h1>
+				<a style="color: rgba(135, 103, 103, 1); border-color: rgba(135, 103, 103, 0.25);" class="sd-btn" href="/product/detail.html?product_no=10">Learn More</a>
+			--></a>
+		</div>
+		<div class="swiper-slide" style="background-image: url(/web/upload/banner/lip-banner.jpg); background-size: cover; background-position: center;">
+			<a class="context" href="/product/detail.html?product_no=49"><!--
+				<h3 style="color: #BC7568; border-color: rgba(188, 117, 104, 0.5);">LIP BALM by KUOCA</h3>
+				<h1 style="color: #332A29">고보습 프리미엄 립 밤<br>립 밤 바이 쿠오카</h1>`
+				<a style="color: rgba(135, 103, 103, 1); border-color: rgba(135, 103, 103, 0.25);" class="sd-btn" href="/product/detail.html?product_no=49">Learn More</a>
+			--></a>
+		</div>
+		<div class="swiper-slide" style="background-image: url(/web/upload/banner/gift-set-banner.jpg); background-size: cover; background-position: center;">
+			<a class="context" href="/product/detail.html?product_no=54"><!--
+				<h3 style="color: #bc7568; border-color: rgba(188,117,104,0.5);">KUOCA GIFT SET</h3>
+				<h1 style="color: #332A29">2021 설 선물 세트<br>쿠오카 프리미엄 기프트 세트</h1>
+				<a class="sd-btn" style="color: #B08D7D; border-color: rgba(176, 141, 125, 0.5);" href="/product/detail.html?product_no=54">Learn More</a>
+			--></a>
+		</div>
+		<div class="swiper-slide" style="background-image: url(/SkinImg/cb-banner.jpg); background-size: cover; background-position: center;">
+			<a class="context" href="/product/detail.html?product_no=11"><!--
+				<h3>RENEW 크림 블렌드</h3>
+				<h1>얼루어 2020 베스트 오브 뷰티가<br>선정한 BEST 안티에이징 크림</h1>
+				<a class="sd-btn" href="/product/detail.html?product_no=11">Learn More</a>
+			--></a>
+		</div>
+		<!--<div onclick="location.href='/product/detail.html?product_no=26'" class="swiper-slide" style="background-image: url(/SkinImg/moist-duo-banner-m.jpg); background-size: cover; background-position: top;">
+			<a class="context top-position" href="/product/detail.html?product_no=26">
+				<h3>TRUFFLE MOISTURIZING DUO</h3>
+				<h1>차원이 다른 트러플 보습 듀오<br>세럼 블렌드 & 크림 블렌드</h1>
+				<a class="sd-btn" href="/product/detail.html?product_no=26">Learn More</a>
+			</a>
+		</div>-->
+	</div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+</div>
+
+
+<div id="best-seller" class="wrap">
+	<!--<h1><img src="/SkinImg/pd-title.png" alt="Premium Blends"></h1>-->
+	<h1 class="title">PREMIUM BLENDS</h1>
+	<h2 class="sub">쿠오카로 완성하는 결, 톤, 빛의 변화</h2>
+</div>
+
+
+<style>
+	/*Swiper-product*/
+	#Prod {
+		max-width: 1080px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.swiper-product {
+		width: 1080px;
+	}
+
+	.swiper-product .swiper-wrapper li {
+		/*transform: translate3d(120px, 0px, 0px) !important;*/
+		width: 360px !important;
+	}
+
+	.swiper-product .thumbnail a img {
+		width: 360px;
+	}
+
+	.swiper-product .swiper-button-next, .swiper-product .swiper-button-prev {
+		position: relative;
+		color: rgba(61, 58, 57, 0.5);
+		top: -470px;
+	}
+
+	.swiper-product .swiper-button-next {
+		float: right;
+		margin-right: 20px;
+	}
+
+	.swiper-product .swiper-button-prev {
+		margin-left: 20px;
+	}
+
+	/*Popup Style*/
+	.information {text-align: center;font-size: 1rem;color: #3D3A39 !important;}
+	.name {letter-spacing: 1px;}
+	.name a {text-transform: uppercase;color: #3d3a39;}
+	.price {letter-spacing: 1px;}
+	p.summary a {color: #BC8383;line-height: 1.5em;word-break: keep-all;display: block;}
+	.icon {margin: 0 0 10px;}
+	p.name a span {font-size: 24px !important;}
+	p.summary a {font-size: 14px;}
+	.information .pdInfo, .capacity, .price {font-size: 15px;}
+	.summary {width: 190px;margin: 10px auto;}
+	.name {padding: 20px 0 10px;}
+	.summary {margin: 0 auto;}
+	.quickView {margin: 20px auto 90px;display: block;text-align: center;}
+	.quickView a {margin: 0 auto;padding: 15px 50px;display: inline-block;background: #BC8383;color: #fff;}
+	.information .pdInfo, .capacity, .price {display: inline-block;}
+</style>
+
+
+<div id="Prod" class="" module="product_listmain_6">
+	<!--
+		$count = 6
+		$basket_result = /product/add_basket.html
+		$basket_option = /product/basket_option.html
+	-->
+	<div class="swiper-product">
+		<div class="swiper-wrapper">
+			<!--Element-->
+			<li class="swiper-slide">
+				<div class="thumbnail" style="height: auto;"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+				<div class="information">
+					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+					<!--상품관리 상품 목록 항목 중 용량 (추가항목) 표시-->
+					<p class="summary"><a href="/product/detail.html{$param}">{$summary_desc}</a></p>
+
+					<p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
+					<span class="pdInfo">
+						<a href="/product/detail.html{$param}">
+
+						<p class="capacity">{$custom_option1} / </p>
+						<p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat}원<span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+						</a>
+						</span>
+					<p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+				</div>
+				<span class="quickView"><a href="#none" onclick="{$zoom_action}">구매하기</a></span>
+			</li>
+			<!--Element Clone-->
+			<li class="swiper-slide">
+				<div class="thumbnail" style="height: auto;"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+				<div class="information">
+					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+					<!--상품관리 상품 목록 항목 중 용량 (추가항목) 표시-->
+					<p class="summary"><a href="/product/detail.html{$param}">{$summary_desc}</a></p>
+
+					<p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
+					<span class="pdInfo">
+						<a href="/product/detail.html{$param}">
+
+						<p class="capacity">{$custom_option1} / </p>
+						<p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat}원<span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+						</a>
+						</span>
+					<p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+				</div>
+				<span class="quickView"><a href="#none" onclick="{$zoom_action}">구매하기</a></span>
+			</li>
+		</div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+</div>
+
+
+<!--Love Project Section Start-->
+<div id="love" class="wrap">
+	<div>
+		<h1 class="title">THE LOVE PROJECT</h1>
+		<h2 class="sub">쿠오카와 함께 당신의 사랑과 관심을 전하세요.</h2>
+		<h3 class="context">*쿠오카는 소비자가 선택하는 사회 재단에<br>판매 금액의 1%를 기부합니다.</h3>
+		<a href="/love.html">더 알아보기</a>
+	</div>
+	<img src="/SkinImg/public/love-img.jpg" alt="Kuoca Love Project" width="750px">
+</div>
+<!--End-->
+
+
+<style>
+	.swiper-event {
+		width: 750px;
+		height: 100%;
+		margin-bottom: 90px;
+	}
+
+	.swiper-event .swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		height: 750px;
+	}
+
+	a.event-content {
+		display: block;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+</style>
+
+<!--Events Section Start-->
+<div id="events" class="wrap">
+	<div>
+		<h1 class="title">EVENTS</h1>
+		<h2 class="sub">공식몰에서만 만나볼 수 있는 다양한 혜택</h2>
+	</div>
+</div>
+<!-- Swiper -->
+<div class="swiper-container swiper-event">
+	<div class="swiper-wrapper">
+		<!--<div class="swiper-slide" style="background-image: url(/SkinImg/public/events02.jpg); background-size: cover;">
+			<a class="event-content" href="/event.html#anchor"></a>
+		</div>-->
+		<div class="swiper-slide" style="background-image: url(/web/upload/banner/events03-02.jpg); background-size: cover;">
+			<a class="event-content" href="/event.html#anchor"></a>
+		</div>
+	</div>
+	<!-- Add Pagination -->
+	<!--<div class="swiper-pagination"></div>-->
+</div>
+
+
+<!--Media Section Start-->
+<style>
+	.tabs {position: relative;display: block;width: 100%;overflow: hidden;margin: 60px auto;font-weight: normal;min-height: 250px;z-index: 0;}
+	/* Nav */
+	.tabs nav {text-align: center;position: absolute;top: 140px;width: 1200px;}
+	.tabs nav ul {padding: 0;margin: 0;list-style: none;display: inline-block;}
+	.tabs nav ul li {border-bottom: 5px solid rgba(184, 106, 106, 0.25);display: block;float: left;position: relative;transition: all 0.5s ease-out;}
+	.tabs nav li.tab-current {border-bottom: 5px solid #B86A6A;z-index: 100;transition: all 0.5s ease-out;}
+	.tabs nav li.tab-current:before, .tabs nav li.tab-current:after {content: '';position: absolute;height: 1px;right: 100%;bottom: 0;}
+	.tabs nav li.tab-current:after {right: auto;left: 100%;}
+	.tabs nav a {color: #becbd2;display: block;font-size: 1.45em;line-height: 3.5;padding: 0 10px;white-space: nowrap; width: 160px}
+	.tabs nav a:hover {color: #768e9d;}
+	.tabs nav li.tab-current a {color: #000;}
+	.tabs nav li img {width: 100%;opacity: 0.3;transition: all 0.5s ease-out;}
+	.tabs nav li.tab-current img {width: 100%;opacity: 1;transition: all 0.5s ease-out;}
+
+	/* Content */
+	.content {position: relative;min-height: 5em;}
+	.content section {position: absolute;top: 0;left: 0;width: 100%;font-size: 24px;line-height: 1.7em;text-align: center;padding: 0; /* display: none; */opacity: 0;max-width: 1230px;margin: 0 auto;min-height: 5em;transition: all 0.5s ease-out;}
+	.content section.content-current { /* display: block; */opacity: 1;transition: all 0.5s ease-out;}
+
+	/* Fallback example */
+	.no-js .content section {display: block;padding-bottom: 2em; /* border-bottom: 1px solid #47a3da; */}
+</style>
+
+<div id="media" class="wrap">
+	<div class="container">
+		<div id="tabs" class="tabs">
+
+			<div class="content">
+				<section id="section-1">
+					"진귀한 성분, 혁신적인 블렌딩.<br>
+					에디터들의 마음을 사로잡은 피부를 위한 최고의 호사!"
+				</section>
+				<section id="section-2">
+					"빛나는 활약이 기대되는<br>
+					2020년 뷰티 루키 브랜드"
+				</section>
+				<section id="section-3">
+					"최상급 원료. 최고의 배합기술.<br>
+					최고의 효능. 백상예술대상만큼 빛이 났던 쿠오카"
+				</section>
+				<section id="section-4">
+					"미션 임파서블을 연상케 하는<br>
+					제조 과정. 완성된 제품은 기대를 저버리지 않는다"
+				</section>
+			</div>
+			<!-- Content -->
+			<nav>
+				<ul>
+					<li><a href="#section-1"><span><img src="/SkinImg/public/allure.png" alt="allure"></span></a></li>
+					<li><a href="#section-2"><span><img src="/SkinImg/public/marie.png" alt="marie claire"></span></a></li>
+					<li><a href="#section-3"><span><img src="/SkinImg/public/singles.png" alt="singles"></span></a></li>
+					<li><a href="#section-4"><span><img src="/SkinImg/public/bazzar.png" alt="bazaar"></span></a></li>
+				</ul>
+			</nav>
+
+		</div>
+		<!-- Tabs End -->
+	</div>
+</div>
+<!--Tab Script-->
+<script>
+	/**
+	 * cbpFWTabs.js v1.0.0
+	 * http://www.codrops.com
+	 *
+	 * Licensed under the MIT license.
+	 * http://www.opensource.org/licenses/mit-license.php
+	 *
+	 * Copyright 2014, Codrops
+	 * http://www.codrops.com
+	 */
+	;(function (window) {
+
+		'use strict';
+
+		function extend(a, b) {
+			for (var key in b) {
+				if (b.hasOwnProperty(key)) {
+					a[key] = b[key];
+				}
+			}
+			return a;
+		}
+
+		function CBPFWTabs(el, options) {
+			this.el = el;
+			this.options = extend({}, this.options);
+			extend(this.options, options);
+			this._init();
+		}
+
+		CBPFWTabs.prototype.options = {
+			start: 0
+		};
+
+		CBPFWTabs.prototype._init = function () {
+			// tabs elemes
+			this.tabs = [].slice.call(this.el.querySelectorAll('nav > ul > li'));
+			// content items
+			this.items = [].slice.call(this.el.querySelectorAll('.content > section'));
+			// current index
+			this.current = -1;
+			// show current content item
+			this._show();
+			// init events
+			this._initEvents();
+		};
+
+		CBPFWTabs.prototype._initEvents = function () {
+			var self = this;
+			this.tabs.forEach(function (tab, idx) {
+				tab.addEventListener('click', function (ev) {
+					ev.preventDefault();
+					self._show(idx);
+				});
+			});
+		};
+
+		CBPFWTabs.prototype._show = function (idx) {
+			if (this.current >= 0) {
+				this.tabs[this.current].className = '';
+				this.items[this.current].className = '';
+			}
+			// change current
+			this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+			this.tabs[this.current].className = 'tab-current';
+			this.items[this.current].className = 'content-current';
+		};
+
+		// add to global namespace
+		window.CBPFWTabs = CBPFWTabs;
+
+	})(window);
+	new CBPFWTabs(document.getElementById('tabs'));
+</script>
+<!--End-->
+
+
+<!-- Share Section Start -->
+<div id="share" class="wrap">
+	<div>
+		<h1 class="title">SHARE</h1>
+	</div>
+	<div>
+		<img src="/SkinImg/public/shares-love.png">
+		<h3 class="context">인스타그램에서 <strong>#쿠오카</strong>를 검색해보세요!</h3>
+		<h2 class="sub">
+			<span>
+			<img class="instaIcon" src="/SkinImg/public/insta.png">#쿠오카
+			</span>
+		</h2>
+	</div>
+	<!-- Instagram Widget -->
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+	<div class="elfsight-app-f9aff175-22f9-4382-aefc-9223c6ef58f2" style="width: 1280px; margin: 0 auto;"></div>
+	<!-- end -->
+</div>
+<!--End-->
+
+<!-- Initialize Swiper -->
+<script>
+	var mainSwiper = new Swiper('.swiper-main', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		// init: false,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		/*autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},*/
+		speed: 350,
+		loop: true,
+		autoHeight: false
+	});
+
+	var mySwiper = new Swiper('.swiper-product', {
+		slidesPerView: 'auto',
+		centeredSlides: false,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		loop: true
+		// slidesPerGroupSkip: 1,
+	});
+
+	var eventSwiper = new Swiper('.swiper-event', {
+		/*pagination: {
+			el: '.swiper-pagination',
+		},*/
+		loop: false,
+		loopPreventSlide: false,
+		autoplay: {
+			stopOnLastSlide: true,
+		}
+	});
+</script>
+
+
+<script>
+	AOS.init({
+		duration: 1000,
+		easing: 'ease-in-out'
+	});
+</script>
+<!--@define(cmc_log)-->

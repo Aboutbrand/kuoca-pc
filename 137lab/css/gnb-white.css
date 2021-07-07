@@ -1,0 +1,13 @@
+#wrap {margin:0px auto 0 auto; padding-top: 0; }
+#header {
+ 
+    background: rgba(255,255,255,0.0);
+    
+}
+.category_menu > a { color: #fff;}
+.icon_menber{color:#fff;}
+.category_menu > a:hover {border-bottom:1px solid #fff;margin-top:-2px; color:#fff;} 
+.top_logo{display:none;}
+.top_logo-w{display:table !important;}
+.right_area a {color: #fff;}
+.pointicon{border:1px solid #fff !important;}

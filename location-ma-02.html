@@ -1,0 +1,89 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/137lab/css/gnb-white.css)-->
+<style>
+#container{width:100% !important;}
+     #contents {
+    float: none;
+    width: 100% !important;
+    min-height: 800px;
+    margin: 0 auto;
+}
+.map-view-btn{display:inline-block; cursor:pointer; font-size:14px; position:absolute; right:0; top;0; color:#EF8585; border:1px solid #3E3A39; padding:5px 10px; color:#3E3A39;  border-radius:70px; -webkit-border-radius:70px; -moz-border-radius:70px;}
+.map-view-btn:hover{color:#fff; background:#3E3A39;}
+.map-view-btn-r{line-height:18px; display:inline-block; cursor:pointer; font-size:14px; position:relative; right:0; top;0; color:#EF8585; border:1px solid #3E3A39; padding:5px 10px; color:#3E3A39;  border-radius:70px; -webkit-border-radius:70px; -moz-border-radius:70px;}
+.map-view-btn-r:hover{color:#fff; background:#3E3A39;}
+.shop-title{font-size:18px; padding-bottom:10px;}
+.shop-subtitle{font-size:14px; line-height:18px; padding-bottom:10px;}
+.ku_col_2 .map-view-btn-r{margin-top:20px;}
+.ku_col_2 li{width:590px; float:left; padding:20px !important; text-align:left;}  
+.ku_col_2 li:nth-last-child( 2n ){float:right;}
+.ku_col_3{width:1280px;}     
+.ku_col_3 .map-view-btn-r{margin-top:20px;}
+.ku_col_3 li{width:370px; float:left;margin-right:20px;  padding:20px !important; text-align:left;}  
+.ku_col li{background:#FAF3EF; padding:20px 0; margin-bottom:20px; }
+.ku_col li:hover{background:#E9DCD5;}
+</style>
+<script>
+    $(document).ready(function(){  
+        $(function() {   
+             $('.map-view-btn').each(function() {      
+                 $(this).hover(       function() {  
+                     console.log("on");
+                     $('.ku_map_on').stop().animate({ opacity: 1.0 }, 500);},  
+                               function() { $('.ku_map_on').stop().animate({ opacity: 0.0 }, 500);     
+                     })   
+                 });
+        });
+     });  
+</script>
+<div class="bg-cover" style="width:100%; height:454px; background-image:url(/SkinImg/location-bg.jpg);">
+	<div style="width:1260px; padding-top:400px; margin:0 auto;">
+		<p class="fs" style="font-size:30px; letter-spacing:1px; color:#fff;">
+			LOCATION
+		</p>
+	</div>
+</div>
+ 
+ 
+<div style="position:relative; width:1280px; margin:0 auto; border-top:1px solid #3D3A39; text-align:center; padding:88px 0 63px 0; font-size:17px; line-height:38px;" >
+	<p class="fsk" style="font-size:30px; padding-bottom:20px;">
+		MEET AT
+	</p>
+    <div id="meetat" style="position:absolute; top:-130px;"></div>
+	<p class="fsk" style="margin-top:30px; margin-bottom:30px;">
+		<span style="font-size:20px; line-height:1.8;">
+가장 아름다운 순간을 만드는<br>
+하이엔드 메이크업샵에서 쿠오카를 만나보세요. </span>
+	</p>
+	<div class="ku_col  -mov">
+		<ul>
+			<li class="-mov">
+			<h3 class="shop-title" style=" ">꼼나나비앙</h3>
+			<p class="shop-subtitle">
+				서울 강남구 도산대로45길 14
+			</p>
+            <div style="padding:0 20px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3506950775854!2d127.03360501652949!3d37.52322963436242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca389416fca61%3A0xafd75652e76e9efa!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsi6Dsgqzrj5kg64-E7IKw64yA66GcNDXquLggMTQ!5e0!3m2!1sko!2skr!4v1584349835461!5m2!1sko!2skr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+			</li>
+			
+		</ul>
+	</div>
+	<div style="width:100%; clear:both;">
+	</div>
+</div>
+ 
+<div class="clearfix">
+</div>
+ 
+
+<div style="position:relative; width:1280px; margin:0 auto; border-top:1px solid #3D3A39; text-align:center; padding:88px 0 63px 0; font-size:17px; line-height:38px;">
+	<p class="fsk" style="font-size:20px; padding-bottom:20px; cursor:pointer;" onclick="location.href='/location.html#meetat'">
+		BACK TO LIST
+	</p>
+    </div>
+<script>
+AOS.init({
+  duration: 1000,
+  easing: 'ease-in-out'
+});
+</script>

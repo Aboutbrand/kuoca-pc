@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<!-- PG크로스브라우징필수내용 -->
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+	<!-- // PG크로스브라우징필수내용 -->
+
+    <title></title>
+
+
+	<!--@import(/137lab/setting.html)-->
+ 
+    
+</head>
+    
+<body>
+    
+ <div class="dim-layer-wrap">
+<div class="dim-layer">
+    <div class="dimBg"></div>
+    <div id="layer2" class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <div style="float:right;">
+                 <a href="#" class="btn-layerClose">Close</a>
+                </div>
+				<!--content //-->
+                <iframe src="/" width="570" height="600" name="sns-inner" frameborder=”0″>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ <style>
+     .dim-layer {
+		 display: none;
+		 position: fixed;
+		 _position: absolute;
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 z-index: 100;
+	 }
+     </style>
+
+
+ <!--@import(/137lab/top.html)-->
+
+ <!--@import(/137lab/gnb.html)-->
+ 
+<hr class="layout"/>
+
+<div id="wrap">
+    <div id="container">
+        <div id="contents">
+            <!--@contents-->
+		</div><hr class="layout"/>
+    </div><!-- //container -->
+	<hr class="layout"/>
+
+    <div id="quick"></div>
+</div><!-- //wrap -->
+<hr class="layout"/>
+ <!--@import(/137lab/footer.html)-->
+
+ <!-- 결제를 위한 필수 영역 -->
+<div id="progressPaybar" style="display:none;">
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <div id="progressPaybarView">
+        <div class="box">
+            <p class="graph">
+                <span><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/txt_progress.gif" alt="현재 결제가 진행중입니다."/></span>
+                <span><img src="//img.echosting.cafe24.com/skin/base/layout/img_loading.gif" alt=""/></span>
+            </p>
+            <p class="txt">
+                본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br/>
+                주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+            </p>
+        </div>
+    </div>
+</div>
+ <!-- //결제를 위한 필수 영역 -->
+
+<div module="Layout_multishopShipping">
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+	<!--@css(/css/module/layout/multishopShipping.css)-->
+	<!--@js(/js/module/layout/multishopShipping.js)-->
+    <div class="dimmed"></div>
+    <div class="worldshipLayer ec-base-layer">
+        <div class="header">
+            <h3>WORLD SHIPPING</h3>
+        </div>
+        <div class="content">
+            <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+            <div class="select">
+                <select module="Layout_multishopShippingCountrylist">
+                    <option value="{$country_code}" {$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                    <option value="{$country_code}" {$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                </select>
+            </div>
+            <div class="select">
+                <select module="Layout_multishopShippingLanguagelist">
+                    <option value="{$shop_domain}" {$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                    <option value="{$shop_domain}" {$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                </select>
+            </div>
+        </div>
+        <div class="ec-base-button">
+            <a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/link/btn_go.gif" alt="GO"/></a>
+        </div>
+        <a href="#none" class="close"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" width="13" height="13" alt="close"/></a>
+    </div>
+</div>
+
+<div module="Layout_conversionPc">
+    <!--@css(/css/module/layout/conversionpc.css)-->
+    <a href="{$mobile_url}">모바일 화면보기</a>
+</div>
+     <section class="modal modalWindow" id="popupOne">
+	<section class="modalWrapper">
+  <p class="fsk" style="font-size:25px; line-height:40px; padding-top:10px; padding-bottom:30px;">#3 HE FOR SHE!<br>: 모든 여성들의 아름다운 권리를 위해     </p>
+        <p class="fsk" style="font-size:16px; line-height:32px; margin-bottom:30px;">
+2014년 UN 내 여성권익 총괄기구에서 시작한 양성 평등 글로벌 캠페인 #HeforShe는 남성과 여성의 <br>
+            동등한 권리와 기회를 위해 여성뿐 아니라 남성들의 지지가 필요함을 강조하는 캠페인입니다. <br>
+‘여자를 위한 남성’이라는 이름을 가진 #HeforShe 캠페인은 UN 여성친선대사인 영화배우 <br>
+엠마 왓슨의 ‘세계 여성의 날’ 연설 후 전 세계로 확산된 양성평등 무브먼트로, <br>
+쿠오카는 모든 여성이 부당하게 차별받지 않으며, 남성과 여성이 서로 동등한 권리와 <br>
+기회를 얻음으로써 우리 사회가 더 건강해진다고 믿습니다. <br><br>
+
+성차별 없는 건강한 사회를 지향하는 #heforshe캠페인을 지지합니다. <br>
+#쿠오카 #kuoca’sloveproject #heforshe 
+
+
+
+
+        </p>
+		<a href="https://www.heforshe.org/en" target="_blank" class="black-btn -mov fsk " style="padding:10px; font-size:16px;" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="100">캠페인 둘러보기<i class="xi-angle-right-thin"></i></a>
+        <a href="#none" class="black-btn -mov fsk closeBtn" style="padding:10px; font-size:16px;" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="100">닫기</a>
+	</section>
+</section>
+<section class="modal modalWindow" id="popupTwo">
+	<section class="modalWrapper">
+  <p class="fsk" style="font-size:25px; line-height:40px; padding-top:10px; padding-bottom:30px;">#1 생명의 숲<br>: 일상에 자연을 불어넣다     </p>
+        <p class="fsk" style="font-size:16px; line-height:32px; margin-bottom:30px;">
+			좋은 공기와 아름다운 자연을 즐기는 일상이 이제 점점 특별한 일이 되어갑니다. <br>
+			미세먼지 때문에 외출은커녕 창을 꼭꼭 걸어 잠그는 도시의 일상 속에서 <br>
+			나무와 숲을 즐길 기회는 점점 줄어들고 있습니다. <br>
+			보다 건강한 일상을 위해, 보다 건강한 도시 생태계를 만들기 위해 <br>
+			1998년부터 ‘생명의 숲’ 활동이 시작되었습니다. 도시에 숲을 만들고, 숲의 소중함을 느낄 수 있는 <br>
+			문화 프로그램을 운영하며, 아이들을 위해 학교의 녹지를 늘려 숲을 조성합니다. <br>
+			우리가 매일 만나는 생활 공간에 나무를 심고 숲을 가꾸는 일, 생태계를 회복시켜 <br>
+			보다 건강한 지구를 만드는 일은 인체에 무해한 자연유래 성분의 생명력으로 <br>
+			최고의 화장품을 만들고자 하는 쿠오카의 신념과도 맞닿아 있습니다. <br><br>
+
+			#쿠오카 #kuoca’sloveproject #생명의숲
+        </p>
+		<a href="https://forest.or.kr/" target="_blank" class="black-btn -mov fsk " style="padding:10px; font-size:16px;" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="100">캠페인 둘러보기<i class="xi-angle-right-thin"></i></a>
+        <a href="#none" class="black-btn -mov fsk closeBtn" style="padding:10px; font-size:16px;" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="100">닫기</a>
+	</section>
+</section>
+
+ <section class="modal modalWindow" id="popupThree">
+	<section class="modalWrapper">
+  <p class="fsk" style="font-size:25px; line-height:40px; padding-top:10px; padding-bottom:30px;">#2 드림 스타트<br>: 아이들과 손잡고 아름다운 미래를 꿈꾸다   </p>
+        <p class="fsk" style="font-size:16px; line-height:32px; margin-bottom:30px;">
+			아이들을 위한 기부 프로그램은 다양합니다. 아이들이 살아가는 데 반드시 필요한 <br>
+			의식주를 지원하는 기부도 필요하지만, 쿠오카는 아이들의 꿈을 응원하고 싶다고 생각했습니다. <br>
+			복지가 취약한 계층의 아동들이 건강하고 행복한 사회구성원으로 성장할 수 있도록 <br>
+			맞춤형 지원사업을 하는 #드림스타트 는 ‘꿈’을 향한 아이들의 첫 걸음이 <br>
+			같은 출발선에서 시작될 수 있도록 다양한 문화의 기회를 제공합니다.  <br>
+			2019년 #드림스타트의 대표적인 활동인 스포츠교실 ‘드림친구사이’는 아이들이 원하는 운동을 <br>
+			가르친 프로그램으로, 많은 아이들의 바람을 실현한 활동입니다. 이 작은 활동을 통해 <br>
+			취약 계층의 아이들이 쉽게 누리기 힘든 ‘스포츠’의 경험을 갖게 되었습니다. <br>
+			쿠오카는 아이들이 풍요로운 일상이 꿈을 키우고, 그 꿈을 통해 우리의 미래가 <br><br>
+			더 아름다워진다고 믿습니다.
+
+			#쿠오카 #kuoca’sloveproject #드림스타트
+		</p>
+		<a href="https://www.sd.go.kr/sd/main.do?op=mainSub&mCode=13C160030160" target="_blank" class="black-btn -mov fsk " style="padding:10px; font-size:16px;" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="100">캠페인 둘러보기<i class="xi-angle-right-thin"></i></a>
+		<a href="#none" class="black-btn -mov fsk closeBtn" style="padding:10px; font-size:16px;" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="100">닫기</a>
+	</section>
+	 
+</section>
+
+<section class="modal overlay"></div>
+ 
+</body>
+</html>

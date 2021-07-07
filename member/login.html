@@ -1,0 +1,234 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!-- WIDERPLANET  SCRIPT START 2020.8.5 -->
+<div id="wp_tg_cts" style="display:none;"></div>
+<script type="text/javascript">
+var wptg_tagscript_vars = wptg_tagscript_vars || [];
+wptg_tagscript_vars.push(
+(function() {
+    return {
+        wp_hcuid:"",  /*고객넘버 등 Unique ID (ex. 로그인  ID, 고객넘버 등 )를 암호화하여 대입.
+                     *주의 : 로그인 하지 않은 사용자는 어떠한 값도 대입하지 않습니다.*/
+        ti:"49924",
+        ty:"Login",                        /*트래킹태그 타입 */
+        device:"web",                  /*디바이스 종류  (web 또는  mobile)*/
+        items:[{
+            i:"로그인",          /*전환 식별 코드  (한글 , 영어 , 번호 , 공백 허용 )*/
+            t:"로그인",          /*전환명  (한글 , 영어 , 번호 , 공백 허용 )*/
+            p:"1",                   /*전환가격  (전환 가격이 없을 경우 1로 설정 )*/
+            q:"1"                   /*전환수량  (전환 수량이 고정적으로 1개 이하일 경우 1로 설정 )*/
+        }]
+    };
+}));
+</script>
+<script type="text/javascript" async src="//cdn-aitg.widerplanet.com/js/wp_astg_4.0.js"></script>
+<!-- // WIDERPLANET  SCRIPT END 2020.8.5 -->
+
+<!--div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>로그인</strong></li>
+    </ol>
+</div>-->
+
+
+<style>
+	#wrap {
+		background: url("/SkinImg/public/login-bg.jpg");
+		background-size: cover;
+		display: flex;
+	}
+
+	.login_title, .security {
+		display: none;
+	}
+
+	.titleArea.login {
+		min-height: 30px;
+		padding: 180px 0 0;
+		margin: 0;
+		border-bottom: 0;
+	}
+
+	.titleArea.login h2 {
+		display: block;
+		color: #3e3a39;
+		font-size: 33px;
+		text-align: center;
+		font-weight: normal;
+		letter-spacing: 1px;
+		padding: 30px 0 0 0;
+	}
+
+	.titleArea.login h2:after {
+		content: '';
+		width: 388px;
+		height: 1px;
+		margin: 30px auto 0;
+		background-color: #BFBFBF50;
+		display: block;
+	}
+
+	.titleArea.login h2 font {
+		color: #3e3a39;
+	}
+
+	.titleArea.login h3 {
+		display: block;
+		color: #3e3a39;
+		font-size: 14px;
+		line-height: 1.6;
+		text-align: center;
+		font-weight: normal;
+		letter-spacing: 1px;
+		padding: 15px 0 20px;
+
+	}
+
+	.titleArea.login h2, .titleArea.login h3 {
+		background: #F8F4ED;
+		width: 510px;
+		margin: 0 auto;
+	}
+
+	.cboth.option {
+		margin: 12px 0;
+	}
+
+	.findArea {
+		border-bottom: 1px solid #BFBFBF !important;
+		padding: 20px 0 !important;
+	}
+
+	.findArea a {
+		padding: 0 40px;
+	}
+
+	.snsArea .kakao {
+		background: #FFE26E !important;
+	}
+
+	.snsArea .kakao a {
+		color: #1E2011 !important;
+	}
+
+	.snsArea .naver {
+		background: #62CB66 !important;
+	}
+
+	.snsArea .naver a {
+		color: #ffffff !important;
+	}
+
+	.snsArea li {
+		margin: 15px 0 0 0 !important;
+	}
+
+	.snsArea li a {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 15px 0;
+		font-weight: bold;
+	}
+
+	.snsArea li a img {
+		position: relative !important;
+	}
+
+	.snsArea li a:after {
+		content: '';
+		width: 1px;
+		height: 20px;
+		left: 110px;
+		margin-top: -2px;
+		background: rgba(31, 29, 30, 0.5);
+		display: inline-block;
+		position: absolute;
+	}
+	.snsArea li:nth-child(2) a:after {
+		background: rgba(255, 255, 255, 0.5);
+	}
+</style>
+
+<div class="titleArea login">
+    <h2>로그인</h2>
+	<h3>쿠오카에 편리하게 로그인하고,<br>
+		다양한 멤버십 혜택을 만나세요.</h3>
+</div>
+
+
+
+<div module="member_login" class="ec-base-box typeThin">
+    <!--@css(/css/module/member/login.css)-->
+    <!--
+        $defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html
+    -->
+    <div class="login">
+        <fieldset>
+            <legend>회원로그인</legend>
+			<div class="login_title" >ID</div>
+            <label class="id ePlaceholder" title="아이디">{$form.member_id}</label>
+			<div class="login_title">PASSWORD</div>
+            <label class="password ePlaceholder" title="비밀번호">{$form.member_passwd}</label>
+			<div class="cboth option">
+				<span class="auto">{$form.member_check_save_id}</span>
+				<span class="save">{$form.use_login_keeping}</span>
+			</div>
+			<a href="#none" class="cboth btnLogin_bk" onclick="{$action_func_login}">로그인</a>
+			<div class="join_box">
+				<a href="/member/join.html" class="btnLogin_wh">회원가입</a>
+			</div>
+
+			<ul class="findArea">
+				<li><a href="/member/id/find_id.html">아이디 찾기</a></li>
+				<li><a href="/member/passwd/find_passwd_info.html">비밀번호 찾기</a></li>
+			</ul>
+
+			<ul class="snsArea">
+				<li class="{$display_kakao|display} kakao" style="width:388px; margin:0 0;">
+					<a href="#none" onclick="{$kakao_func_login}">
+						<img src="/assets/icon/kakao.png" alt="카카오계정 로그인" width="23" style="float: left; left: 15px; top: -2px;"/>
+						카카오 로그인 / 회원가입
+					</a>
+				</li>
+				<!--<li class="{$display_naver|display} naver" style="width:388px; margin:0 0;">
+					<a href="#none" onclick="{$naver_func_login}">
+						<img src="/assets/icon/naver.png" alt="네이버 로그인" width="17" style="float: left; left: 18px;"/>
+						네이버 로그인
+					</a>
+				</li>-->
+				<!--<li class="{$display_facebook|display}" style="width:50%; margin:0 0;">
+					<a href="#none" onclick="{$facebook_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_facebook_login.gif" alt="Facebook으로 로그인" width="99%"/></a>
+				</li>-->
+				<!--<li class="{$display_google|display}" style="width:50%; margin:0 0;">
+					<a href="#none" onclick="{$google_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif" alt="구글 로그인"width="99%" /></a>
+				</li>-->
+				<!--<li class="{$display_line|display}" style="width:50%; margin:0 0;">
+					<a href="#none" onclick="{$line_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_line_login.gif" alt="LINE 로그인" width="99%"/></a>
+				</li>-->
+			</ul>
+
+            <div class="join_box {$display_nomember|display}" id="noMemberWrap">
+                <br /><br />비회원의 경우, 해당버튼을 통해 주문이 가능합니다.<br /><br />
+                <a href="{$returnUrl}" class="btnLogin_wh" onclick="{$action_nomember_order}">GUEST ORDER</a>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+<div module="MyShop_OrderHistoryNologin" class="ec-base-box typeThin">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/list.html
+    -->
+    <p>비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</p>
+    <dl class="ec-base-desc gBlank20">
+        <dt>{$form_label.order_name}</dt><dd>{$form.order_name}</dd>
+        <dt>{$form_label.order_id}</dt><dd>{$form.order_id}</dd>
+        <dt>{$form_label.order_password}</dt><dd>{$form.order_password}</dd>
+    </dl>
+    <p class="ec-base-button gColumn"><button type="submit" class="btnLogin_wh">ORDER SEARCH</button></p>
+</div>

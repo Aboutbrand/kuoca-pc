@@ -1,0 +1,123 @@
+   <!--@layout(/layout/basic/layout.html)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css) -->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-desc.css)-->
+
+	<!-- @css(/layout/basic/css/layout.css) -->
+ <style>
+@charset "utf-8";
+
+/* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
+
+/* tag reset */
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; }
+html { width:100%; height:100%; }
+body,code {background:#fff; }
+body {width:100%;}
+body#popup { min-width:0; }
+li { list-style:none; }
+img,fieldset { border:none; vertical-align:top; }
+table { width:100%; border:0; border-spacing:0; border-collapse:collapse; }
+caption { display:none; }
+th,td { border:0; vertical-align:top; }
+button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; }
+hr.layout { display:none; }
+a { text-decoration:none; color:#3e3a39;}
+a:hover { text-decoration:underline; }
+a:active { text-decoration:none; }
+.objHidden { visibility:hidden; position:absolute; left:-1000px; top:-1000px; height:0; width:0; }
+#content_CONTAINER table, #bi_inquire_content_CONTAINER table { border:0; margin:0 0 -1px; }
+#content_CONTAINER table:before, #bi_inquire_content_CONTAINER table:before { display:none; }
+#content_CONTAINER td, #bi_inquire_content_CONTAINER td { width:auto !important; padding:0; }
+table.nneditor-table { width:auto !important; }
+ .ww-img img{width:100%;} 
+/* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */
+     
+     
+     .xans-board-movement { border:1px solid #d7d5d5; margin:20px 0; width:98%;}
+.xans-board-movement li { overflow:hidden; padding:0 20px; border-bottom:1px solid #e9e9e9; line-height:140%; color:#353535; }
+.xans-board-movement li strong,
+.xans-board-movement li a { float:left; padding:10px; }
+.xans-board-movement li strong { width:140px; padding-left:15px; font-weight:normal; background:url("//img.echosting.cafe24.com/skin/base/board/ico_move_prev.gif") no-repeat 0 15px; }
+.xans-board-movement li a { border-left:1px solid #e9e9e9; }
+
+.xans-board-movement li.next { border:0; }
+.xans-board-movement li.next strong { background:url("//img.echosting.cafe24.com/skin/base/board/ico_move_next.gif") no-repeat 0 15px; }
+  #contents {
+    float: none;
+    width: 540px !important;
+      
+    min-height: 800px;
+    margin: 0 auto;
+}   
+</style>
+<div module="board_ReadPackage_8" style="width:540px; margin:0 autp; text-align:center;">
+    <!--@css(/css/module/board/readPackage.css)-->
+ 
+
+ 
+
+    <div module="board_read_8">
+        <!--
+            $delete_success_url = /board/gallery/list.html
+            $login_page_url = /member/login.html
+            $deny_access_url = /board/gallery/list.html
+        -->
+        <div class="ec-base-table typeWrite" style="width:540px; margin:0 autp; text-align:center;">
+ {$content} 
+        </div>
+
+    <div class="ec-base-button" style="width:90%; height:30px; overflow:hidden; clear:both; ">
+ 
+            <span class="gRight">
+                <a href="#none" onclick="{$action_delete}" targer="_parent" class="btnNormalFix sizeS {$delete_button_auth|display}">삭제</a> 
+                <a href="/board/gallery/modify.html{$param_modify}" targer="_parent" class="btnEmFix sizeS {$modify_button_auth|display}">수정</a>
+               
+            </span>
+        </div>
+ 
+</div>
+        <div class="ec-base-button">
+            <span class="gLeft">
+                <span class="{$config.is_admin|display}">
+                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.is_post|display}">{$admin_publish_message}</a>
+                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.not_post|display}">{$not_publish_message}</a>
+                    <a href="#none" onclick="{$action_spam}" class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>
+                    <a href="#none" onclick="{$action_spam_cancle}" class="btnNormalFix sizeS {$is_global_display|display}">스팸해제</a>
+                </span>
+                <a href="/board/gallery/list.html?board_no=8" class="btnNormalFix sizeS">목록</a>
+            </span>
+            <span class="gRight">
+                <a href="#none" onclick="{$action_delete}" class="btnNormalFix sizeS {$delete_button_auth|display}">삭제</a>
+                <a href="/board/gallery/modify.html{$param_modify}" class="btnEmFix sizeS {$modify_button_auth|display}">수정</a>
+                <a href="/board/gallery/reply.html{$param_reply}" class="btnSubmitFix sizeS {$reply_button_auth|display}">답변</a>
+            </span>
+        </div>
+
+ 
+ 
+
+<div module="board_movement_8">
+     
+    <ul>
+        <li class="prev {$prev_display|display}"><strong>이전글</strong><a href="{$link_board_detail_prev}">@{$prev_subject}</a></li>
+        <li class="next {$next_display|display}"><strong>다음글</strong><a href="{$link_board_detail_next}">@{$next_subject}</a></li>
+    </ul>
+</div>
+
+ </div>
+<style>
+.xans-board-movement li a {
+    width: 60%;
+    border-left: 0;
+}
+</style>
+<!--@define(cmc_log)-->

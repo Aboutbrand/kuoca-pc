@@ -1,0 +1,186 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    .online ul li a {display: inline;height: 100%;}
+    #container {width: 100% !important;}
+    #contents {float: none;width: 100% !important;min-height: 520px;margin: 0 auto;}
+    .map-view-btn {display: inline-block;cursor: pointer;font-size: 14px;position: absolute;right: 0;top: 0;border: 1px solid #BC8383;padding: 5px 10px;color: #BC8383;}
+    .map-view-btn:hover {color: #fff;background: #8E8E8E;}
+
+    .map-view-btn-r {
+	    line-height: 18px;
+	    display: inline-block;
+	    cursor: pointer;
+	    font-size: 14px;
+	    position: relative;
+	    right: 0;
+	    top: 0;
+	    border: 1px solid #BC8383;
+	    padding: 5px 10px;
+	    color: #fff;
+	    background-color: #BC8383;
+    }
+
+    .map-view-btn-r:hover {
+	    color: #BC8383;
+	    background: transparent;
+	    border: 1px solid #BC8383;
+    }
+    .shop-title {font-size: 18px;padding-bottom: 10px;}
+    .shop-subtitle {font-size: 14px;line-height: 18px;padding-bottom: 10px;}
+    .ku_col_2 .map-view-btn-r {margin-top: 20px;}
+    .ku_col_2 li {width: 590px;float: left;padding: 20px !important;text-align: left;}
+    .ku_col_2 li:nth-last-child( 2n ) {float: right;}
+    .ku_col_3 {width: 1280px;}
+    .ku_col_3 .map-view-btn-r {margin-top: 20px;}
+    .ku_col_3 li {width: 370px;float: left;margin-right: 20px;padding: 20px !important;text-align: left;}
+    .ku_col li {background: #FAF3EF;padding: 20px 0;margin-bottom: 20px;}
+    .ku_col li:hover {background: #E9DCD5;}
+</style>
+<script>
+    $(document).ready(function () {
+        $(function () {
+            $('.map-view-btn').each(function () {
+                $(this).hover(function () {
+                        console.log("on");
+                        $('.ku_map_on').stop().animate({opacity: 1.0}, 500);
+                    },
+                    function () {
+                        $('.ku_map_on').stop().animate({opacity: 0.0}, 500);
+                    })
+            });
+        });
+    });
+</script>
+
+<!--<div class="bg-cover" style="width:100%; height:640px; background-image:url(/web/upload/asset/location/store-top-banner.jpg);">
+</div>-->
+
+<div style="position:relative; width:1280px; margin:0 auto; text-align:center; padding:88px 0 63px 0; font-size:17px; line-height:38px;">
+    <p class="fsk" style="font-size:30px; padding-bottom:20px;">
+        OFFLINE
+    </p>
+    <div id="shopat" style="position:absolute; top:-130px;"></div>
+    <p class="fsk" style="margin-top:30px; margin-bottom:30px;">
+		<span style="font-size:20px; line-height:1.8;">
+			상품 하나하나에 차별화된 가치를 담아 제안하는 큐레이션<br>
+			극신선 스킨케어 쿠오카를 오프라인 매장에서 만나보세요.<br>
+		</span>
+    </p>
+    <div class="ku_col -mov">
+        <ul>
+            <li class="-mov">
+                <h3 class="shop-title" style=" ">갤러리아백화점 명품관 WEST<br>5F 기프트샵</h3>
+                <p class="shop-subtitle">
+                    서울 강남구 압구정로 343.<br>
+                </p>
+                <div class="map-view-btn-r -mov" onclick="location.href='/location-sa-01.html'">
+                    위치보기
+                </div>
+            </li>
+			<li class="-mov">
+				<h3 class="shop-title" style=" ">신세계백화점 센텀시티점 1F</h3>
+				<p class="shop-subtitle">
+					해운대구 센텀남대로 35<br>
+				</p>
+				<div class="map-view-btn-r -mov" onclick="location.href='/location-sa-02.html'">
+					위치보기
+				</div>
+			</li>
+        </ul>
+    </div>
+</div>
+
+<div style="position:relative; width:1280px; margin:0 auto; border-top:1px solid #3D3A39; text-align:center; padding:88px 0 63px 0; font-size:17px; line-height:38px;">
+    <p class="fsk" style="font-size:30px; padding-bottom:20px;">
+        ONLINE
+    </p>
+    <p class="fsk" style="margin-top:30px; margin-bottom:30px;">
+    </p>
+	<div class="ku_col ku_col_3 -mov online">
+		<ul>
+
+			<li class="-mov" style="background:#ffffff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://chicor.com/search/search?query=%EC%BF%A0%EC%98%A4%EC%B9%B4&startCount=1&listCount=12"><img src="/web/upload/asset/location/chicor.jpg" width="100%"></a>
+				시코르닷컴
+			</li>
+			<li class="-mov" style="background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="http://www.ssg.com/search.ssg?target=all&query=%EC%BF%A0%EC%98%A4%EC%B9%B4"><img src="/web/upload/asset/location/ssg.jpg" width="100%"></a>
+				SSG.COM
+			</li>
+
+			<li class="-mov" style="margin-right:0;background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://www.galleria.co.kr/dispctg/initBrandShop.action?shop_brand_no=2000003287"><img src="/web/upload/asset/location/galleria.jpg" width="100%"></a>
+				갤러리아백화점
+			</li>
+
+
+			<div style="width:100%; clear:both;">
+			</div>
+
+			<li class="-mov" style=" background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://www.kurly.com/shop/goods/goods_view.php?&goodsno=49079"><img src="/web/upload/asset/location/kurly.jpg" width="100%"></a>
+				마켓컬리
+			</li>
+			<li class="-mov" style="background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://www.wconcept.co.kr/Brand/106192"><img src="/web/upload/asset/location/wconcept.jpg" width="100%"></a>
+				W컨셉
+			</li>
+
+			<li class="-mov" style="margin-right: 0; background:#fff; text-align:center; padding: 0; cursor:pointer; ">
+				<a target="_blank" href="https://www.akmall.com/planshop/PlanShopView.do?shop_event_id=1027803&ctgId=0&urlpath=0@0&initpath=0"><img src="/web/upload/asset/location/ak.jpg" width="100%"></a>
+				AK몰
+			</li>
+
+
+			<div style="width:100%; clear:both;">
+			</div>
+
+			<li class="-mov" style="background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://www.thehyundai.com/front/dpo/hdSearch.thd?searchQuery=쿠오카&brendSearchYn=Y&bfp=productdetail"><img src="/web/upload/asset/location/hyundai.jpg" width="100%"></a>
+				더현대닷컴
+			</li>
+			<li class="-mov" style="background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://www.29cm.co.kr/shop/brand/8855"><img src="/web/upload/asset/location/29cm.jpg" width="100%"></a>
+				29CM
+			</li>
+
+			<li class="-mov" style="margin-right: 0; background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://www.kolonmall.com/kuoca/List/133021000145"><img src="/web/upload/asset/location/kolon.jpg" width="100%"></a>
+				코오롱몰
+			</li>
+
+			<div style="width:100%; clear:both;">
+			</div>
+
+			<li class="-mov" style="background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://display.musinsa.com/display/brands/kuoca/goods"><img src="/web/upload/asset/location/lfmall.jpg" width="100%"></a>
+				LF몰
+			</li>
+
+			<li class="-mov" style="background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://www.lfmall.co.kr/p2/search/result?searchWord=%EC%BF%A0%EC%98%A4%EC%B9%B4&etag1=003_A002_E093&etag2=0&etag3=0&etag4=80342"><img src="/web/upload/asset/location/musinsa.jpg" width="100%"></a>
+				무신사
+			</li>
+
+			<li class="-mov" style="margin-right: 0; background:#fff; text-align:center; padding: 0; cursor:pointer;">
+				<a target="_blank" href="https://m.hyfresh.co.kr/exhibition/fredit/searchResultFredit.do?pSite_cd=&keyword=%25EC%25BF%25A0%25EC%2598%25A4%25EC%25B9%25B4"><img src="/web/upload/asset/location/fredit.jpg" width="100%"></a>
+				프레딧
+			</li>
+
+		</ul>
+	</div>
+
+
+    <div style="width:100%; clear:both;">
+    </div>
+</div>
+<div class="clearfix">
+</div>
+<div style="width:100%; height:100px;">
+</div>
+<script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out'
+    });
+</script>
