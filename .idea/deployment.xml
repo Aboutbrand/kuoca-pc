@@ -5,7 +5,7 @@
       <paths name="Kuoca-Desktop">
         <serverdata>
           <mappings>
-            <mapping deploy="/sde_design/skin42" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/sde_design/skin41" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
