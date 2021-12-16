@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Kuoca-PC(Staging)/Kuoca-PC(Staging).iml" filepath="$PROJECT_DIR$/Kuoca-PC(Staging)/Kuoca-PC(Staging).iml" />
+      <module fileurl="file://$PROJECT_DIR$/kuoca-desktop.iml" filepath="$PROJECT_DIR$/kuoca-desktop.iml" />
     </modules>
   </component>
 </project>

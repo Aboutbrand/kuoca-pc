@@ -1,0 +1,297 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/137lab/js/main_script.js)-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<style>
+	.top_banner { display: none; !important; }
+
+	.xans-element-.xans-layout.xans-layout-statelogoff.pointicon.move {
+		display: none !important;
+	}
+
+	/*	.clearfix {
+			display: block;
+		}
+
+		.red-btn {
+			color: #986C6E;
+			background: #F1E3DD;
+			border: 1px solid #986C6E;
+		}
+
+		.big-btn {
+			line-height: 40px;
+			height: 40px;
+		}*/
+
+	#wrap {
+		padding-bottom: 0;
+	}
+
+	#container {
+		width: 100% !important;
+	}
+
+	#contents {
+		float: none;
+		width: 100% !important;
+		min-height: 750px;
+		margin: 0 auto;
+	}
+
+	#fm-banner {
+		background: url('/web/upload/shop/fm-sale/family-banner.jpg');
+		background-size: cover;
+		max-width: 100%;
+		margin: 0 auto;
+		height: 750px;
+	}
+
+	#context-invite, #context-sale {
+		width: 760px;
+		text-align: center;
+		padding-top: 250px;
+		padding-left: 90px;
+	}
+
+	#context-invite h1, #context-sale h1 {
+		font-size: 46px;
+		letter-spacing: 1px;
+		color: #fff;
+	}
+
+	#context-invite h2 {
+		font-size: 30px;
+		color: #fff;
+		margin: 30px 0 0;
+	}
+
+	#context-invite p {
+		margin: 0;
+	}
+
+	#context-invite div {
+		color: #fff;
+		font-size: 20px;
+		line-height: 2em;
+	}
+
+	#context-sale {
+		display: none;
+	}
+
+	#pm-code-box {
+		margin: 0 auto;
+		padding: 80px;
+		background: #FBF3EC;
+		font-family: "Marcellus", "Nanum Myeongjo" !important;
+	}
+
+	#pm-code-box > div {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#pm-code-box > div > h1,
+	#pm-code-box > div > p {
+		color: #A26F6F;
+	}
+
+	#pm-code-box > div > h1 {
+		font-size: 26px;
+	}
+
+	#pm-code-box > div > p {
+		font-size: 16px;
+		line-height: 2em;
+	}
+
+	#pm-code-box > .container {
+		width: 460px;
+		background: #fff;
+		border: 1px solid #F1E3DD;
+		margin-top: 30px;
+	}
+
+	#pm-code-box > .container > div {
+		height: 100px;
+	}
+
+	#pm-code-box .notice {
+		margin-top: 30px;
+	}
+
+	#pm-code-box span > * {
+		display: inline-block;
+		color: #A26F6F;
+		vertical-align: baseline;
+		margin-top: 30px;
+	}
+
+	#pm-code-input {
+		height: 50px;
+		background: rgba(0, 0, 0, 0);
+		font-size: 20px;
+		width: 150px;
+		padding: 25px 10px;
+		border: 1px solid #986C6E;
+		letter-spacing: 0;
+		display: inline;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-top: -5px;
+	}
+
+	#pm-code-box button {
+		font-size: 16px;
+		padding: 14px 30px;
+		cursor: pointer;
+		letter-spacing: 5px;
+		display: inline;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-top: 20px;
+		font-family: "Marcellus", "Nanum Myeongjo" !important;
+
+	}
+
+	#pm-code-box button:disabled {
+		color: #707070;
+		background: #fff;
+	}
+
+	#fm-prod-list {
+		display: none;
+		padding: 60px 0;
+		background: #FBF3EC;
+	}
+
+	.fm-container {
+		display: block;
+		width: 1280px;
+		margin: 0 auto;
+	}
+
+	.fm-container > .fm-prod {
+		width: 633px;
+		margin: 7px 0;
+		background: #FBF3EC;
+		text-align: center;
+		position: relative;
+		display: inline-block;
+		border: 1px solid #986C6E;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	.fm-container > .fm-prod > div {
+		width: 300px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.fm-container > .fm-prod > div > img {
+		margin-left: -50px;
+	}
+
+	.fm-prod-name {
+		font-size: 26px;
+		letter-spacing: 1.2px;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	.fm-prod-name h3 {
+		display: inline-block;
+	}
+
+	.fm-prod-name p {
+		color: #949495;
+		font-size: 20px;
+		display: inline-block;
+	}
+
+	.fm-prod-sale {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	.fm-prod-sale > p {
+		margin: 10px 0;
+		font-size: 14px;
+	}
+
+	.fm-prod-badge {
+		background-color: #D6B09D;
+		color: #fff;
+		font-size: 16px;
+		border-radius: 20px;
+		display: inline-block;
+		padding: 8px 15px;
+		margin-bottom: 10px;
+	}
+
+	.fm-prod-price {
+		font-size: 20px;
+		display: block;
+		margin: 15px 0 20px;
+		color: #3e3a39;
+	}
+
+	.fm-prod-price p {
+		font-size: 18px;
+		display: inline;
+	}
+
+</style>
+<div id="fm-banner" class="bg-cover">
+	<div id="context-invite">
+	</div>
+	<div id="context-sale">
+		<h1 class="fs">KUOCA ONLINE FAMILY SALE </h1>
+	</div>
+</div>
+<div id="pm-code-box">
+	<div>
+		<h1>KUOCA ONLINY FAMILY SALE</h1>
+	</div>
+	<div class="container">
+        <span>
+            <h1>PROMOTION CODE</h1>
+        </span>
+		<div>
+			<input id="pm-code-input" type="text" name="promotion" required value="kuoca2021">
+			<button id="confirm-code" class="red-btn -mov fsk" onclick="location.href='/family-product.html'">확인</button>
+		</div>
+	</div>
+	<div class="notice">
+		<p>*프로모션 코드는 자동 입력된 상태이며, 확인 버튼 클릭시 세일 페이지로 이동됩니다.</p>
+		<p>*패밀리 세일 링크는 오직 쿠오카 자사몰 회원에게만 공개됩니다.</p>
+	</div>
+</div>
+
+
+<script>
+	var gnbLogo = document.querySelector('div#header div.top_logo-w a');
+	gnbLogo.setAttribute('href', '');
+
+	var $pmCodeInput = document.querySelector('#pm-code-input');
+	var $confirmCode = document.querySelector('#confirm-code');
+	var $pmCodeBox = document.querySelector('#pm-code-box');
+	var $fmProdList = document.querySelector('#fm-prod-list');
+	var $contextInvite = document.querySelector('#context-invite');
+	var $contextSale = document.querySelector('#context-sale');
+	$pmCodeInput.onkeyup = function (e) {
+		if (e.target.value !== 'kuoca2021') $confirmCode.disabled = true;
+		else $confirmCode.disabled = false;
+	};
+	/*$confirmCode.onclick = function (e) {
+		$fmProdList.style.display = 'inline-block';
+		$pmCodeBox.style.display = 'none';
+		$contextInvite.style.display = 'none';
+		$contextSale.style.display = 'block';
+	};*/
+</script>			</div>		</div>
+

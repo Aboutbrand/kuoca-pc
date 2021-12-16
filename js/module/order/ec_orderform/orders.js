@@ -40,14 +40,14 @@ EC$(function() {
             }
         });
         if (iCheckPrdCnt > 0) {
-            var sTotalPrice = SHOP_PRICE_FORMAT.toShopPrice(iSumPrice);
+            var sTotalPrice = CAFE24.SHOP_PRICE_FORMAT.toShopPrice(iSumPrice);
             EC$('#checked_order_count').html('<strong>' + sprintf(__('%s'),iCheckPrdCnt) + '</strong>' +'개 상품선택').css('padding-bottom','5px');
             EC$('#checked_order_price').html('결제예정금액 <strong><em>'+sTotalPrice+'</em></strong>').css('padding-bottom','5px');
         } else {
             fixLayerPriceRest();
         }
 
-        var sPriceRef = SHOP_PRICE_FORMAT.shopPriceToSubPrice(iSumPrice);
+        var sPriceRef = CAFE24.SHOP_PRICE_FORMAT.shopPriceToSubPrice(iSumPrice);
         if (sPriceRef != '') {EC$('#checked_order_price').find('strong').append(sPriceRef);}
     };
 
@@ -96,23 +96,23 @@ EC$(function() {
 
 //정기배송 이용약관 동의
 function viewRegularDelivery() {
-    window.open('/order/ec_orderform/agreement/regular_delivery.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+    window.open('/order/ec_orderform/agreement/regular_delivery.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
 }
 
 //쇼핑몰 이용약관 동의
 function viewMallAgree() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/mallagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/mallagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/mallagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/mallagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //비회원 구매시 개인정보수집이용동의
 function viewPersonAgree() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/personagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/personagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/personagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/personagree.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //청약철회방침 보기
@@ -126,9 +126,9 @@ function viewSubscription() {
 //전자보증보험 보기
 function viewInsurance() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/insurance.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/insurance.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/insurance.html?basket_type='+EC$('#basket_type').val() +'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/insurance.html?basket_type='+EC$('#basket_type').val() +'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //Daum 비회원 구매 동의 보기
@@ -142,56 +142,56 @@ function viewDaum() {
 //배송정보 제공방침 동의
 function viewDelivery() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/delivery.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/delivery.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/delivery.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/delivery.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //고유식별정보수집 동의
 function viewIdentification() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/identification.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/identification.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/identification.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/identification.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //개인정보수집 이용동의
 function viewMemberJoinAgree() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/privacy_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/privacy_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/privacy_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/privacy_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //개인정보 제3자 제공 동의
 function viewInformationAgree() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/information_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/information_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/information_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/information_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //개인정보취급 위탁 동의
 function viewConsignmentAgree() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/consignment_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/consignment_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/consignment_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/consignment_agreement.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 //예약결제 이용 동의
 function viewCrowdfunding() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/agreement/crowdfunding.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/agreement/crowdfunding.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/agreement/crowdfunding.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=450,height=350');
+        window.open('/order/ec_orderform/agreement/crowdfunding.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=450,height=350');
     }
 }
 function viewSafePhone() {
     if (EC_MOBILE_DEVICE == true) {
-        window.open('/order/ec_orderform/popup/safePhone.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'));
+        window.open('/order/ec_orderform/popup/safePhone.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val());
     } else {
-        window.open('/order/ec_orderform/popup/safePhone.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+getQueryString('delvtype'), '', 'width=500,height=467');
+        window.open('/order/ec_orderform/popup/safePhone.html?basket_type='+EC$('#basket_type').val()+'&delvtype='+EC$('#delvType').val(), '', 'width=500,height=467');
     }
 }
 
@@ -273,4 +273,5 @@ function dimmedLayerPosition(target) {
         findLayer.show();
     }
 }
+
 /* File end */

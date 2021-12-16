@@ -25,6 +25,13 @@ h3.context {
 	font-size: 0.95rem;
 }
 
+.container {
+	position: relative;
+	width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 /* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
 /* tag reset */
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {

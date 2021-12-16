@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8771ffac-87c4-48c3-9eda-8b07bf3c2692" name="Kuoca-Desktop" url="http://skin-skin42.kuocaskinshop.cafe24.com">
+        <fileTransfer host="kuocaskinshop.ftp.cafe24.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

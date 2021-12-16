@@ -142,6 +142,24 @@
                         <li>카페24페이는 카페24에 회원가입 또는 로그인 후 별도 앱 설치 없이 결제 가능합니다.</li>
                         <li>최초 1회 카드 정보를 등록하여야 사용 가능합니다.</li>
                     </ul>
+
+                    <!-- 후불 결제 도움말 -->
+                    <div id="{$pg_paymethod_info_defer}" class="{$payment_input_defer_display|display}">
+                        <!-- NP Postpay/GMO Payment After Delivery -->
+                        <ul id="{$pg_paymethod_info_defer_type_a}" class="ec-base-help typeDash">
+                            <li>상품 수령과 동시에 배송 직원에게 결제 수수료를 지불하는 후불 결제수단입니다.</li>
+                            <li>최종 결제금액은 후불 결제 수수료가 포함된 금액으로 계산됩니다.</li>
+                            <li>희망배송업체/방식을 선택하시면 배송업체별 후불 결제 수수료가 적용됩니다.</li>
+                            <li>결제 수수료 정보를 확인 후 결제하시기 바랍니다.<a href="#ec-orderform-defer-layer" class="txtWord ec-order-deffered-payment-popup ec-jigsaw-showLayer">확인하기</a></li>
+                        </ul>
+                        <!-- Daibiki (COD) -->
+                        <ul id="{$pg_paymethod_info_defer_type_b}" class="ec-base-help typeDash">
+                            <li>상품 수령과 동시에 배송 직원에게 결제 수수료를 지불하는 후불 결제수단입니다.</li>
+                            <li>최종 결제금액은 후불 결제 수수료가 포함된 금액으로 계산됩니다.</li>
+                            <li>희망배송업체/방식을 선택하시면 배송업체별 후불 결제 수수료가 적용됩니다.</li>
+                            <li>결제 수수료 정보를 확인 후 결제하시기 바랍니다.<a href="#ec-orderform-defer-layer" class="txtWord ec-order-deffered-payment-popup ec-jigsaw-showLayer">확인하기</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -280,4 +298,7 @@
             <div id="ec-orderform-paymethod-tail"></div>
         </div>
     </div>
+
+        <!-- Layer pop-up for transaction fee -->
+        <!--@import(/order/ec_orderform/popup/deferredPayment.html)-->
 <!-- File end -->
