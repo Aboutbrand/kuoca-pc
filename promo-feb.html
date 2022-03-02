@@ -1,0 +1,57 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/aboutbrand/js/main_script.js)-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<style>
+	.top_banner { display: none; !important; }
+
+	.xans-element-.xans-layout.xans-layout-statelogoff.pointicon.move {
+		display: none !important;
+	}
+
+	#wrap {
+		padding-bottom: 0;
+	}
+
+	#container {
+		width: 100% !important;
+	}
+
+	#contents {
+		float: none;
+		width: 100% !important;
+		min-height: 750px;
+		margin: 0 auto;
+	}
+
+	#fm-banner {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+</style>
+<div id="fm-banner" class="bg-cover">
+	<a href="/product/detail.html?product_no=27">
+		<img src="/web/upload/asset/promo-feb.jpg" width="750px">
+	</a>
+</div>
+
+<!-- 210316 criteo -->
+<script>
+	var criteoProductListSub = [];
+	var dogbowl_item_list_count = document.querySelectorAll(".fm-shop-container").length;
+	//console.log(criteoProductListSub);
+	for (i = 0; i < dogbowl_item_list_count; i++) {
+		var prdNo = document.querySelectorAll(".fm-shop-container > .context > a")[i].href.split("=")[1];
+		;
+		criteoProductListSub.push(prdNo);
+	}
+	var criteoProductListSub = criteoProductListSub.slice(0, 3);
+</script>
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+<script type="text/javascript">
+	//console.log(criteoProductListSub);
+	window.criteo_q = window.criteo_q || [];
+	window.criteo_q.push(
+		{event: "setAccount", account: 83231}, {event: "setSiteType", type: "d"},
+		{event: "viewList", item: criteoProductListSub});
+</script><!-- 210316 script end -->

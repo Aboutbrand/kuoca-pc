@@ -5,7 +5,171 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <style>
-	#contents {background: #fff;}  .wrap {width: 1280px;text-align: center;margin: 0 auto;}  #wrap {padding-bottom: 90px;}  /*Best Seller*/  #best-seller {padding-top: 50px;}  #best-seller h1.title {font-size: 45px;color: #3D3A39;margin: 10px 0 5px;letter-spacing: 1.5px;}  #share div:nth-child(2) > img {width: 445px;display: block;margin: 40px auto 10px;}  #best-seller h2.sub {margin: 10px 0 60px;font-size: 22px;letter-spacing: 0.5px;line-height: 1.8em;}  /*Love*/  #love .title {margin: 45px 0 10px;}  #love > div {padding: 5px 0 10px 0;}  #love:before, #love:after {content: '';width: 1280px;height: 1px;background: #bfbfbf;display: block;margin: 0 auto;}  #love h2.sub {margin: 0;}  #love h3 {font-size: 22px;line-height: 1.8em;color: #BC8383;font-weight: normal;padding-top: 8px;}  #love a {display: inline-block;font-size: 14px;margin: 20px 0;padding: 15px 55px;border: 1px solid #BC8383;color: #fff;background-color: #BC8383;}  #love a:hover {border: 1px solid #BC8383;color: #BC8383;background-color: transparent;}  #love img {padding: 30px 0 70px 0;}  /*Eveents*/  #events h1.title {margin: 55px 0 0;}  #events h2.sub {margin: 10px 0 55px;}  #media {margin: 0 auto;padding: 30px 0;box-sizing: border-box;width: 100%;}  #media .container {width: 1280px;margin: 0 auto;}  /*Share*/  #share .sub-title {font-size: 25px;color: #3D3A39}  #share .title { /*color:#B86A6A;*/margin: 15px 0 0 0;}  #share span {vertical-align: middle;display: block;margin: 20px 0 0;}  #share h2 {font-size: 27px;float: right;width: 150px;text-align: right;margin: 15px 0 30px;}  #share h3 {font-size: 22px;margin: 10px 0 55px 0;}  #share .instaIcon {width: 30px;margin: 3px 10px 0 0;}  .m-banner-img {width: 1280px;background-size: cover;box-sizing: border-box;}  /*Insta Widget*/  .elfsight-app-f9aff175-22f9-4382-aefc-9223c6ef58f2 {margin-top: 50px;padding: 0;}  .eapps-instagram-feed-posts-grid-load-more-text.eapps-instagram-feed-posts-grid-load-more-text-visible {font-family: 'Marcellus' !important;}  .eapps-instagram-feed-posts-grid-load-more {width: 50%;height: 3em;line-height: 3em;}
+	#contents {
+		background: #fff;
+	}
+
+	.wrap {
+		width: 1280px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#wrap {
+		padding-bottom: 90px;
+	}
+
+	/*Best Seller*/
+	#best-seller {
+		padding-top: 50px;
+	}
+
+	#best-seller h1.title {
+		font-size: 45px;
+		color: #3D3A39;
+		margin: 10px 0 5px;
+		letter-spacing: 1.5px;
+	}
+
+	#share div:nth-child(2) > img {
+		width: 445px;
+		display: block;
+		margin: 40px auto 10px;
+	}
+
+	#best-seller h2.sub {
+		margin: 10px 0 60px;
+		font-size: 22px;
+		letter-spacing: 0.5px;
+		line-height: 1.8em;
+	}
+
+	/*Love*/
+	#love .title {
+		margin: 45px 0 10px;
+	}
+
+	#love > div {
+		padding: 5px 0 10px 0;
+	}
+
+	#love:before, #love:after {
+		content: '';
+		width: 1280px;
+		height: 1px;
+		background: #bfbfbf;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#love h2.sub {
+		margin: 0;
+	}
+
+	#love h3 {
+		font-size: 22px;
+		line-height: 1.8em;
+		color: #BC8383;
+		font-weight: normal;
+		padding-top: 8px;
+	}
+
+	#love a {
+		display: inline-block;
+		font-size: 14px;
+		margin: 20px 0;
+		padding: 15px 55px;
+		border: 1px solid #BC8383;
+		color: #fff;
+		background-color: #BC8383;
+	}
+
+	#love a:hover {
+		border: 1px solid #BC8383;
+		color: #BC8383;
+		background-color: transparent;
+	}
+
+	#love img {
+		padding: 30px 0 70px 0;
+	}
+
+	/*Eveents*/
+	#events h1.title {
+		margin: 55px 0 0;
+	}
+
+	#events h2.sub {
+		margin: 10px 0 55px;
+	}
+
+	#media {
+		margin: 0 auto;
+		padding: 30px 0;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	#media .container {
+		width: 1280px;
+		margin: 0 auto;
+	}
+
+	/*Share*/
+	#share .sub-title {
+		font-size: 25px;
+		color: #3D3A39
+	}
+
+	#share .title { /*color:#B86A6A;*/
+		margin: 15px 0 0 0;
+	}
+
+	#share span {
+		vertical-align: middle;
+		display: block;
+		margin: 20px 0 0;
+	}
+
+	#share h2 {
+		font-size: 27px;
+		float: right;
+		width: 150px;
+		text-align: right;
+		margin: 15px 0 30px;
+	}
+
+	#share h3 {
+		font-size: 22px;
+		margin: 10px 0 55px 0;
+	}
+
+	#share .instaIcon {
+		width: 30px;
+		margin: 3px 10px 0 0;
+	}
+
+	.m-banner-img {
+		width: 1280px;
+		background-size: cover;
+		box-sizing: border-box;
+	}
+
+	/*Insta Widget*/
+	.elfsight-app-f9aff175-22f9-4382-aefc-9223c6ef58f2 {
+		margin-top: 50px;
+		padding: 0;
+	}
+
+	.eapps-instagram-feed-posts-grid-load-more-text.eapps-instagram-feed-posts-grid-load-more-text-visible {
+		font-family: 'Marcellus' !important;
+	}
+
+	.eapps-instagram-feed-posts-grid-load-more {
+		width: 50%;
+		height: 3em;
+		line-height: 3em;
+	}
 </style>
 
 <style>
@@ -88,16 +252,19 @@
 
 <div class="swiper-container swiper-main">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide" style="background-image: url(/web/upload/banner/dec-happy-pc-re.jpg); background-size: cover; background-position: center;
-		cursor:pointer;" onclick="location.href='/product.html'">
+		<div class="swiper-slide" style="background-image: url(/web/upload/banner/mar-ritual-pc.jpg); background-size:
+		cover; background-position: center;
+		cursor:pointer;" onclick="location.href='/product/detail.html?product_no=66'">
 			<div class="context"></div>
 		</div>
-		<div class="swiper-slide" style="background-image: url(/web/upload/banner/dec-lip-pc.jpg); background-size: cover; background-position: center;
-		cursor:pointer;" onclick="location.href='/product/detail.html?product_no=49'">
+		<div class="swiper-slide" style="background-image: url(/web/upload/banner/mar-cream-pc.jpg); background-size: cover;
+		background-position: center;
+		cursor:pointer;" onclick="location.href='/product/detail.html?product_no=11'">
 			<div class="context"></div>
 		</div>
-		<div class="swiper-slide" style="background-image: url(/web/upload/banner/nov-review-pc.jpg); background-size: cover; background-position: center;
-		cursor:pointer;" onclick="location.href='/board/smartreview/list/list.html'">
+		<div class="swiper-slide" style="background-image: url(/web/upload/banner/mar-toner-pc.jpg); background-size:
+		cover; background-position: center;
+		cursor:pointer;" onclick="location.href='/product/detail.html?product_no=65'">
 			<div class="context"></div>
 		</div>
 		<!--<div class="swiper-slide" style="background-image: url(/web/upload/banner/nov-trial-pc.jpg); background-size: cover; background-position: center;
@@ -296,7 +463,9 @@
 			<!--Element-->
 			<li class="swiper-slide">
 				<div class="thumbnail" style="height: auto;">
-					<a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+					<a href="/product/detail.html{$param}">
+						<img src="{$image_medium}" alt="">
+					</a></div>
 				<div class="information">
 					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a>
 					</p>
@@ -318,7 +487,9 @@
 			<!--Element Clone-->
 			<li class="swiper-slide">
 				<div class="thumbnail" style="height: auto;">
-					<a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+					<a href="/product/detail.html{$param}">
+						<img src="{$image_medium}" alt="">
+					</a></div>
 				<div class="information">
 					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a>
 					</p>
@@ -822,10 +993,10 @@
 	window.criteo_q = window.criteo_q || [];
 	var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
 	window.criteo_q.push(
-	  {event: "setAccount", account: 83231}, // 이 라인은 업데이트하면 안됩니다
-	  {event: "setEmail", email: ""}, // 빈 문자 일수 있습니다
-	  {event: "setSiteType", type: deviceType},
-	  {event: "viewHome"});
+		{event: "setAccount", account: 83231}, // 이 라인은 업데이트하면 안됩니다
+		{event: "setEmail", email: ""}, // 빈 문자 일수 있습니다
+		{event: "setSiteType", type: deviceType},
+		{event: "viewHome"});
 </script><!-- END Criteo 홈페이지 태그 --><!-- 210316 script end -->
 
 <!-- ADN 메인패널 설치 start -->

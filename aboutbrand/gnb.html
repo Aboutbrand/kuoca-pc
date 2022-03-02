@@ -91,15 +91,17 @@
 		left: 8px;
 	}
 
-	.t-sub-menus, .t-sub-active, .set-sub-menus, .set-sub-active {
+	.t-sub-menus, .t-sub-active,
+	.m-sub-menus, .m-sub-active,
+	.set-sub-menus, .set-sub-active {
 		transition: background-color 500ms ease-in-out;
 	}
 
-	.t-sub-menus li, .set-sub-menus li {
+	.t-sub-menus li, .m-sub-menus li, .set-sub-menus li {
 		height: 30px;
 	}
 
-	.t-sub-menus li a, .set-sub-menus li a {
+	.t-sub-menus li a, .m-sub-menus li a, .set-sub-menus li a {
 		display: block;
 		padding: 0;
 		color: #3D3A39;
@@ -155,10 +157,13 @@
 
 <div id="header">
 	<div class="top_logo"><a href="/">
-		<img src="/SkinImg/gnb-logo.png" width="180px"></a>
+		<img src="/SkinImg/gnb-logo.png" width="180px">
+	</a>
 	</div>
 	<!-- 좌측 로고 수정하는곳 -->
-	<div class="top_logo-w"><a href="/"><img src="/SkinImg/gnb-logo-w.png" width="180px"></a></div>
+	<div class="top_logo-w"><a href="/">
+		<img src="/SkinImg/gnb-logo-w.png" width="180px">
+	</a></div>
 	<!-- 좌측 로고 수정하는곳 -->
 
 	<div class="menu_wrapper">
@@ -182,16 +187,27 @@
 					<div class="position">
 						<!-- 좌측 카테고리 자동출력 -->
 						<ul>
-							<li>
-								<a href="/product/detail.html?product_no=74">MIST BLEND</a>
+							<li class="sub-menus-btn mist-sub">
+								<a href="javascript:void();">MIST BLEND</a>
+								<div class="btn-container">
+									<div class="plusBtn"></div>
+								</div>
 							</li>
+							<ul class="mist m-sub-menus" style="display: none;">
+								<li>
+									<a href="/product/detail.html?product_no=109">MIST BLEND 30ML</a>
+								</li>
+								<li>
+									<a href="/product/detail.html?product_no=74">MIST BLEND 100ML</a>
+								</li>
+							</ul>
 							<li class="sub-menus-btn toner-sub">
 								<a href="javascript:void();">TONER BLEND</a>
 								<div class="btn-container">
 									<div class="plusBtn"></div>
 								</div>
 							</li>
-							<ul class="t-sub-menus" style="display: none;">
+							<ul class="toner t-sub-menus" style="display: none;">
 								<li>
 									<a href="/product/detail.html?product_no=16">TONER BLEND NOURISHING</a>
 								</li>
@@ -251,15 +267,15 @@
 				</div>
 				<!-- //Layout_category -->
 			</div>
-				  <!-- //left_shop_btn -->
+						<!-- //left_shop_btn -->
 
 
 			<div class="category_menu">
 				<a href="/love.html" class="move fs">LOVE</a>
 			</div>
-			<!--<div class="category_menu">
-				<a href="/event.html" class="move fs">BENEFIT</a>
-			</div>-->
+						<!--<div class="category_menu">
+							<a href="/event.html" class="move fs">BENEFIT</a>
+						</div>-->
 
 			<style>
 				.left2 {
@@ -344,7 +360,9 @@
 	</div>
 
 	<div id="quick_search">
-		<div class="quick_searchClose"><img src="/images/icon_close.png" class="rotate"></div>
+		<div class="quick_searchClose">
+			<img src="/images/icon_close.png" class="rotate">
+		</div>
 		<div module="Layout_SearchHeader">
 			<!--
 			$product_page=/product/detail.html
@@ -363,14 +381,21 @@
 		$(".sub-menus-btn.toner-sub").click(function () {
 			$(".t-sub-menus").slideToggle('fast');
 			$(".t-sub-menus").toggleClass('sub-active');
-			$("li.sub-menus-btn:nth-child(1) > div:nth-child(2) > div:nth-child(1)").toggleClass('active');
+			$("#category > div > ul > li.sub-menus-btn.toner-sub > div > .plusBtn").toggleClass('active');
+		});
+	});
+	$(document).ready(function () {
+		$(".sub-menus-btn.mist-sub").click(function () {
+			$(".m-sub-menus").slideToggle('fast');
+			$(".m-sub-menus").toggleClass('sub-active');
+			$("#category > div > ul > li.sub-menus-btn.mist-sub > div > .plusBtn").toggleClass('active');
 		});
 	});
 	$(document).ready(function () {
 		$(".sub-menus-btn.set-sub").click(function () {
 			$(".set-sub-menus").slideToggle('fast');
 			$(".set-sub-menus").toggleClass('sub-active');
-			$("li.sub-menus-btn:nth-child(7) > div:nth-child(2) > div:nth-child(1)").toggleClass('active');
+			$("#category > div > ul > li.sub-menus-btn.set-sub > div > .plusBtn").toggleClass('active');
 		});
 	});
 	// show language dropdowns

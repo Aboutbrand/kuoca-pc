@@ -652,6 +652,14 @@ body {
 	background: #3D3A39;
 }
 
+.top_banner.second {
+	background: #111;
+}
+
+.top_banner.second:hover {
+	background: #3D3A39;
+}
+
 /* header */
 div#header.gnbFixed {
 	height: 130px;

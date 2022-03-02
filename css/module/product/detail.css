@@ -275,3 +275,130 @@
 .xans-product-detail .productSet .description .btnClose { background:transparent; }
 .xans-product-detail .productSet .description > .ec-base-tooltip { display:block; top:0; }
 .xans-product-detail .productSet .description > .ec-base-tooltip > .edge { z-index:20; position:absolute; left:auto; right:40px; display:block; margin:0 0 0 -5px; width:9px; height:6px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_option_arrow.gif") no-repeat 0 0; }
+
+
+/*상품 상세 페이지 공통 - PC*/
+.detail-add-wrap {
+    width: 750px;
+}
+
+.product-desc {
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+    border-spacing: 0;
+    color: #616161;
+    font-family: "Nanum Myeongjo", serif !important;
+}
+
+.product-desc th {
+    text-align: left;
+    font-size: 25px;
+    padding: 0 0 20px 0;
+}
+
+.product-desc tbody {
+    display: block;
+    padding: 55px;
+    text-align: left;
+    border-collapse: separate;
+}
+
+.product-desc td {
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 0;
+    font-size: 17px;
+    line-height: 29px;
+    vertical-align: top;
+    padding: 10px 15px;
+}
+
+.product-desc tr td.empty-cell {
+    background-color: rgba(0, 0, 0, 0);
+    width: 1%;
+    border: none;
+    padding: 0 10px;
+}
+
+.product-desc td.desc-detail {
+    background: #f9f9f9;
+}
+
+.product-desc tr td:nth-child(1) {
+    background: #F4EBEB;
+    width: 28%;
+}
+
+.product-desc tr td:nth-child(3) {
+    width: 66%;
+}
+
+.product-desc tr:last-child td {
+    padding-bottom: 30px;
+}
+
+.pdp-content > .gif {
+    width: 750px;
+}
+
+.pdp-content .gift {
+    width: 750px;
+}
+
+/*상품 상세 공통 - Mobile*/
+/*상품 상세 공통*/
+.product-desc-mobile {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    color: #616161;
+    font-family: "Nanum Myeongjo", serif !important;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.product-desc-mobile th {
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.product-desc-mobile tbody {
+    display: table;
+    padding: 10px 25px;
+    text-align: left;
+    border-collapse: separate;
+}
+
+.product-desc-mobile td {
+    font-size: 9px;
+    vertical-align: top;
+    padding: 5px 10px;
+}
+
+.product-desc-mobile tr td.empty-cell {
+    background-color: rgba(0, 0, 0, 0);
+    border: none !important;
+    padding: 0 5px;
+}
+
+.product-desc-mobile td.desc-detail {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 0;
+}
+
+.product-desc-mobile tr td:nth-child(1) {
+    background: #F4EBEB;
+    width: 33%;
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 0;
+}
+
+.product-desc-mobile tr td:nth-child(3) {
+    width: 66%;
+}
+
+.product-desc-mobile tr:last-child td {
+    padding-bottom: 30px;
+}
