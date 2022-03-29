@@ -1,195 +1,12 @@
 <!--@layout(/layout/basic/layout.html)-->
+
 <!-- jQuery 1.8 or later, 33 KB -->
 
+
 <link rel="stylesheet" href="/aboutbrand/css/product_carousel.css"/>
+<link rel="stylesheet" href="/aboutbrand/css/main.css"/>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<style>
-	#contents {
-		background: #fff;
-	}
-
-	.wrap {
-		width: 1280px;
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	#wrap {
-		padding-bottom: 90px;
-	}
-
-	/*Best Seller*/
-	#best-seller {
-		padding-top: 50px;
-	}
-
-	#best-seller h1.title {
-		font-size: 45px;
-		color: #3D3A39;
-		margin: 10px 0 5px;
-		letter-spacing: 1.5px;
-	}
-
-	#share div:nth-child(2) > img {
-		width: 445px;
-		display: block;
-		margin: 40px auto 10px;
-	}
-
-	#best-seller h2.sub {
-		margin: 10px 0 60px;
-		font-size: 22px;
-		letter-spacing: 0.5px;
-		line-height: 1.8em;
-	}
-
-
-	/*Brand*/
-	#brand .title {
-		margin: 45px 0 10px;
-	}
-
-	#brand > div {
-		padding: 5px 0 10px 0;
-	}
-
-	#brand:before, #brand:after {
-		content: '';
-		width: 1280px;
-		height: 1px;
-		background: #bfbfbf;
-		display: block;
-		margin: 0 auto;
-	}
-
-	#brand h2.sub {
-		margin: 0;
-	}
-
-	#brand h3 {
-		font-size: 22px;
-		line-height: 1.8em;
-		color: #BC8383;
-		font-weight: normal;
-		padding-top: 8px;
-	}
-
-	#brand img {
-		padding: 30px 0 70px 0;
-	}
-
-	/*Love*/
-	#love .title {
-		margin: 45px 0 10px;
-	}
-
-	#love > div {
-		padding: 5px 0 10px 0;
-	}
-
-	#love:before {
-		content: '';
-		width: 1280px;
-		height: 1px;
-		background: #bfbfbf;
-		display: block;
-		margin: 0 auto;
-	}
-
-	#love h2.sub {
-		margin: 0;
-	}
-
-	#love h3 {
-		font-size: 22px;
-		line-height: 1.8em;
-		color: #BC8383;
-		font-weight: normal;
-		padding-top: 8px;
-	}
-
-	#love img {
-		padding: 30px 0 70px 0;
-	}
-</style>
-
-<style>
-	.swiper-container.swiper-main {
-		width: 1280px;
-		height: 640px;
-		overflow: hidden;
-	}
-
-	.swiper-main .swiper-button-next, .swiper-main .swiper-button-prev {
-		opacity: 0;
-		transition: opacity 0.4s ease-in-out;
-		z-index: 10;
-	}
-
-	.swiper-main .swiper-button-next {
-		right: 340px;
-		left: auto;
-		top: 400px;
-	}
-
-	.swiper-main .swiper-button-prev {
-		left: 340px;
-		right: auto;
-		top: 400px;
-	}
-
-	.swiper-main:hover .swiper-button-next, .swiper-main:hover .swiper-button-prev {
-		opacity: 1;
-	}
-
-	.swiper-main .swiper-container-horizontal > .swiper-pagination-bullets {
-		bottom: 0;
-	}
-
-	.swiper-main .swiper-pagination-bullets {
-		top: -50px;
-		margin: 20px auto;
-		position: relative;
-	}
-
-	.swiper-main .swiper-pagination-bullet {
-		opacity: 1;
-		background: #fff;
-		width: 10px;
-		height: 10px;
-	}
-
-	.swiper-main .swiper-pagination-bullet-active {
-		background: #BC8383 !important;
-		opacity: 1;
-	}
-
-	.swiper-main .swiper-pagination-bullets .swiper-pagination-bullet {
-		margin: 0 7px !important;
-	}
-
-	.swiper-main .context {
-		margin: 215px 55px 0 0;
-		float: right;
-		font-family: 'Optima', 'Nanum Myeongjo';
-	}
-
-	.swiper-main h3 {
-		font-size: 30px;
-	}
-
-	.swiper-main h1 {
-		font-size: 38px;
-		line-height: 58px;
-		margin: 10px 0 15px 0;
-	}
-
-	.swiper-main a {
-		font-size: 20px;
-		border-bottom: 1px solid #b36d6d;
-	}
-</style>
 
 <!--Main Slider-->
 <div class="swiper-container swiper-main">
@@ -209,22 +26,6 @@
 		cursor:pointer;" onclick="location.href='/product/detail.html?product_no=16'">
 			<div class="context"></div>
 		</div>
-		<!--<div class="swiper-slide" style="background-image: url(/web/upload/banner/nov-trial-pc.jpg); background-size: cover; background-position: center;
-		cursor:pointer;"
-				 onclick="location.href='/product/detail.html?product_no=27'">
-			<div class="context"></div>
-		</div>-->
-		<!--<div class="swiper-slide" style="background-image: url(/web/upload/banner/august-banner-pc.jpg); background-size: cover; background-position: center; cursor:pointer;" onclick="location.href='/product/detail.html?product_no=75'">
-			<div class="context">
-				&lt;!&ndash;<h3 style="color: #b36d6d">SPECIAL PROMOTION</h3>
-				<h1 style="color: #b36d6d">
-					지구의 달 기념 더블 적립금 이벤트!<br>
-					기부도 두 배, 적립금도 두배로 드립니다
-				</h1>
-				<a style="color: #b36d6d" href="/product.html">LEARN MORE</a>&ndash;&gt;
-			</div>
-			</a>
-		</div>-->
 	</div>
 	<!-- Add Arrows -->
 	<div class="swiper-button-next swiper-button-black">
@@ -246,8 +47,8 @@
 <div id="Prod" class="" module="product_listmain_6">
 	<div id="best-seller" class="wrap">
 		<!--<h1><img src="/SkinImg/pd-title.png" alt="Premium Blends"></h1>-->
-		<h1 class="title">PREMIUM BLENDS</h1>
-		<h2 class="sub">제조 후 30일 이내로 만나는 화이트 트러플의 힘!<br>쿠오카 프리미엄 블렌드</h2>
+		<h2 class="title">PREMIUM BLENDS</h2>
+		<h3 class="sub">제조 후 30일 이내로 만나는 화이트 트러플의 힘!<br>쿠오카 프리미엄 블렌드</h3>
 	</div>
 	<!--
 		$count = 8
@@ -267,24 +68,28 @@
 
 <div id="brand" class="wrap">
 	<div>
-		<h1 class="title">FINE DINING SKINCARE, KUOCA</h1>
-		<h3 class="sub">극한의 신선함을 피부에</h3>
+		<h2 class="title">파인다이닝 스킨케어, 당신의 피부를 위하여</h2>
+		<h3 class="sub">
+			우유, 과일 등 식료품처럼 화장품도 신선할수록 효능이 좋아요.<br>
+			쿠오카는 스킨케어의 효능을 제대로 전달하기 위해<br>
+			제조 후 30일 이내의 제품을 제공합니다.
+		</h3>
 		<a class="main-btn black-btn -mov" href="/brand-story.html">LEARN MORE</a>
 	</div>
-	<img src="/asset/brand-story-bg.jpg" alt="Kuoca Love Project" width="1280px">
+	<img src="/asset/main-brand-bg.jpg" alt="Kuoca Love Project" width="1170px">
 </div>
 
 <!--Love Project Section Start-->
 <div id="love" class="wrap">
 	<div>
-		<h1 class="title">KUOCA SHARES LOVE</h1>
+		<h2 class="title">KUOCA SHARES LOVE</h2>
 		<h3 class="sub">
 			당신이 아름다워지는 만큼 세상도 아름다워지도록,<br>
 			당신이 선택한 캠페인에 판매금의 1%를.
 		</h3>
 		<a class="main-btn black-btn -mov" href="/love.html">LEARN MORE</a>
 	</div>
-	<img src="/web/upload/asset/public/love-img-renewal.jpg" alt="Kuoca Love Project" width="1280px">
+	<img src="/asset/main-share-bg.jpg" alt="Kuoca Love Project" width="1170px">
 </div>
 <!--End-->
 

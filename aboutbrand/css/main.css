@@ -1,0 +1,170 @@
+#contents {
+	background: #fff;
+}
+
+.wrap {
+	width: 1280px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#wrap {
+	padding-bottom: 90px;
+}
+
+h2.title, h3.sub {
+	font-weight: 300;
+}
+
+/*Best Seller*/
+#best-seller {
+	padding-top: 50px;
+}
+
+#best-seller .title {
+	margin: 10px 0 5px;
+}
+
+#share div:nth-child(2) > img {
+	width: 445px;
+	display: block;
+	margin: 40px auto 10px;
+}
+
+#best-seller h3.sub {
+	margin: 15px 0 40px;
+}
+
+
+/*Brand*/
+#brand .title {
+	margin: 45px 0 10px;
+}
+
+#brand > div {
+	padding: 5px 0 10px 0;
+}
+
+#brand:before, #brand:after {
+	content: '';
+	width: 1280px;
+	height: 1px;
+	background: #bfbfbf;
+	display: block;
+	margin: 0 auto;
+}
+
+#brand h3.sub {
+	margin: 15px 0 25px;
+}
+
+#brand img {
+	padding: 30px 0 70px 0;
+}
+
+/*Love*/
+#love .title {
+	margin: 45px 0 10px;
+}
+
+#love > div {
+	padding: 5px 0 10px 0;
+}
+
+#love:before {
+	content: '';
+	width: 1280px;
+	height: 1px;
+	background: #bfbfbf;
+	display: block;
+	margin: 0 auto;
+}
+
+#love h3.sub {
+	margin: 15px 0 40px;
+}
+
+#love h3 {
+	/*color: #BC8383;*/
+	padding-top: 8px;
+}
+
+#love img {
+	padding: 30px 0 70px 0;
+}
+
+
+.swiper-container.swiper-main {
+	width: 1280px;
+	height: 640px;
+	overflow: hidden;
+}
+
+.swiper-main .swiper-button-next, .swiper-main .swiper-button-prev {
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+	z-index: 10;
+}
+
+.swiper-main .swiper-button-next {
+	right: 340px;
+	left: auto;
+	top: 400px;
+}
+
+.swiper-main .swiper-button-prev {
+	left: 340px;
+	right: auto;
+	top: 400px;
+}
+
+.swiper-main:hover .swiper-button-next, .swiper-main:hover .swiper-button-prev {
+	opacity: 1;
+}
+
+.swiper-main .swiper-container-horizontal > .swiper-pagination-bullets {
+	bottom: 0;
+}
+
+.swiper-main .swiper-pagination-bullets {
+	top: -50px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.swiper-main .swiper-pagination-bullet {
+	opacity: 1;
+	background: #fff;
+	width: 10px;
+	height: 10px;
+}
+
+.swiper-main .swiper-pagination-bullet-active {
+	background: #BC8383 !important;
+	opacity: 1;
+}
+
+.swiper-main .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 7px !important;
+}
+
+.swiper-main .context {
+	margin: 215px 55px 0 0;
+	float: right;
+	font-family: 'Optima', 'Nanum Myeongjo';
+}
+
+.swiper-main h3 {
+	font-size: 30px;
+}
+
+.swiper-main h1 {
+	font-size: 38px;
+	line-height: 58px;
+	margin: 10px 0 15px 0;
+}
+
+.swiper-main a {
+	font-size: 20px;
+	border-bottom: 1px solid #b36d6d;
+}

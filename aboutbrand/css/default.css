@@ -13,23 +13,25 @@
 	/*메인 컬러*/
 	--main-color: #4c3434;
 
+	--txt-color : #3D3A39;
+
 	/*
 	서브 컬러
 	- 강조 텍스트
 	- 버튼
 	*/
-	--sub-color-first: #BC8383;
+	--sub-color-first: #C08A8A;
 	--sub-color-second: #a8594c;
 
 	/*푸터 색상*/
-	--footer-txt-color: #fff;
+	--footer-txt-color: #989898;
 
 	/*  ==================================
 			-우편번호 검색, 아이디,이메일 중복확인 버튼 보더 컬러
 			==================================  */
 	--sub-btn-border-color: #ECF3F9;
 
-	font-weight: 400;
+	font-weight: 300;
 
 	--border-color-regular: rgb(83 92 76 / 79%);
 	--btn-bg-color: var(--main-color);
@@ -44,6 +46,29 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+/*폰트 기본 스타일*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 45px;
+	line-height: 1.35em;
+	letter-spacing: 1px;
+	margin: 30px 0 10px;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+}
+
+h3 {
+	font-size: 15px;
+	line-height: 22px;
+}
+
 .fw-bold {
 	font-weight: bold;
 }
@@ -53,29 +78,14 @@
 }
 
 .fw-regular {
-	font-weight: normal;
+	font-weight: 400;
 }
 
-h1.title, h2.sub, #love h3, #share h3 {
-	font-weight: normal;
+.fw-light {
+	font-weight: 300;
 }
 
-h1.title {
-	font-size: 45px;
-	line-height: 1.35em;
-	letter-spacing: 1px;
-	margin: 30px 0 10px;
-}
-
-h2.sub {
-	font-size: 22px;
-	margin: 10px 0 20px;
-}
-
-h3.context {
-	font-size: 0.95rem;
-}
-
+/*컨테이너 및 레이아웃*/
 .container {
 	position: relative;
 	width: 1280px;
@@ -408,8 +418,8 @@ a:active {
 }
 
 .category_menu > a {
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 18px;
+	line-height: 26px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	display: block;
@@ -652,11 +662,11 @@ div#header.gnbFixed {
 /* footer */
 #footer {
 	width: 100%;
-	position: absolute;
+	position: relative;
 	margin: 0 auto 0;
 	padding: 50px 0 0 0;
-	background-color: #231816;
-	color: #fff;
+	background-color: #fff;
+	color: var(--txt-color);
 }
 
 #footer .inner {
@@ -664,132 +674,35 @@ div#header.gnbFixed {
 	width: 1280px;
 }
 
-.bt_info {
-	padding: 0;
-	font-size: 13px;
-	color: #fff;
-	line-height: 24px;
-	text-align: left;
-	float: left;
-}
+#footer h1 {font-weight: 400;font-size: 13px;line-height: 19px;}
+#footer .number {font-weight: 400;font-size: 21px;line-height: 30px;}
+#footer h3 {font-weight: 300;font-size: 13px;line-height: 19px;}
+#footer .cs, #footer .info {display: inline-block;}
+#footer .cs .title, #footer .info .title {margin-bottom: 12px;}
+#footer .cs {margin-right: 44px;}
+#footer .info h1 {font-weight: 500;}
+#footer .info a {font-weight: 300;font-size: 13px;line-height: 19px;}
 
-.bt_title {
-	font-size: 14px;
-	color: #fff;
-	margin-bottom: 24px;
-	display: block;
-	font-weight: 700;
-}
-
-.bt_info a {
-	padding: 0;
-	font-size: 13px;
-	color: #fff;
-	line-height: 24px;
-	text-align: left;
-}
-
-.bt_logo {
-	float: left;
-	vertical-align: top;
-	width: 260px;
-	text-align: left;
-}
-
-.bt_runtime,
-.bt_cscenter {
-	padding: 0;
-	margin-left: 100px;
-	font-size: 13px;
-	color: #fff;
-	line-height: 24px;
-	text-align: left;
-	float: left;
-}
-
-.bt_communitu {
-	float: right;
-	width: 100px;
-}
-
-.bt_communitu a {
-	font-size: 13px;
-	color: #fff;
-	line-height: 24px;
-	text-align: left;
-	display: block;
-}
-
-.bt_communitu a:hover {
-	color: #fff;
-}
-
-.escrow {
-	margin-top: 10px;
-	font-size: 12px;
-	color: #fff;
-	line-height: 18px;
-	text-align: left;
-	display: block;
+#footer .company {
 	font-weight: 300;
+	font-size: 10px;
+	line-height: 14px;
+	color: var(--footer-txt-color);
+	margin: 48px auto 161px;
 }
+#footer .company a {font-size: 10px;line-height: 14px;color: var(--footer-txt-color);}
 
-.copyright {
-	font-size: 12px;
-	color: #999;
-	line-height: 18px;
+#footer .company-info {
+	margin-bottom: 30px;
+}
+.escrow, .copyright {
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 14px;
+	color: var(--footer-txt-color);
 	text-align: left;
 	display: block;
-	font-weight: 300;
-}
-
-#footer .utilMenu {
-	font-size: 0;
-	padding: 0;
-	margin: 0;
-	text-align: left;
-}
-
-#footer .utilMenu li {
-	float: left;
-	margin: 0 15px 0 0;
-	font-size: 12px;
-	color: #fff;
-	line-height: 25px;
-}
-
-#footer .utilMenu li a {
-	line-height: 25px;
-	font-size: 12px;
-	color: #fff;
-	letter-spacing: -0.8px;
-}
-
-#footer .utilMenu li a strong {
-	font-weight: 400;
-	color: #fff;
-}
-
-#footer .utilMenu li a:hover {
-	color: #fff;
-}
-
-ul.xans-layout-multishoplistitem {
-	float: left;
-}
-
-ul.xans-layout-multishoplistitem li {
-	float: left;
-	margin: 3px 0 0 5px;
-}
-
-.bt_sns {
-	margin: 40px 0 0 0;
-}
-
-.bt_sns a {
-	margin-right: 10px;
-	float: left;
+	margin: 5px auto;
 }
 
 #content_CONTAINER table, #bi_inquire_content_CONTAINER table {
@@ -994,6 +907,25 @@ div.layerProgress {
 	flex-direction: column;
 }
 
+/*Button Style(Btn)*/
+.btn--basic {
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 300;
+	padding: 18px 95px;
+	letter-spacing: 0.075em;
+	background-color: transparent;
+	border: 1px solid var(--txt-color);
+	color: var(--txt-color);
+	display: inline-block;
+}
+
+/*.btn--basic:hover {
+	background-color: var(--txt-color);
+	border: 1px solid var(--txt-color);
+	color: var(--btn-txt-color);
+}*/
+
 .big-btn {
 	display: inline-block;
 	padding: 0 15px;
@@ -1011,18 +943,18 @@ div.layerProgress {
 	letter-spacing: 0.235em;
 }
 
-.black-btn:hover {
+/*.black-btn:hover {
 	border: 1px solid #3D3A39;
 	background: rgba(0, 0, 0, 1);
 	color: #fff;
-}
+}*/
 
 .main-btn {
-	font-size: 18px;
-	font-weight: normal;
-	letter-spacing: 0.235em;
-	margin: 30px 0 0;
-	padding: 20px 60px;
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 300;
+	padding: 18px 95px;
+	letter-spacing: 0.075em;
 	display: inline-block;
 }
 
@@ -1130,10 +1062,10 @@ input:-webkit-autofill {
 }
 
 /* 크롬에서 인풋박스 노란배경 안나오게 */
-h1, h2, h3, h4, h5 {
+/*h1, h2, h3, h4, h5 {
 	font-weight: normal;
 	letter-spacing: 0.06em;
-}
+}*/
 
 /* 레이아웃 */
 input, select, textarea {
