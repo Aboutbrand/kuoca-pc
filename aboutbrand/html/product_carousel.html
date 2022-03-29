@@ -1,0 +1,23 @@
+<li class="swiper-slide">
+	<div class="thumbnail" style="height: auto;">
+		<a href="/product/detail.html{$param}">
+			<img src="{$image_medium}" alt="">
+		</a></div>
+	<div class="information">
+		<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a>
+		</p>
+		<!--상품관리 상품 목록 항목 중 용량 (추가항목) 표시-->
+		<p class="summary"><a href="/product/detail.html{$param}">{$summary_desc}</a></p>
+
+		<p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
+		<span class="pdInfo">
+						<a href="/product/detail.html{$param}">
+
+						<p class="capacity">{$custom_option1} / </p>
+						<p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat}<span class="notosans">원</span><span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+						</a>
+						</span>
+		<p class="price {$product_sale_display|display}">{$product_custom}</p>
+	</div>
+	<span class="quickView"><a href="#none" onclick="{$zoom_action}">SHOP NOW</a></span>
+</li>

@@ -3,44 +3,42 @@
  * 카테고리 서브 메뉴 출력
  */
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     var methods = {
-        aCategory    : [],
-        aSubCategory : {},
+        aCategory: [],
+        aSubCategory: {},
 
-        get: function()
-        {
-             $.ajax({
-                url : '/exec/front/Product/SubCategory',
+        get: function () {
+            $.ajax({
+                url: '/exec/front/Product/SubCategory',
                 dataType: 'json',
-                success: function(aData) {
+                success: function (aData) {
 
                     if (aData == null || aData == 'undefined') return;
-                    for (var i=0; i<aData.length; i++)
-                    {
+                    for (var i = 0; i < aData.length; i++) {
                         var sParentCateNo = aData[i].parent_cate_no;
 
                         if (!methods.aSubCategory[sParentCateNo]) {
                             methods.aSubCategory[sParentCateNo] = [];
                         }
 
-                        methods.aSubCategory[sParentCateNo].push( aData[i] );
+                        methods.aSubCategory[sParentCateNo].push(aData[i]);
                     }
                 }
             });
         },
 
-        getParam: function(sUrl, sKey) {
+        getParam: function (sUrl, sKey) {
 
-            var aUrl         = sUrl.split('?');
+            var aUrl = sUrl.split('?');
             var sQueryString = aUrl[1];
-            var aParam       = {};
+            var aParam = {};
 
             if (sQueryString) {
                 var aFields = sQueryString.split("&");
-                var aField  = [];
-                for (var i=0; i<aFields.length; i++) {
+                var aField = [];
+                for (var i = 0; i < aFields.length; i++) {
                     aField = aFields[i].split('=');
                     aParam[aField[0]] = aField[1];
                 }
@@ -48,12 +46,12 @@ $(document).ready(function(){
             return sKey ? aParam[sKey] : aParam;
         },
 
-        getParamSeo: function(sUrl) {
-            var aUrl         = sUrl.split('/');
+        getParamSeo: function (sUrl) {
+            var aUrl = sUrl.split('/');
             return aUrl[3] ? aUrl[3] : null;
         },
 
-        show: function(overNode, iCateNo) {
+        show: function (overNode, iCateNo) {
 
             if (methods.aSubCategory[iCateNo].length == 0) {
                 return;
@@ -61,8 +59,8 @@ $(document).ready(function(){
 
             var aHtml = [];
             aHtml.push('<ul>');
-            $(methods.aSubCategory[iCateNo]).each(function() {
-                aHtml.push('<li><a href="'+this.link_product_list+'">'+this.name+'</a></li>');
+            $(methods.aSubCategory[iCateNo]).each(function () {
+                aHtml.push('<li><a href="' + this.link_product_list + '">' + this.name + '</a></li>');
             });
             aHtml.push('</ul>');
 
@@ -71,14 +69,14 @@ $(document).ready(function(){
             $('<div class="sub-category"></div>')
                 .appendTo(overNode)
                 .html(aHtml.join(''))
-                .find('li').mouseover(function(e) {
-                    $(this).addClass('over');
-                }).mouseout(function(e) {
-                    $(this).removeClass('over');
-                });
+                .find('li').mouseover(function (e) {
+                $(this).addClass('over');
+            }).mouseout(function (e) {
+                $(this).removeClass('over');
+            });
         },
 
-        close: function() {
+        close: function () {
             $('.sub-category').remove();
         }
     };
@@ -86,36 +84,43 @@ $(document).ready(function(){
     methods.get();
 
 
-    $('.xans-layout-category li').mouseenter(function(e) {
+    // Sub Menu
+    $('.xans-layout-category li').mouseenter(function (e) {
         var $this = $(this).addClass('on'),
-        iCateNo = Number(methods.getParam($this.find('a').attr('href'), 'cate_no'));
+            iCateNo = Number(methods.getParam($this.find('a').attr('href'), 'cate_no'));
 
         if (!iCateNo) {
             iCateNo = Number(methods.getParamSeo($this.find('a').attr('href')));
         }
 
         if (!iCateNo) {
-           return;
+            return;
         }
 
         methods.show($this, iCateNo);
-     }).mouseleave(function(e) {
+    }).mouseleave(function (e) {
         $(this).removeClass('on');
 
-          methods.close();
-     });
-    
-    $('.left_shop_btn2').hover(function(){
-    $(".left2").show();   
-},function(){
-     $(".left2").hide();   
-});
+        methods.close();
+    });
 
-    $('.left_shop_btn3').hover(function(){
-    $(".left3").show();   
-        },function(){
-     $(".left3").hide();   
-});  
-    
-    
+    $('.left_shop_btn1').hover(function () {
+        $(".left1").show();
+    }, function () {
+        $(".left1").hide();
+    });
+
+    $('.left_shop_btn2').hover(function () {
+        $(".left2").show();
+    }, function () {
+        $(".left2").hide();
+    });
+
+    $('.left_shop_btn3').hover(function () {
+        $(".left3").show();
+    }, function () {
+        $(".left3").hide();
+    });
+
+
 });

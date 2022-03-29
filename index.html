@@ -1,7 +1,7 @@
 <!--@layout(/layout/basic/layout.html)-->
-<!--@js(/aboutbrand/js/main_script.js)-->
 <!-- jQuery 1.8 or later, 33 KB -->
 
+<link rel="stylesheet" href="/aboutbrand/css/product_carousel.css"/>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <style>
@@ -44,6 +44,41 @@
 		line-height: 1.8em;
 	}
 
+
+	/*Brand*/
+	#brand .title {
+		margin: 45px 0 10px;
+	}
+
+	#brand > div {
+		padding: 5px 0 10px 0;
+	}
+
+	#brand:before, #brand:after {
+		content: '';
+		width: 1280px;
+		height: 1px;
+		background: #bfbfbf;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#brand h2.sub {
+		margin: 0;
+	}
+
+	#brand h3 {
+		font-size: 22px;
+		line-height: 1.8em;
+		color: #BC8383;
+		font-weight: normal;
+		padding-top: 8px;
+	}
+
+	#brand img {
+		padding: 30px 0 70px 0;
+	}
+
 	/*Love*/
 	#love .title {
 		margin: 45px 0 10px;
@@ -53,7 +88,7 @@
 		padding: 5px 0 10px 0;
 	}
 
-	#love:before, #love:after {
+	#love:before {
 		content: '';
 		width: 1280px;
 		height: 1px;
@@ -74,101 +109,8 @@
 		padding-top: 8px;
 	}
 
-	#love a {
-		display: inline-block;
-		font-size: 14px;
-		margin: 20px 0;
-		padding: 15px 55px;
-		border: 1px solid #BC8383;
-		color: #fff;
-		background-color: #BC8383;
-	}
-
-	#love a:hover {
-		border: 1px solid #BC8383;
-		color: #BC8383;
-		background-color: transparent;
-	}
-
 	#love img {
 		padding: 30px 0 70px 0;
-	}
-
-	/*Eveents*/
-	#events h1.title {
-		margin: 55px 0 0;
-	}
-
-	#events h2.sub {
-		margin: 10px 0 55px;
-	}
-
-	#media {
-		margin: 0 auto;
-		padding: 30px 0;
-		box-sizing: border-box;
-		width: 100%;
-	}
-
-	#media .container {
-		width: 1280px;
-		margin: 0 auto;
-	}
-
-	/*Share*/
-	#share .sub-title {
-		font-size: 25px;
-		color: #3D3A39
-	}
-
-	#share .title { /*color:#B86A6A;*/
-		margin: 15px 0 0 0;
-	}
-
-	#share span {
-		vertical-align: middle;
-		display: block;
-		margin: 20px 0 0;
-	}
-
-	#share h2 {
-		font-size: 27px;
-		float: right;
-		width: 150px;
-		text-align: right;
-		margin: 15px 0 30px;
-	}
-
-	#share h3 {
-		font-size: 22px;
-		margin: 10px 0 55px 0;
-	}
-
-	#share .instaIcon {
-		width: 30px;
-		margin: 3px 10px 0 0;
-	}
-
-	.m-banner-img {
-		width: 1280px;
-		background-size: cover;
-		box-sizing: border-box;
-	}
-
-	/*Insta Widget*/
-	.elfsight-app-f9aff175-22f9-4382-aefc-9223c6ef58f2 {
-		margin-top: 50px;
-		padding: 0;
-	}
-
-	.eapps-instagram-feed-posts-grid-load-more-text.eapps-instagram-feed-posts-grid-load-more-text-visible {
-		font-family: 'Marcellus' !important;
-	}
-
-	.eapps-instagram-feed-posts-grid-load-more {
-		width: 50%;
-		height: 3em;
-		line-height: 3em;
 	}
 </style>
 
@@ -249,7 +191,7 @@
 	}
 </style>
 
-
+<!--Main Slider-->
 <div class="swiper-container swiper-main">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide" style="background-image: url(/web/upload/banner/mar-ritual-pc.jpg); background-size:
@@ -264,7 +206,7 @@
 		</div>
 		<div class="swiper-slide" style="background-image: url(/web/upload/banner/mar-toner-pc.jpg); background-size:
 		cover; background-position: center;
-		cursor:pointer;" onclick="location.href='/product/detail.html?product_no=65'">
+		cursor:pointer;" onclick="location.href='/product/detail.html?product_no=16'">
 			<div class="context"></div>
 		</div>
 		<!--<div class="swiper-slide" style="background-image: url(/web/upload/banner/nov-trial-pc.jpg); background-size: cover; background-position: center;
@@ -301,158 +243,12 @@
 	<div class="swiper-pagination"></div>
 </div>
 
-
-<div id="best-seller" class="wrap">
-	<!--<h1><img src="/SkinImg/pd-title.png" alt="Premium Blends"></h1>-->
-	<h1 class="title">PREMIUM BLENDS</h1>
-	<h2 class="sub">제조 후 30일 이내로 만나는 화이트 트러플의 힘!<br>쿠오카 프리미엄 블렌드</h2>
-</div>
-
-
-<style>
-	/*Swiper-product*/
-	#Prod {
-		max-width: 1280px;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-
-	.swiper-product {
-		width: 1280px;
-	}
-
-	.swiper-product .swiper-wrapper li {
-		transform: translate3d(90px, 0px, 0px) !important;
-		width: 360px !important;
-	}
-
-	.swiper-product .thumbnail a img {
-		width: 360px;
-	}
-
-	.swiper-product .swiper-button-next, .swiper-product .swiper-button-prev {
-		position: relative;
-		color: rgba(61, 58, 57, 0.5);
-		top: -470px;
-	}
-
-	.swiper-product .swiper-button-next {
-		float: right;
-		margin-right: 10px;
-		background: url("/web/upload/asset/pd-left-arrow.png") no-repeat;
-	}
-
-	.swiper-product .swiper-button-prev {
-		margin-left: 20px;
-		background: url("/web/upload/asset/pd-right-arrow.png") no-repeat;
-	}
-
-	.swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after,
-	.swiper-button-prev::after, .swiper-container-rtl .swiper-button-next::after {
-		display: none;
-	}
-
-	/*Popup Style*/
-	.information {
-		text-align: center;
-		font-size: 1rem;
-		color: #3D3A39 !important;
-		height: 140px;
-	}
-
-	.name {
-		letter-spacing: 1px;
-	}
-
-	.name a {
-		text-transform: uppercase;
-		color: #3d3a39;
-	}
-
-	.price {
-		letter-spacing: 1px;
-	}
-
-	p.summary a {
-		color: #BC8383;
-		line-height: 1.5em;
-		word-break: keep-all;
-		display: block;
-	}
-
-	.icon {
-		margin: 0 0 10px;
-	}
-
-	p.name a span {
-		font-size: 24px !important;
-	}
-
-	p.summary a {
-		font-size: 14px;
-	}
-
-	.information .pdInfo, .capacity, .price {
-		font-size: 15px;
-	}
-
-	.summary {
-		width: 190px;
-		margin: 10px auto;
-	}
-
-	.name {
-		padding: 20px 0 10px;
-	}
-
-	.summary {
-		margin: 0 auto;
-	}
-
-	.quickView {
-		margin: 20px auto 90px;
-		display: block;
-		text-align: center;
-	}
-
-	.quickView a {
-		margin: 0 auto;
-		padding: 15px 50px;
-		display: inline-block;
-		background: #BC8383;
-		color: #fff;
-		opacity: 0;
-		transform: translate(0, 40%);
-		transition: all 0.3s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-	}
-
-	.quickView a.hovered {
-		transform: translate(0, 0);
-		opacity: 1;
-	}
-
-	.information .pdInfo, .capacity, .price {
-		display: inline-block;
-	}
-</style>
-
-
-<script>
-
-	$(document).ready(function () {
-		$("li[data-swiper-slide-index]").each(function () {
-			$(this).hover(function () {
-				$(this).find(".quickView a").addClass('hovered');
-			}, function () {
-				$(this).find(".quickView a").removeClass('hovered');
-			});
-		});
-	});
-
-
-</script>
-
 <div id="Prod" class="" module="product_listmain_6">
+	<div id="best-seller" class="wrap">
+		<!--<h1><img src="/SkinImg/pd-title.png" alt="Premium Blends"></h1>-->
+		<h1 class="title">PREMIUM BLENDS</h1>
+		<h2 class="sub">제조 후 30일 이내로 만나는 화이트 트러플의 힘!<br>쿠오카 프리미엄 블렌드</h2>
+	</div>
 	<!--
 		$count = 8
 		$basket_result = /product/add_basket.html
@@ -460,54 +256,8 @@
 	-->
 	<div class="swiper-product">
 		<div class="swiper-wrapper">
-			<!--Element-->
-			<li class="swiper-slide">
-				<div class="thumbnail" style="height: auto;">
-					<a href="/product/detail.html{$param}">
-						<img src="{$image_medium}" alt="">
-					</a></div>
-				<div class="information">
-					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a>
-					</p>
-					<!--상품관리 상품 목록 항목 중 용량 (추가항목) 표시-->
-					<p class="summary"><a href="/product/detail.html{$param}">{$summary_desc}</a></p>
-
-					<p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
-					<span class="pdInfo">
-						<a href="/product/detail.html{$param}">
-
-						<p class="capacity">{$custom_option1} / </p>
-						<p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat}<span class="notosans">원</span><span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
-						</a>
-						</span>
-					<p class="price {$product_sale_display|display}">{$product_custom}</p>
-				</div>
-				<span class="quickView"><a href="#none" onclick="{$zoom_action}">SHOP NOW</a></span>
-			</li>
-			<!--Element Clone-->
-			<li class="swiper-slide">
-				<div class="thumbnail" style="height: auto;">
-					<a href="/product/detail.html{$param}">
-						<img src="{$image_medium}" alt="">
-					</a></div>
-				<div class="information">
-					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a>
-					</p>
-					<!--상품관리 상품 목록 항목 중 용량 (추가항목) 표시-->
-					<p class="summary"><a href="/product/detail.html{$param}">{$summary_desc}</a></p>
-
-					<p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
-					<span class="pdInfo">
-						<a href="/product/detail.html{$param}">
-
-						<p class="capacity">{$custom_option1} / </p>
-						<p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat}<span class="notosans">원</span><span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
-						</a>
-						</span>
-					<p class="price {$product_sale_display|display}">{$product_custom}</p>
-				</div>
-				<span class="quickView"><a href="#none" onclick="{$zoom_action}">SHOP NOW</a></span>
-			</li>
+			<!--@import(/aboutbrand/html/product_carousel.html)-->
+			<!--@import(/aboutbrand/html/product_carousel.html)-->
 		</div>
 		<!-- Add Arrows -->
 		<div class="swiper-button-next"></div>
@@ -515,67 +265,14 @@
 	</div>
 </div>
 
-<!--<div id="Prod2" class="" module="product_listmain_6">
-	&lt;!&ndash;
-		$count = 6
-		$basket_result = /product/add_basket.html
-		$basket_option = /product/basket_option.html
-	&ndash;&gt;
-	<div class="pd-box-l">
-		<div class="swiper-button-prev"></div>
+<div id="brand" class="wrap">
+	<div>
+		<h1 class="title">FINE DINING SKINCARE, KUOCA</h1>
+		<h3 class="sub">극한의 신선함을 피부에</h3>
+		<a class="main-btn black-btn -mov" href="/brand-story.html">LEARN MORE</a>
 	</div>
-	<div class="swiper-product-example">
-		<div class="swiper-wrapper">
-			&lt;!&ndash;Element&ndash;&gt;
-			<li class="swiper-slide">
-				<div class="thumbnail" style="height: auto;"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
-				<div class="information">
-					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
-					&lt;!&ndash;상품관리 상품 목록 항목 중 용량 (추가항목) 표시&ndash;&gt;
-					<p class="summary"><a href="/product/detail.html{$param}">{$summary_desc}</a></p>
-
-					<p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
-					<span class="pdInfo">
-						<a href="/product/detail.html{$param}">
-
-						<p class="capacity">{$custom_option1} / </p>
-						<p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat}원<span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
-						</a>
-						</span>
-					<p class="price {$product_sale_display|display}">{$product_sale_price}</p>
-				</div>
-				<span class="quickView"><a href="#none" onclick="{$zoom_action}">SHOP NOW</a></span>
-			</li>
-			&lt;!&ndash;Element Clone&ndash;&gt;
-			<li class="swiper-slide">
-				<div class="thumbnail" style="height: auto;"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
-				<div class="information">
-					<p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
-					&lt;!&ndash;상품관리 상품 목록 항목 중 용량 (추가항목) 표시&ndash;&gt;
-					<p class="summary"><a href="/product/detail.html{$param}">{$summary_desc}</a></p>
-
-					<p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
-					<span class="pdInfo">
-						<a href="/product/detail.html{$param}">
-
-						<p class="capacity">{$custom_option1} / </p>
-						<p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat}원<span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
-						</a>
-						</span>
-					<p class="price {$product_sale_display|display}">{$product_sale_price}</p>
-				</div>
-				<span class="quickView"><a href="#none" onclick="{$zoom_action}">SHOP NOW</a></span>
-			</li>
-		</div>
-		&lt;!&ndash; Add Arrows &ndash;&gt;
-
-	</div>
-	<div class="pd-box-r">
-		<div class="swiper-button-next"></div>
-	</div>
-</div>-->
-
-
+	<img src="/asset/brand-story-bg.jpg" alt="Kuoca Love Project" width="1280px">
+</div>
 
 <!--Love Project Section Start-->
 <div id="love" class="wrap">
@@ -585,350 +282,14 @@
 			당신이 아름다워지는 만큼 세상도 아름다워지도록,<br>
 			당신이 선택한 캠페인에 판매금의 1%를.
 		</h3>
-		<a href="/love.html">LEARN MORE</a>
+		<a class="main-btn black-btn -mov" href="/love.html">LEARN MORE</a>
 	</div>
 	<img src="/web/upload/asset/public/love-img-renewal.jpg" alt="Kuoca Love Project" width="1280px">
-</div><!--End-->
+</div>
+<!--End-->
 
 
-<style>
-	.swiper-event {
-		width: 1280px;
-		height: 100%;
-		margin-bottom: 90px;
-	}
 
-	.swiper-event .swiper-slide {
-		text-align: center;
-		font-size: 18px;
-		background: #fff;
-		height: 640px;
-	}
-
-	a.event-content {
-		display: block;
-		width: 100%;
-		height: 100%;
-		cursor: pointer;
-	}
-
-	.event-banner {
-		display: flex;
-		height: 640px;
-		justify-content: flex-end;
-	}
-
-	.event-banner .event-content {
-		align-self: center;
-		margin-right: 125px;
-	}
-
-	.event-banner .event-content h2 {
-		font-size: 36px;
-		font-weight: bold;
-	}
-
-	.event-banner .event-content h3 {
-		font-size: 20px;
-		margin: 15px 0 10px 0;
-	}
-
-	.event-banner .event-content p {
-		font-size: 16px;
-		margin: 0 0 5px;
-	}
-
-	.event-banner .event-img {
-		margin-right: -5px;
-	}
-</style>
-
-<!--Events Section Start-->
-<!--<div id="events" class="wrap">
-	<div>
-		<h1 class="title">EVENTS</h1>
-		<h2 class="sub">공식몰에서만 만나볼 수 있는 다양한 혜택</h2>
-	</div>
-	<div class="event-banner">
-		<div class="event-content">
-			<h2>8월 우수<br>리뷰어 이벤트</h2>
-			<h3 class="notosans">
-				피부에 닿는 첫 스킨케어,<br>
-				토너 블렌드 퓨리파잉 정품 (130ml) 증정 </h3>
-			&lt;!&ndash;<p>쿠오카 토너 블렌드 130ml</p>&ndash;&gt;
-			<p class="notosans" style="font-size: 14px;">*한정 수량으로 조기 소진 가능</p>
-		</div>
-		<div class="event-img">
-			<img src="/web/upload/asset/review-banner-img-june.jpg" width="630">
-		</div>
-	</div>
-</div>--><!-- Swiper --><!--<div class="swiper-container swiper-event">
-	<div class="swiper-wrapper">
-		&lt;!&ndash;<div class="swiper-slide" style="background-image: url(/SkinImg/public/events02.jpg); background-size: cover;">
-			<a class="event-content" href="/event.html#anchor"></a>
-		</div>&ndash;&gt;
-		<div class="swiper-slide" style="background-image: url(/web/upload/asset/public/event-banner.jpg);">
-			<a class="event-content" href="/event.html#anchor"></a>
-		</div>
-	</div>
-	&lt;!&ndash; Add Pagination &ndash;&gt;
-	&lt;!&ndash;<div class="swiper-pagination"></div>&ndash;&gt;
-</div>-->
-
-
-<!--Media Section Start-->
-<style>
-	.tabs {
-		position: relative;
-		display: block;
-		width: 100%;
-		overflow: hidden;
-		margin: 60px auto;
-		font-weight: normal;
-		min-height: 510px;
-		z-index: 0;
-	}
-
-	/* Nav */
-	.tabs nav {
-		text-align: center;
-		position: absolute;
-		top: 220px;
-		width: 1280px;
-	}
-
-	.tabs nav ul {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		display: inline-block;
-	}
-
-	.tabs nav ul li {
-		border-bottom: 8px solid rgba(184, 106, 106, 0.25);
-		display: block;
-		float: left;
-		position: relative;
-		transition: all 0.5s ease-out;
-	}
-
-	.tabs nav li.tab-current {
-		border-bottom: 8px solid #B86A6A;
-		z-index: 100;
-		transition: all 0.5s ease-out;
-	}
-
-	.tabs nav li.tab-current:before, .tabs nav li.tab-current:after {
-		content: '';
-		position: absolute;
-		height: 1px;
-		right: 100%;
-		bottom: 0;
-	}
-
-	.tabs nav li.tab-current:after {
-		right: auto;
-		left: 100%;
-	}
-
-	.tabs nav a {
-		color: #becbd2;
-		display: block;
-		font-size: 1.45em;
-		line-height: 3.5;
-		padding: 0 10px;
-		white-space: nowrap;
-		width: 300px;
-		height: 170px;
-	}
-
-	.tabs nav a:hover {
-		color: #768e9d;
-	}
-
-	.tabs nav li.tab-current a {
-		color: #000;
-	}
-
-	.tabs nav li img {
-		width: 100%;
-		opacity: 0.3;
-		transition: all 0.5s ease-out;
-	}
-
-	.tabs nav li.tab-current img {
-		width: 100%;
-		opacity: 1;
-		transition: all 0.5s ease-out;
-	}
-
-	/* Content */
-	.content {
-		position: relative;
-		min-height: 5em;
-	}
-
-	.content section {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		font-size: 30px;
-		line-height: 1.7em;
-		text-align: center;
-		padding: 0; /* display: none; */
-		opacity: 0;
-		max-width: 1230px;
-		margin: 0 auto;
-		min-height: 5em;
-		transition: all 0.5s ease-out;
-	}
-
-	.content section.content-current { /* display: block; */
-		opacity: 1;
-		transition: all 0.5s ease-out;
-	}
-
-	/* Fallback example */
-	.no-js .content section {
-		display: block;
-		padding-bottom: 2em; /* border-bottom: 1px solid #47a3da; */
-	}
-</style>
-
-<div id="media" class="wrap">
-	<div class="container">
-		<div id="tabs" class="tabs">
-
-			<div class="content">
-				<section id="section-1">
-					"진귀한 성분, 혁신적인 블렌딩.<br>
-					에디터들의 마음을 사로잡은 피부를 위한 최고의 호사!"
-				</section>
-				<section id="section-2">
-					"빛나는 활약이 기대되는<br>
-					2020년 뷰티 루키 브랜드"
-				</section>
-				<section id="section-3">
-					"최상급 원료. 최고의 배합기술.<br>
-					최고의 효능. 백상예술대상만큼 빛이 났던 쿠오카"
-				</section>
-				<section id="section-4">
-					"미션 임파서블을 연상케 하는<br>
-					제조 과정. 완성된 제품은 기대를 저버리지 않는다"
-				</section>
-			</div>
-			<!-- Content -->
-			<nav>
-				<ul>
-					<li><a href="#section-1"><span><img src="/SkinImg/public/allure.png" alt="allure"></span></a></li>
-					<li><a href="#section-2"><span><img src="/SkinImg/public/marie.png" alt="marie claire"></span></a>
-					</li>
-					<li><a href="#section-3"><span><img src="/SkinImg/public/singles.png" alt="singles"></span></a></li>
-					<li><a href="#section-4"><span><img src="/SkinImg/public/bazzar.png" alt="bazaar"></span></a></li>
-				</ul>
-			</nav>
-
-		</div>
-		<!-- Tabs End -->
-	</div>
-</div><!--Tab Script-->
-<script>
-	/**
-	 * cbpFWTabs.js v1.0.0
-	 * http://www.codrops.com
-	 *
-	 * Licensed under the MIT license.
-	 * http://www.opensource.org/licenses/mit-license.php
-	 *
-	 * Copyright 2014, Codrops
-	 * http://www.codrops.com
-	 */
-	;(function (window) {
-
-		'use strict';
-
-		function extend(a, b) {
-			for (var key in b) {
-				if (b.hasOwnProperty(key)) {
-					a[key] = b[key];
-				}
-			}
-			return a;
-		}
-
-		function CBPFWTabs(el, options) {
-			this.el = el;
-			this.options = extend({}, this.options);
-			extend(this.options, options);
-			this._init();
-		}
-
-		CBPFWTabs.prototype.options = {
-			start: 0
-		};
-
-		CBPFWTabs.prototype._init = function () {
-			// tabs elemes
-			this.tabs = [].slice.call(this.el.querySelectorAll('nav > ul > li'));
-			// content items
-			this.items = [].slice.call(this.el.querySelectorAll('.content > section'));
-			// current index
-			this.current = -1;
-			// show current content item
-			this._show();
-			// init events
-			this._initEvents();
-		};
-
-		CBPFWTabs.prototype._initEvents = function () {
-			var self = this;
-			this.tabs.forEach(function (tab, idx) {
-				tab.addEventListener('click', function (ev) {
-					ev.preventDefault();
-					self._show(idx);
-				});
-			});
-		};
-
-		CBPFWTabs.prototype._show = function (idx) {
-			if (this.current >= 0) {
-				this.tabs[this.current].className = '';
-				this.items[this.current].className = '';
-			}
-			// change current
-			this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
-			this.tabs[this.current].className = 'tab-current';
-			this.items[this.current].className = 'content-current';
-		};
-
-		// add to global namespace
-		window.CBPFWTabs = CBPFWTabs;
-
-	})(window);
-	new CBPFWTabs(document.getElementById('tabs'));
-</script><!--End-->
-
-
-<!-- Share Section Start -->
-<div id="share" class="wrap">
-	<div>
-		<h1 class="sub-title">SHARE</h1>
-	</div>
-	<div>
-		<h1 class="title">#KUOCA</h1>
-		<h3 class="context">인스타그램에서 <strong>#쿠오카</strong>를 검색해보세요!</h3>
-		<!--<h2 class="sub">
-			<span>
-			<img class="instaIcon" src="/SkinImg/public/insta.png">#쿠오카
-			</span>
-		</h2>-->
-	</div>
-	<!-- Instagram Widget -->
-	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-	<div class="elfsight-app-f9aff175-22f9-4382-aefc-9223c6ef58f2" style="width: 1280px; margin: 0 auto;"></div>
-	<!-- end -->
-</div><!--End-->
 
 <!-- Initialize Swiper -->
 <script>
@@ -952,7 +313,7 @@
 		autoHeight: false
 	});
 
-	var mySwiper = new Swiper('.swiper-product', {
+	var productSwiper = new Swiper('.swiper-product', {
 		slidesPerView: 'auto',
 		centeredSlides: false,
 		spaceBetween: 10,
@@ -962,17 +323,6 @@
 		},
 		loop: true
 		// slidesPerGroupSkip: 1,
-	});
-
-	var eventSwiper = new Swiper('.swiper-event', {
-		/*pagination: {
-			el: '.swiper-pagination',
-		},*/
-		loop: false,
-		loopPreventSlide: false,
-		autoplay: {
-			stopOnLastSlide: true,
-		}
 	});
 </script>
 

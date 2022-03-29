@@ -1015,7 +1015,7 @@
 				</tbody>
 				<tbody module="product_option">
 				<tr>
-					<th scope="row">{$option_name}</th>
+					<th scope="row">{$option_name} <i class="xi-help" style="font-size:16px;"></i></th>
 					<td>{$form.option}<p class="value">{$option_desc}</p></td>
 				</tr>
 				<tr module="product_quantity">
@@ -1050,11 +1050,6 @@
 			<div class="guideArea">
 
 				<!--<p class="info {$limit_display|display}">(최소주문수량 {$minimum_limit}개 이상<span class="{$maximum_limit_display|display}"> / 최대주문수량 {$maximum_limit}개 이하</span>)</p><br><br>-->
-				<p>
-					<a href="/love.html">“기부로 바꾸는 세상! <i class="xi-help" style="font-size:16px;"></i><br>
-										 쿠오카는 판매금액의 1%를 고객님이 지정하신 활동에 기부합니다.”</a>
-
-				</p>
 				<span class="sizeGuide {$size_guide_display|display}"><a href="#none" class="{$size_guide_class}" product_no="{$product_no}">사이즈 가이드</a></span>
 			</div>
 
@@ -1533,12 +1528,10 @@
 		<div class="cont">
 			{$product_detail}
 		</div>
-		<!--@import(/detail-add.html)-->
 	</div>
 
 	<!-- //prdDetail -->
 	<!--Review Point Banner-->
-	<!--@import(/detail-point.html)-->
 
 	<div id="prdInfo" class="ec-base-tab">
 		<div class="detail_tab_area cboth">

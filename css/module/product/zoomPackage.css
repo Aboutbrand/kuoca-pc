@@ -39,7 +39,7 @@
 
 /* infoArea */
 .xans-product-zoom .infoArea { float:right; width:401px; }
-.xans-product-zoom .infoArea h3 { padding:22px 5px 20px 9px; border-bottom:1px solid #e8e8e8; font-size:14px; color:#2e2e2e; }
+.xans-product-zoom .infoArea h3 { padding:22px 5px 20px 9px; border-bottom:1px solid #e8e8e8; font-size:14px; color:#3D3A39; }
 .xans-product-zoom .infoArea h3 span { font-weight:normal; font-size:12px; }
 .xans-product-zoom .infoArea .icon { padding:0 0 0 10px; }
 .xans-product-zoom .infoArea .icon img { vertical-align:middle; }
@@ -210,7 +210,7 @@
 .differentialShipping .content ul { color:#757575; line-height:25px; }
 .differentialShipping .content li { overflow:hidden; }
 .differentialShipping .content li strong { float:left; font-weight:normal; }
-.differentialShipping .content li span { float:right; color:#2e2e2e; }
+.differentialShipping .content li span { float:right; color:#3D3A39; }
 .differentialShipping .content .info { margin:7px 0 0; padding:7px 0 0; border-top:1px dotted #b0b1b3; color:#80aeef; text-align:right; }
 
 .xans-product-zoom .shippingFee .differentialShipping { margin:0 0 0 -200px; }

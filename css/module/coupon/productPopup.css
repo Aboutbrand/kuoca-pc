@@ -26,6 +26,6 @@
 #dCouponDetail h3 { height:35px; padding:0 35px 0 19px; color:#fff; font-size:14px; line-height:35px; background:#495164; }
 #dCouponDetail h3 + a { position:absolute; right:20px; top:10px; }
 #dCouponDetail ul { padding:16px 10px 17px 20px; margin:25px 19px; background:#f5f5f5; }
-#dCouponDetail ul li { margin:7px 0 0; color:#2e2e2e; line-height:18px; }
+#dCouponDetail ul li { margin:7px 0 0; color:#3D3A39; line-height:18px; }
 #dCouponDetail ul li:first-child { margin-top:0; }
 #dCouponDetail ul + a { display:block; padding:12px 0; text-align:center; border-top:1px solid #d7d5d5; background:#fbfafa; }

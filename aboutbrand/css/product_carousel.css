@@ -1,0 +1,124 @@
+/*Swiper-product*/
+#Prod {
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.swiper-product {
+	width: 1280px;
+}
+
+.swiper-product .swiper-wrapper li {
+	transform: translate3d(90px, 0px, 0px) !important;
+	width: 360px !important;
+}
+
+.swiper-product .thumbnail a img {
+	width: 360px;
+}
+
+.swiper-product .swiper-button-next, .swiper-product .swiper-button-prev {
+	position: relative;
+	color: rgba(61, 58, 57, 0.5);
+	top: -510px;
+}
+
+.swiper-product .swiper-button-next {
+	float: right;
+	margin-right: 10px;
+	background: url("/web/upload/asset/pd-left-arrow.png") no-repeat;
+}
+
+.swiper-product .swiper-button-prev {
+	margin-left: 20px;
+	background: url("/web/upload/asset/pd-right-arrow.png") no-repeat;
+}
+
+.swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after,
+.swiper-button-prev::after, .swiper-container-rtl .swiper-button-next::after {
+	display: none;
+}
+
+/*Popup Style*/
+.information {
+	text-align: center;
+	font-size: 1rem;
+	color: #3D3A39 !important;
+	height: 140px;
+}
+
+.name {
+	letter-spacing: 1px;
+}
+
+.name a {
+	text-transform: uppercase;
+	color: #3d3a39;
+}
+
+.price {
+	letter-spacing: 1px;
+}
+
+p.summary a {
+	color: #BC8383;
+	line-height: 1.5em;
+	word-break: keep-all;
+	display: block;
+}
+
+.icon {
+	margin: 0 0 10px;
+}
+
+p.name a span {
+	font-size: 24px !important;
+}
+
+p.summary a {
+	font-size: 14px;
+}
+
+.information .pdInfo, .capacity, .price {
+	font-size: 15px;
+}
+
+.summary {
+	width: 190px;
+	margin: 10px auto;
+}
+
+.name {
+	padding: 20px 0 10px;
+}
+
+.summary {
+	margin: 0 auto;
+}
+
+.quickView {
+	margin: 20px auto 90px;
+	display: block;
+	text-align: center;
+}
+
+.quickView a {
+	margin: 0 auto;
+	padding: 15px 50px;
+	display: inline-block;
+	background: #BC8383;
+	color: #fff;
+	opacity: 0;
+	transform: translate(0, 40%);
+	transition: all 0.3s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+.quickView a.hovered {
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+.information .pdInfo, .capacity, .price {
+	display: inline-block;
+}

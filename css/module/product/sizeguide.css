@@ -1,4 +1,4 @@
-#popup .xans-product-sizeguide { height:667px; margin-top:-700px; border:1px solid #000; }
+#popup .xans-product-sizeguide { height:667px; margin-top:-700px; border:1px solid #3D3A39; }
 #popup .xans-product-sizeguide .content { max-height:580px; }
 .xans-product-sizeguide { position:fixed; top:50%; left:50%; width:820px; margin:-375px 0 0 -410px; max-height:720px; }
 .xans-product-sizeguide .content { overflow:auto; position:relative; max-height:685px; max-height:735px\9; zoom:1; }

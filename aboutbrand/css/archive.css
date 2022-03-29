@@ -1,0 +1,217 @@
+/* 메인 타임세일 관련 */
+.timesale_box {
+	line-height: 50px;
+	height: 50px;
+	color: #3D3A39;
+	font-size: 14px;
+	text-align: left;
+	margin: -10px 0 20px 0;
+	border-bottom: 1px solid #eae9e5;
+	background: url("/images/icon_time.png") no-repeat center left;
+	display: none;
+}
+
+.timesale_box .untilStart {
+	padding-left: 25px;
+	letter-spacing: 1px;
+	font-family: "Noto Sans KR", sans-serif !important;
+	font-weight: 500;
+}
+
+.timesale_box .saletime {
+	float: left;
+}
+
+.timesale_box .sale_per {
+	float: right;
+	color: #3D3A39;
+}
+
+.xans-search-result,
+.xans-product-relationlist,
+.xans-product-listnormal,
+.xans-product-listnew,
+.xans-product-listrecommend {
+	width: 1300px;
+	margin-left: -10px;
+}
+
+.xans-product-listmain {
+	width: 1300px;
+	margin-left: -10px;
+}
+
+/* 분류페이지 타이틀 */
+.xans-product-menupackage .title {
+	text-align: left;
+	margin: 0 auto 20px;
+}
+
+.xans-product-menupackage .title h2 {
+	font-size: 28px;
+	color: #3D3A39;
+	line-height: 40px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.xans-product-menupackage .title .banner {
+	margin: 0 0 10px;
+}
+
+.xans-product-menupackage .title .likeButton {
+	height: 25px;
+}
+
+.xans-product-menupackage .title .likeButton button {
+	padding: 0;
+	margin: 0;
+}
+
+.xans-product-menupackage .title .likeButton button img {
+	vertical-align: middle;
+}
+
+/* 목록페이지 중분류 리스트 스타일 */
+.xans-product-menupackage {
+	margin: 0 auto 40px;
+}
+
+.xans-product-menupackage .menuCategory {
+	border: 0;
+	text-align: left;
+	margin: 8px auto;
+	padding: 0px 0px;
+	width: 100%;
+	border-bottom: 2px solid #7f7f7f;
+}
+
+.xans-product-menupackage .menuCategory > li {
+	width: auto;
+	text-align: center;
+	font-size: 17px;
+	height: 27px;
+	padding: 0 0 0 20px;
+	margin: 0px 5px 10px;
+	position: relative;
+	background: url("/images/menuCategory_bar.png") no-repeat center left;
+}
+
+.xans-product-menupackage .menuCategory > li:first-child {
+	background: none;
+	padding: 0;
+}
+
+.xans-product-menupackage .menuCategory > li > ul > li > a:hover,
+.xans-product-menupackage .menuCategory > li > a:hover {
+	background: #fff;
+	text-decoration: none;
+	color: #3D3A39;
+	font-weight: 400;
+}
+
+.xans-product-menupackage .menuCategory > li.selected > a {
+	color: #3D3A39;
+	background-color: #fff;
+}
+
+.xans-product-menupackage .menuCategory > li > a {
+	background: none;
+	padding: 0;
+	font-weight: 400;
+	color: #3D3A39;
+	margin: 0 10px 0 0;
+	display: block;
+	font-size: 17px;
+	height: 27px;
+	line-height: 27px;
+	text-align: left;
+	letter-spacing: 0;
+}
+
+.xans-product-menupackage .menuCategory > li:hover .xans-product-children {
+	display: block;
+}
+
+.xans-product-children {
+	display: none;
+}
+
+.xans-product-menupackage .menuCategory > li > ul {
+	padding: 0;
+}
+
+/* 리스트 정렬 */
+.xans-product-normalmenu {
+	width: 100%;
+	margin: 40px auto 80px;
+	border-bottom: 1px solid #e9e9e9;
+	display: none;
+}
+
+.xans-product-normalmenu .prdCount {
+	color: #3D3A39;
+	line-height: 40px;
+	font-size: 12px;
+	padding: 0;
+}
+
+.xans-product-normalmenu .prdCount img {
+	padding-top: 9px;
+}
+
+.xans-product-normalmenu .function {
+	border: 0;
+	margin: 0 auto;
+}
+
+.xans-product-normalmenu .function .compare a,
+.xans-product-normalmenu ul#type li a {
+	color: #3D3A39;
+	font-size: 12px;
+	line-height: 40px;
+}
+
+.xans-product-normalmenu .function .compare a:hover,
+.xans-product-normalmenu ul#type li a:hover {
+	color: #3D3A39;
+	text-decoration: none;
+}
+
+.xans-product-normalmenu .function .compare {
+	display: inline;
+	padding: 6px;
+	border: 1px solid #ccc;
+	background-color: #f3f3f3;
+}
+
+.xans-product-normalmenu .function .btnCompare {
+	border: 0;
+}
+
+/* 페이징번호 색상변경 */
+.ec-base-paginate {
+	margin: 30px 0 50px;
+}
+
+.xans-product-normalpaging li a.this,
+.xans-product-additional .paging li a.this,
+.xans-board-paging li a.this,
+.xans-search-paging li a.this {
+	border-bottom: 3px solid #333;
+	color: #3D3A39;
+}
+
+.xans-product-normalpaging,
+.xans-search-paging {
+	border: 0;
+}
+
+.typeSub.ec-base-paginate li a.this {
+	color: #3D3A39;
+}
+
+/* 상품비교 가격 색상변경 */
+.xans-product-listcompare .boardWrite .prdPrice {
+	color: #3D3A39;
+}

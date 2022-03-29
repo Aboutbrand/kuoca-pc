@@ -169,7 +169,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 #mCafe24Order .ec-base-layer.typeWide.theme1 > h1 { background:#508bed; }
 #mCafe24Order .ec-base-layer.typeWide.theme1 .wrap { -webkit-flex:none; -moz-flex:none; -ms-flex:none; flex:none; height:auto; }
 /* dimmed */
-#mCafe24Order .dimmed { z-index:121; position:fixed; left:0; top:0; right:0; bottom:0; background-color:#000; opacity:0.5; filter:alpha(opacity=50); }
+#mCafe24Order .dimmed { z-index:121; position:fixed; left:0; top:0; right:0; bottom:0; background-color:#3D3A39; opacity:0.5; filter:alpha(opacity=50); }
 
 /* ec-base-button */
 #mCafe24Order .ec-base-layer .wrap + div > .ec-base-button,
@@ -243,7 +243,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 #mCafe24Order .ec-base-prdInfo .layerOptionModify .ec-base-button.gCenter { margin:0; }
 #mCafe24Order .ec-base-prdInfo .status { padding:6px 12px; line-height:26px; font-weight:bold; color:#508bed; background:#f1f1f1; }
 #mCafe24Order .ec-base-prdInfo .status:after { content:""; display:block; clear:both; }
-#mCafe24Order .ec-base-prdInfo .status .store { color:#000; font-weight:normal; }
+#mCafe24Order .ec-base-prdInfo .status .store { color:#3D3A39; font-weight:normal; }
 #mCafe24Order .ec-base-prdInfo .status .button { float:right; }
 #mCafe24Order .ec-base-prdInfo .status .button .btnBasic { font-weight:normal; background-color:#fff; }
 /* 품절상태 */
@@ -280,7 +280,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 #mCafe24Order .ec-base-table.typeView > table > tbody > tr:first-child > th,
 #mCafe24Order .ec-base-table.typeView > table > tbody > tr:first-child > td { border-top-width:0; }
 /* typeList */
-#mCafe24Order .ec-base-table.typeList { border-top:1px solid #000; border-bottom:1px solid #d9d9d9; color:#333; font-size:15px; }
+#mCafe24Order .ec-base-table.typeList { border-top:1px solid #3D3A39; border-bottom:1px solid #d9d9d9; color:#333; font-size:15px; }
 #mCafe24Order .ec-base-table.typeList thead th { border-left:1px solid #d9d9d9; padding:9px 7px; font-weight:bold; background:#f9fbfc; }
 #mCafe24Order .ec-base-table.typeList td { border-left:1px solid #d9d9d9; border-top:1px solid #d9d9d9; padding:8px; }
 #mCafe24Order .ec-base-table.typeList thead th:first-child,
@@ -347,7 +347,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 #header { position:fixed; z-index:120; top:0; left:0; right:0; min-width:320px; }
 #header .header { position:relative; padding:18px 0; text-align:center; vertical-align:top; background:#fff; }
 #header #titleArea { background:#4a5164; }
-#header .header h1 { margin:0 95px; font-size:18px; text-align:center; color:#000; }
+#header .header h1 { margin:0 95px; font-size:18px; text-align:center; color:#3D3A39; }
 #header .header h1 .link:hover { text-decoration:none; }
 #header .header h1 img { max-width:100%; vertical-align:middle; font-size:12px; max-height:30px; }
 #header .headerMenu { position:absolute; top:50%; margin-top:-15px; }
@@ -376,7 +376,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 #header { position:fixed; z-index:120; top:0; left:0; right:0; min-width:320px; }
 #header .header { position:relative; padding:18px 0; text-align:center; vertical-align:top; background:#fff; }
 #header .titleArea h1 { line-height:56px; color:#fff; font-size:20px; font-weight:normal; text-align:center; background:#4a5164; }
-#header .header h1 { margin:0 95px; font-size:18px; text-align:center; color:#000; }
+#header .header h1 { margin:0 95px; font-size:18px; text-align:center; color:#3D3A39; }
 #header .header h1 .link:hover { text-decoration:none; }
 #header .header h1 img { max-width:100%; vertical-align:middle; font-size:12px; max-height:30px; }
 #header .headerMenu { position:absolute; top:50%; margin-top:-15px; }
@@ -817,7 +817,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 #mCafe24Order .xans-product-detail .productSet .product .thumbnail img { max-width:100%; border:1px solid #d5d5d5; }
 #mCafe24Order .xans-product-detail .productSet .product .name { margin:0 0 7px; font-size:14px; color:#757575; line-height:1.25em; }
 #mCafe24Order .xans-product-detail .productSet .product .name a { color:#757575; word-wrap:break-word; }
-#mCafe24Order .xans-product-detail .productSet .product .price { margin:0 0 14px; font-size:14px; font-family:Tahoma, sans-serif; color:#000; line-height:1.25em; word-wrap:break-word; }
+#mCafe24Order .xans-product-detail .productSet .product .price { margin:0 0 14px; font-size:14px; font-family:Tahoma, sans-serif; color:#3D3A39; line-height:1.25em; word-wrap:break-word; }
 #mCafe24Order .xans-product-detail .productSet .product .qty { font-size:11px; color:#8f8f91; }
 #mCafe24Order .xans-product-detail .productSet .product .salePrice { font-size:13px; font-family:Tahoma, sans-serif; font-weight:bold; color:#66676a; }
 #mCafe24Order .xans-product-detail .productSet .product .option { margin:5px 0 0; padding:0 6px 6px; border:1px solid #d5d5d5; background:#f1f1f1; }
@@ -921,7 +921,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 #mCafe24Order .xans-product-detaildesign td ul.discountMember li a { float:left; margin:0 5px 5px 0; }
 /* discount_layer */
 #mCafe24Order .xans-product-detaildesign .discount_layer { margin:3px auto 0; padding:0 14px 14px; }
-#mCafe24Order .xans-product-detaildesign .discount_layer h3 { display:block; font-size:15px; color:#000; line-height:43px; }
+#mCafe24Order .xans-product-detaildesign .discount_layer h3 { display:block; font-size:15px; color:#3D3A39; line-height:43px; }
 #mCafe24Order .xans-product-detaildesign .discount_layer p,
 #mCafe24Order .xans-product-detaildesign .discount_layer ul { margin:7px 0; }
 #mCafe24Order .xans-product-detaildesign .discount_layer p.bullet,
@@ -1031,7 +1031,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-
 .shippingFee .wrap .btnClose:after { content:''; display:inline-block; position:absolute; top:25px; right:10px; width:28px; height:2px; border-radius:2px; background:#fff; transform:rotate(-45deg)}
 
 /* 결제진행바 */
-#progressPaybarBackground { position:absolute; z-index:120; left:0; top:0; background:#000; filter:alpha(opacity=40); opacity:0.4; -moz-opacity:0.4; height:100%; width:100% !important;  }
+#progressPaybarBackground { position:absolute; z-index:120; left:0; top:0; background:#3D3A39; filter:alpha(opacity=40); opacity:0.4; -moz-opacity:0.4; height:100%; width:100% !important;  }
 #progressPaybarView { position:fixed; padding:25px 0; margin:0 0 0 -180px; z-index:121; top:200px !important; left:50% !important;  width: 350px; font-size: 12px; text-align:center; border:5px solid #4764B3; border-radius:10px; background:#fff;}
 #progressPaybarView .graph {padding:0px 0 35px; color:#4764B3; font-weight:bold; font-size:20px; background:url(//img.echosting.cafe24.com/skin/base/layout/img_loading.gif) no-repeat center 38px; background-size:70%;}
 

@@ -4,7 +4,7 @@
 /* 주문완료 */
 .xans-order-result .orderInfo { width:380px; margin:45px auto 0; padding:0 0 10px 130px; color:#353535; line-height:1.5; background:url("//img.echosting.cafe24.com/skin/base/order/bg_result.png") no-repeat 0 10px; }
 .xans-order-result .orderInfo p { margin:0 0 20px; }
-.xans-order-result .orderInfo p strong { display:block; margin:0 0 7px; color:#000; font-size:20px; }
+.xans-order-result .orderInfo p strong { display:block; margin:0 0 7px; color:#3D3A39; font-size:20px; }
 .xans-order-result .orderInfo p a { color:#008bcc; text-decoration:underline; font-weight:bold; }
 .xans-order-result .orderInfo li strong { font-size:14px; letter-spacing:-1px; }
 

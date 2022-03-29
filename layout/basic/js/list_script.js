@@ -1,12 +1,15 @@
-jQuery(document).ready(function() {
-	/* 추천상품 순위 morenvy 정환 */
-	jQuery('.xans-product-listrecommend ul.grid2 .thumbnail .num').each(function(index) {
-		jQuery(this).append('0' + (index + 1));
-	});
+/*
+(function ($) {
+    var jQuery = $;
 
-	/* 신상품 순위 morenvy 정환 */
-	jQuery('.xans-product-listnew ul.grid2 .thumbnail .num').each(function(index) {
-		jQuery(this).append('0' + (index + 1));
-	});
-});
+    $(document).ready(function () {
+        $('.ec-base-product .spec').each(function () {
+            if($(this).find('li[rel="용량"]').length === 0) {
+                $(this).find('li[rel="판매가"]').addClass('noCapa')
+            }
+        })
 
+    });
+
+})(aboutbrandScript);
+*/

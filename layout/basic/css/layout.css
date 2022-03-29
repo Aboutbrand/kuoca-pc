@@ -18,7 +18,7 @@ input:focus, img:focus, embed:focus, map:focus {outline:none;}
 input:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px white inset; } /* 크롬에서 인풋박스 노란배경 안나오게 */
 
 /* 레이아웃 */
-body, code { font: 0.75em "Poppins", "Noto Sans KR",Verdana,Dotum,AppleGothic,sans-serif;color:#111;background:#fff;}
+/*body, code { font: 0.75em "Poppins", "Noto Sans KR",Verdana,Dotum,AppleGothic,sans-serif;color:#111;background:#fff;}*/
 input, select, textarea {font-family:"Noto Sans KR",sans-serif !important;}
 body {min-width:1280px;}
 #wrap {position:relative;width:100%;margin:0 auto;z-index:4;background-color:#fff;}
@@ -28,7 +28,6 @@ body {min-width:1280px;}
 #banner {position:absolute;top:0;left:0;width:90px; }
 #quick {position:absolute;top:0;right:0;width:90px; }
 .move {-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s;  transition: all 0.5s;}
-.width1280 {width:1280px;margin:0 auto;}
 .mrb0 {margin-bottom:0px !important;}
 .mrt10 {margin-top:10px;}
 .pdt30 {padding-top:30px;}
@@ -48,7 +47,15 @@ body {min-width:1280px;}
 
 /* header */
 #header {width:1280px;height:160px;position:relative;margin:0 auto;}
-.top_logo {display:table;height:160px;line-height:160px;position:absolute;left:0;top:0;}
+
+.top_logo {
+ display: table;
+ height: 160px;
+ line-height: 160px;
+ position: absolute;
+ left: 0;
+ top: 0;
+}
 .top_logo a {display:table-cell;vertical-align:middle;}
 .top_logo a img {vertical-align:middle;}
 .right_area {margin:0; position:absolute;right:0;top:75px;}
@@ -85,7 +92,7 @@ body {min-width:1280px;}
 #quick_search .xans-layout-searchheader input::-ms-input-placeholder {color:#555;}
 #quick_search .xans-layout-searchheader input::-webkit-input-placeholder {color:#555;} 
 #quick_search .xans-layout-searchheader input::-moz-placeholder {color:#555;}
-#quick_search .xans-layout-searchheader .search_btn {float:right;margin-top:10px; margin-right:10px; cursor:pointer;}
+#quick_search .xans-layout-searchheader .search_btn {float:right;margin-top:22px; margin-right:20px; cursor:pointer;}
 img.rotate { border-radius: 50em; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 img.rotate:hover { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 
@@ -251,8 +258,8 @@ ul.xans-layout-multishoplistitem li {float:left;margin:3px 0 0 5px;}
 /* 상세페이지 게시판 */
 .xans-product-additional .ec-base-button .gRight a { display:block;height:30px;width:60px;border:0; text-align:center;float:left; line-height:30px; font-size: 15px;background: url("/images/menuCategory_bar.png") no-repeat center left;padding:0 0 0 20px;font-weight:400;color:#222;margin:20px 0 0 20px;}
 
-.xans-product-additional .ec-base-button .gRight a:first-child { color: #000;background:none; }
-.xans-product-additional .ec-base-button .gRight a:hover {color: #000;}
+.xans-product-additional .ec-base-button .gRight a:first-child { color: #3D3A39;background:none; }
+.xans-product-additional .ec-base-button .gRight a:hover {color: #3D3A39;}
 .xans-product-additional div.board p.nodata {color:#111;font-weight:500;font-size:13px;}
 
 /* headingArea */
@@ -368,7 +375,7 @@ ul.xans-layout-multishoplistitem li {float:left;margin:3px 0 0 5px;}
 
 .xans-product-zoom .xans-product-action  {width:400px;}
 .xans-product-zoom .xans-product-action .ec-base-button { overflow:hidden; margin:0px; text-align:center; display:table; font-weight:400;}
-.sublayer_buy {text-align:center;width:398px; height:48px; border:1px solid #000; line-height:48px; color:#fff; background-color: #000; display:block; font-size:12px; vertical-align:middle; padding:0; font-weight:400;
+.sublayer_buy {text-align:center;width:398px; height:48px; border:1px solid #000; line-height:48px; color:#fff; background-color: #3D3A39; display:block; font-size:12px; vertical-align:middle; padding:0; font-weight:400;
  font-family:"Poppins", "Noto Sans KR",Verdana,Dotum,AppleGothic,sans-serif;margin:0px; letter-spacing:1px;}
 .sublayer_cart {text-align:center;width:398px; height:48px; border: 1px solid #c9c9c9; line-height:48px;color:#222; background-color: #fff; display:block;  font-size:12px; vertical-align:middle;padding:0;font-weight:400; font-family:"Poppins", "Noto Sans KR",Verdana,Dotum,AppleGothic,sans-serif;letter-spacing:1px; margin: 10px 0 0 0px;}
 .sublayer_wish {text-align:center;width:398px; height:48px; border: 1px solid #c9c9c9; line-height:48px;color:#222; background-color: #fff; display:block;  font-size:12px; vertical-align:middle;padding:0;font-weight:400; font-family:"Poppins", "Noto Sans KR",Verdana,Dotum,AppleGothic,sans-serif; letter-spacing:1px; margin: 10px 0 0 0px;}
@@ -395,7 +402,7 @@ ul.xans-layout-multishoplistitem li {float:left;margin:3px 0 0 5px;}
 .boardMain .leftArea .board { margin:0 23px 65px 0; }
 .boardMain .rightArea { float:right; width:50%; }
 .boardMain .rightArea .board { margin:0 0 65px 23px; }
-.boardMain .board h3 { margin:0 0 13px; height:28px; font-size:16px; color:#2e2e2e; border-bottom:2px solid #626672; }
+.boardMain .board h3 { margin:0 0 13px; height:28px; font-size:16px; color:#3D3A39; border-bottom:2px solid #626672; }
 .boardMain .board .btnLink { position:absolute; top:3px; right:0; }
 .boardMain .board .ec-base-table.typeList td { color:#a4a4a4; }
 .boardMain .board .ec-base-table.typeList td.title a,

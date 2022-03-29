@@ -1,4 +1,4 @@
- 
+
 
 /**
  * 움직이는 배너 Jquery Plug-in
@@ -52,6 +52,7 @@
  */
 $(document).ready(function(){
     $('#banner:visible, #quick:visible').floatBanner();
+    // runTopbanner();
 
     //placeholder
     $(".ePlaceholder input, .ePlaceholder textarea").each(function(i){
@@ -182,11 +183,9 @@ function returnTagetName(_this){
 });
 
 
-$(document).ready(function () {
-
+ $(document).ready(function () {
     var LabMenu = $('body').offset();
     $(window).scroll(function () {
-
         if ($(document).scrollTop() > LabMenu.top) {
             $('#header').addClass('gnbFixed');
             $('#wrap').addClass('down');
@@ -195,6 +194,5 @@ $(document).ready(function () {
             $('#wrap').removeClass('down');
         }
     });
-
 });
 

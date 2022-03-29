@@ -1,29 +1,20 @@
 <div id="footer">
 	<div class="cboth inner " module="Layout_footer">
-		<div class="bt_logo"><img src="/SkinImg/gnb-logo-w.png" width="160px"></div>
+		<div class="bt_logo">
+			<img src="/SkinImg/gnb-logo-w.png" width="160px">
+		</div>
 
+		<!-- //bt_info -->
 		<div class="bt_info">
-			<div class="bt_title">{$company_name}</div>
-			대표 : 유승협, 김지수 <br>
-			소재지 : {$mall_zipcode} {$mall_addr1} {$mall_addr2}<br>
-			사업자등록번호 : {$company_regno} <a href="http://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank">[사업자정보확인]</a><br>
-			통신판매업신고번호 : {$network_regno}<br>
-
-			개인정보보호책임자 : <a href="mailto:{$cpo_email}">최민정 ({$cpo_email})</a>
-		</div><!-- //bt_info -->
-
-		<div class="bt_cscenter">
-			<div class="bt_title">고객센터</div>
-			{$phone}<br>
-			{$cpo_email}<br>
-			평일 : 10:00 - 18:00<br>
-			마케팅,제휴문의 : hjlee@kuoca.com<br>
-			wholesale 문의 : byu@kuoca.com
-		</div><!-- //bt_cscenter -->
-
-		<div class="bt_runtime"><!-- 운영시간 및 계좌번호는 [상점관리 - 기본정보관리 - 내쇼핑몰정보 - CS운영시간] 에 작성하시면 자동출력됩니다. -->
-														{$runtime}
-		</div><!-- //bt_runtime -->
+			<div class="bt_title">{$company_name}
+			</div>
+			대표 : 유승협 김지수 / 소재지 : {$mall_zipcode} {$mall_addr1} {$mall_addr2} /<br>
+			사업자등록번호 : {$company_regno} <a href="http://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank">[사업자정보확인]
+		</a>/ 통신판매업신고번호 : {$network_regno}<br>
+			고객센터 : {$phone} / 문의 : {$cpo_email} / 마케팅, 제휴문의 : hjlee@kuoca.com /<br>
+			wholesale 문의 : byu@kuoca.com 개인정보보호책임자 :
+			<a href="mailto:{$cpo_email}">최민정 ({$cpo_email})</a>
+		</div>
 
 		<div class="bt_communitu">
 			<div class="bt_title">커뮤니티</div>
@@ -49,7 +40,7 @@
 			</ul><!-- //utilMenu -->
 
 			<div class="cboth escrow">고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG 사의 구매안전 서비스를 이용하실 수 있습니다. [ 나이스 올더게이트 ]</div>
-			<div class="">COPYRIGHT &copy; <span>Kuoca. </span> ALL RIGHTS RESERVED. HOSTING BY 카페24(주)</span></div>
+			<div class="copyright">COPYRIGHT &copy; <span>Kuoca. </span> ALL RIGHTS RESERVED. HOSTING BY 카페24(주)</span></div>
 
 			<div class="cboth bt_sns"><!-- 하단 SNS 링크 수정하는곳 -->
 
@@ -76,6 +67,15 @@
 		</div>
 	</div><!-- //inner -->
 </div><!-- //footer -->
+
+<!-- 배너매니저 스크립트 코드 -->
+<style>[df-banner-code][hidden] {
+	display: none !important
+}</style>
+<script>
+	var ord = Math.random();
+	document.write('<script src="/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/09c5d9a2b53192740afa80d9b3e8fc09.js?v=' + ord + '"><\/script>');
+</script>
 
 <!-- ADN Tracker[공통] start -->
 <script type="text/javascript">

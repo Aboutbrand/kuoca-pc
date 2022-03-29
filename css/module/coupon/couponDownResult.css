@@ -2,7 +2,7 @@
 .couponDownResult img { border:0; vertical-align:top; }
 .couponDownResult p { margin:0; }
 .couponDownResult .content { padding:30px 30px 20px; line-height:20px; }
-.couponDownResult .content .total { padding:0 0 0 6px; color:#000; font-size:12px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_triangle2.gif") no-repeat 0 6px; }
+.couponDownResult .content .total { padding:0 0 0 6px; color:#3D3A39; font-size:12px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_triangle2.gif") no-repeat 0 6px; }
 .couponDownResult .content .total .point { color:#6292db; }
 .couponDownResult .content .desc { padding:0 0 5px 6px; }
 .couponDownResult .content .couponList { overflow-y:auto; height:120px; padding:10px; border:1px solid #d8d8d8; line-height:18px; }

@@ -1,5 +1,5 @@
 #popup { width:500px; overflow-y:scroll; }
-.xans-product-restockemail .information h2 { font-size:14px; color:#2e2e2e; }
+.xans-product-restockemail .information h2 { font-size:14px; color:#3D3A39; }
 .xans-product-restockemail .information p { margin:5px 0 0; color:#757575; }
 .xans-product-restockemail .information .optionWrap { margin:20px 0 0; }
 .xans-product-restockemail .information .optionWrap > ul > li { overflow:hidden; padding:3px 0; }
@@ -23,7 +23,7 @@
 .xans-product-restockemail .information .optionWrap ul li .option .ec-product-button .ec-product-soldout a span { display:inline-block; width:100%; height:100%; cursor:not-allowed; color:#d7d7d7; }
 .xans-product-restockemail .information .optionWrap ul li .option .ec-product-button .ec-product-soldout.ec-product-selected { border-style:dashed; }
 .xans-product-restockemail .information .optionWrap ul li .option .ec-product-button .ec-product-disabled a { cursor:default; }
-.xans-product-restockemail .information .optionWrap ul li .option .ec-product-button .ec-product-disabled a span { display:inline-block; width:100%; height:100%; color:#000; background:#555; filter:alpha(opacity=30); opacity:0.3; }
+.xans-product-restockemail .information .optionWrap ul li .option .ec-product-button .ec-product-disabled a span { display:inline-block; width:100%; height:100%; color:#3D3A39; background:#555; filter:alpha(opacity=30); opacity:0.3; }
 .xans-product-restockemail .information .optionWrap ul li .option .ec-product-button .ec-product-selected { border:2px solid #495164; }
 .xans-product-restockemail .information .optionWrap ul li .option .ec-product-button .ec-product-selected a { margin:-1px; }
 .xans-product-restockemail .information .optionWrap ul li .option .ec-product-radio > li { display:inline-block; margin:0 0 3px; }
@@ -44,5 +44,5 @@
 .xans-product-restockemail .emailArea ul li { padding:0 0 0 15px; background:url("//img.echosting.cafe24.com/skin/base_ko_KR/common/bg_list.gif") no-repeat 0 7px; }
 .xans-product-restockemail .emailArea strong { color:#008bcc; }
 .xans-product-restockemail .emailArea .contact { padding:7px 10px; border-radius:5px; background:#f1f1f1; }
-.xans-product-restockemail .emailArea .contact strong { color:#2e2e2e; }
+.xans-product-restockemail .emailArea .contact strong { color:#3D3A39; }
 .xans-product-restockemail .emailArea input[type=text] { width:250px; }
