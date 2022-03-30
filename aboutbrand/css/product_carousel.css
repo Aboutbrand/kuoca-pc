@@ -49,7 +49,7 @@
 }
 
 .name {
-	letter-spacing: 1px;
+	padding: 20px 0 16px;
 }
 
 .name a {
@@ -67,11 +67,14 @@ p.summary a {
 	line-height: 19px;
 	word-break: keep-all;
 	display: block;
+	margin-bottom: 17px;
+	min-height: 40px;
 
 }
 
-.icon {
+.information > .icon {
 	margin: 0 0 10px;
+	display: none;
 }
 
 p.name a span {
@@ -86,15 +89,7 @@ p.name a span {
 }
 
 .summary {
-	width: 190px;
-	margin: 10px auto;
-}
-
-.name {
-	padding: 20px 0 10px;
-}
-
-.summary {
+	width: 180px;
 	margin: 0 auto;
 }
 

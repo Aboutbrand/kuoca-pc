@@ -38,16 +38,16 @@ h2.title, h3.sub {
 
 /*Brand*/
 #brand .title {
-	margin: 45px 0 10px;
+	margin: 70px 0 10px;
 }
 
 #brand > div {
-	padding: 5px 0 10px 0;
+	padding: 5px 0 0 0;
 }
 
 #brand:before, #brand:after {
 	content: '';
-	width: 1280px;
+	width: 1170px;
 	height: 1px;
 	background: #bfbfbf;
 	display: block;
@@ -59,34 +59,29 @@ h2.title, h3.sub {
 }
 
 #brand img {
-	padding: 30px 0 70px 0;
+	padding: 51px 0 45px 0;
 }
 
 /*Love*/
 #love .title {
-	margin: 45px 0 10px;
+	margin: 70px 0 10px;
 }
 
 #love > div {
 	padding: 5px 0 10px 0;
 }
 
-#love:before {
+/*#love:before {
 	content: '';
 	width: 1280px;
 	height: 1px;
 	background: #bfbfbf;
 	display: block;
 	margin: 0 auto;
-}
+}*/
 
 #love h3.sub {
-	margin: 15px 0 40px;
-}
-
-#love h3 {
-	/*color: #BC8383;*/
-	padding-top: 8px;
+	margin: 22px 0 28px;
 }
 
 #love img {

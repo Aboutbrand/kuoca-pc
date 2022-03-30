@@ -935,12 +935,13 @@ div.layerProgress {
 }
 
 .black-btn {
-	border: 1px solid #3D3A39;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 27px;
 	text-align: center;
 	letter-spacing: 0.235em;
+	display: inline-block;
+	border: 1px solid #3D3A39;
 }
 
 /*.black-btn:hover {
@@ -3284,8 +3285,7 @@ div.ec-base-help > h3 {
 }
 
 .btnLogin_wh {
-	height: 50px;
-	line-height: 50px;
+	padding: 10px 30px;
 	font-size: 14px;
 	display: block;
 	background-color: transparent;
@@ -3804,7 +3804,7 @@ section.modalWindow {
 	width: 900px;
 	min-height: 200px;
 	margin-left: -450px;
-	background: #EFE8E4;
+	background: #fff;
 	cursor: default;
 }
 
@@ -3821,8 +3821,27 @@ section.modal.overlay {
 }
 
 section.modalWindow section.modalWrapper {
-	margin: 60px 0;
-	padding: 15px;
+	margin: 0 auto;
+	padding: 100px 0 90px;
 	text-align: center;
 	line-height: 20px !important;
+}
+
+section.modalWindow .modalWrapper h3 {
+	margin: 30px 0 20px;
+}
+
+section.modalWindow .modalWrapper p {
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: normal;
+}
+
+section.modalWindow .modalWrapper .black-btn {
+	font-weight: 400;
+	font-size: 13px !important;
+	margin-top: 36px;
+	/*line-height: 0;*/
+	letter-spacing: 0;
+	font-weight: 400;
 }
