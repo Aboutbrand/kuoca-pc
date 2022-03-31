@@ -287,7 +287,7 @@ ul.xans-layout-multishoplistitem li {float:left;margin:3px 0 0 5px;}
 .xans-product-detail .infoArea th span {font-size:12px !important;color:#888 !important;font-weight:400 !important;}
 .xans-product-detail .infoArea td span {font-size:12px !important;color:#888 !important;}
 .xans-product-detail .infoArea td span #span_product_price_sale {color:#111 !important;} 
-.xans-product-detail .infoArea td span #span_product_price_text {color:#111 !important;} 
+.xans-product-detail .infoArea td span #span_product_price_text {}
 .xans-product-detail .infoArea tr[rel="상품명"],
 .xans-product-detail .infoArea tr[rel="상품요약정보"] {display:none;}
 

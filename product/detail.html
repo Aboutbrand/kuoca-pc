@@ -10,6 +10,13 @@
 <!--@css(/css/module/product/detail.css)-->
 
 <style>
+	tbody.xans-element-:nth-child(3) > tr:nth-child(1) > th:nth-child(1):after {
+		content: '[필수]';
+		font-size: 14px;
+		display: inline-block;
+		color: var(--sub-color-first);
+	}
+
 
 	#wrap {
 		margin: 0;
@@ -47,7 +54,9 @@
 		padding-top: 10px;
 	}
 
+	/*필수 옵션 선택 안내 문구 삭제*/
 	.xans-product-detail .infoArea .xans-product-option .value {
+		display: none;
 		color: #BC8383;
 		margin-top: 5px;
 	}
@@ -59,8 +68,8 @@
 	}
 
 	.xans-product .infoArea td span {
-		color: #2B2B2B !important;
 		font-size: 14px !important;
+		font-weight: normal !important;
 	}
 
 	.xans-product .infoArea .xans-product-option .ec-product-button li a span {
@@ -1015,7 +1024,7 @@
 				</tbody>
 				<tbody module="product_option">
 				<tr>
-					<th scope="row">{$option_name} <i class="xi-help" style="font-size:16px;"></i></th>
+					<th scope="row">{$option_name}</th>
 					<td>{$form.option}<p class="value">{$option_desc}</p></td>
 				</tr>
 				<tr module="product_quantity">
@@ -1047,11 +1056,11 @@
 				</tbody>
 			</table>
 
-			<div class="guideArea">
+			<!--<div class="guideArea">
 
-				<!--<p class="info {$limit_display|display}">(최소주문수량 {$minimum_limit}개 이상<span class="{$maximum_limit_display|display}"> / 최대주문수량 {$maximum_limit}개 이하</span>)</p><br><br>-->
+				&lt;!&ndash;<p class="info {$limit_display|display}">(최소주문수량 {$minimum_limit}개 이상<span class="{$maximum_limit_display|display}"> / 최대주문수량 {$maximum_limit}개 이하</span>)</p><br><br>&ndash;&gt;
 				<span class="sizeGuide {$size_guide_display|display}"><a href="#none" class="{$size_guide_class}" product_no="{$product_no}">사이즈 가이드</a></span>
-			</div>
+			</div>-->
 
 
 			<div class="productSet" module="product_setproduct">

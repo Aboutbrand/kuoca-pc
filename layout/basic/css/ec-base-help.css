@@ -1,6 +1,9 @@
-span.ec-base-help,
-p.ec-base-help,
-ul.ec-base-help li { margin:2px 9px; padding:1px 0 1px 20px; line-height:1.4; background:url('//img.echosting.cafe24.com/skin/base/common/ico_info.gif') no-repeat 0 2px; }
+span.ec-base-help, p.ec-base-help, ul.ec-base-help li {
+	margin: 10px 100px;
+	padding: 1px 0 1px 20px;
+	line-height: 1.4;
+	background: url('//img.echosting.cafe24.com/skin/base/common/ico_info.gif') no-repeat 0 2px;
+}
 
 div.ec-base-help { margin:20px 0; border:1px solid #d6d4d4; line-height:18px; }
 div.ec-base-help > h2,

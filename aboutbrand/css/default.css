@@ -90,6 +90,15 @@ h3 {
 	position: relative;
 	width: 1280px;
 	margin: 0 auto;
+	font-size: 0;
+}
+
+.wrapper {
+	font-size: 0;
+}
+
+.top-bg {
+	font-size: 0;
 }
 
 .flex {
@@ -1532,6 +1541,11 @@ input[type="checkbox"] {
 
 .xans-product-detail .infoArea td span #span_product_price_text {
 	color: #3D3A39 !important;
+	font-weight: normal !important;
+}
+
+#span_product_price_text {
+	font-weight: normal !important;
 }
 
 .xans-product-detail .infoArea tr[rel="상품명"],
@@ -3832,16 +3846,15 @@ section.modalWindow .modalWrapper h3 {
 }
 
 section.modalWindow .modalWrapper p {
-	font-size: 15px;
-	line-height: 22px;
+	font-size: 13px;
+	line-height: 19px;
 	font-weight: normal;
 }
 
 section.modalWindow .modalWrapper .black-btn {
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 13px !important;
-	margin-top: 36px;
+	margin: 36px 7px 0 0;
 	/*line-height: 0;*/
 	letter-spacing: 0;
-	font-weight: 400;
 }
