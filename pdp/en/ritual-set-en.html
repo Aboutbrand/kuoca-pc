@@ -1,0 +1,410 @@
+<style>
+	/*Whole Wrapper*/
+	.ritual-content {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	/*Prod Wrapper*/
+	.ritual-prod {
+		display: flex;
+		flex-direction: column;
+		margin: 90px 0;
+		color: #585757;
+		font-family: "Marcellus", "Nanum Myeongjo";
+	}
+
+	/*Text and link, button style*/
+	.ritual-prod h1 {
+		font-size: 35px !important;
+		font-weight: normal;
+	}
+
+	.ritual-travel h1::before {
+		content: "";
+		width: 64px;
+		height: 46px;
+		background-image: url("/web/upload/detail/ritual-set/gift-letter.png");
+		background-size: 64px 46px;
+		position: absolute;
+		left: 160px;
+		top: -35px;
+	}
+
+	.ritual-prod h2 {
+		font-size: 28px !important;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	/*Toner Pury Margin Exception*/
+	.ritual-toner > div:nth-child(2) > h2:nth-child(2) {
+		margin-top: -7px;
+	}
+
+	.ritual-prod h3 {
+		font-size: 18px !important;
+		margin: 5px 0 10px !important;
+		font-weight: normal;
+	}
+
+	.ritual-prod p {
+		font-size: 19px !important;
+	}
+
+	.ritual-prod a {
+		font-size: 12px;
+		display: inline-block;
+		color: #986C6E;
+		padding: 10px 30px;
+		margin: 30px 0 0;
+		background-color: transparent;
+		border: 1px solid #986c6e;
+		border-radius: 3px;
+	}
+
+	/*Serum Blend Button Exception*/
+	div.content-wrapper:nth-child(1) > a:nth-child(5) {
+		margin: 15px 0 0;
+	}
+
+	div.ritual-travel div.content-wrapper a {
+		margin: 20px 0 0;
+	}
+
+	.ritual-prod a:hover {
+		background-color: #986c6e;
+		color: #ffffff;
+		border: 1px solid #986c6e;
+		border-radius: 3px;
+	}
+
+	.content-wrapper {
+		display: inline-block;
+		margin: 80px 0 0;
+		width: 630px;
+		height: 366px;
+	}
+
+	/*Prd Img*/
+	.img-wrapper {
+		display: inline-block;
+		width: 366px;
+		height: 366px;
+	}
+
+	.ritual-toner, .ritual-serum, .ritual-travel {
+		display: block;
+	}
+
+	.ritual-serum {
+		position: relative;
+		top: -30px;
+	}
+
+	.ritual-travel {
+		position: relative;
+		top: -60px;
+	}
+
+	.ritual-toner .content-wrapper,
+	.ritual-travel .content-wrapper {
+		float: right;
+		position: relative;
+		top: -48px;
+		right: 58px;
+	}
+
+	.ritual-serum .content-wrapper {
+		float: left;
+		position: relative;
+		top: 5px;
+		left: 72px;
+	}
+
+	.ritual-travel .content-wrapper {
+		top: 0;
+	}
+
+	.ritual-serum .img-wrapper {
+		position: relative;
+		right: 40px;
+	}
+
+	.ritual-toner img,
+	.ritual-travel img {
+		padding-left: 50px;
+	}
+
+	.ritual-serum img {
+		padding-right: 0;
+	}
+
+	/*Mobile*/
+	@media all and (max-width: 1280px) {
+		.ritual-top {
+			display: block;
+			width: 100%;
+			height: 158vw;
+			background-image: url("/web/upload/detail/ritual-set/ritual-top-mo.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		.ritual-content > img:nth-child(2) /*top-banner-mo*/,
+		.ritual-toner > div:nth-child(1) > img:nth-child(2) /*toner-img-pc*/
+		{
+			display: block;
+		}
+
+		.ritual-content > img:nth-child(1) /*top-banner-pc*/,
+		.ritual-toner > div:nth-child(1) > img:nth-child(1) /*toner-img-pc*/
+		{
+			display: none;
+		}
+
+		.content-wrapper {
+			display: inline-block;
+			margin: 0;
+			width: 45%;
+			height: unset;
+		}
+
+		.img-wrapper {
+			display: inline-block;
+			position: relative;
+			width: 44%;
+			height: unset;
+		}
+
+		.ritual-toner, .ritual-serum, .ritual-travel {
+			display: block;
+		}
+
+		.ritual-serum {
+			position: relative;
+			top: -6.5vw;
+		}
+
+		.ritual-travel {
+			top: -7.5vw;
+		}
+
+		.ritual-toner .content-wrapper {
+			float: unset;
+			position: relative;
+			top: -8.5vw;
+			right: -2vw;
+		}
+
+		.ritual-serum .content-wrapper {
+			float: unset;
+			position: relative;
+			top: 10.5vw;
+			left: -1vw;
+		}
+
+		.ritual-travel .content-wrapper {
+			float: unset;
+			position: relative;
+			top: 13vw;
+			left: 2vw;
+		}
+
+		/*Ritual Margin Exception*/
+		.ritual-travel > div:nth-child(2) > h2:nth-child(2) {
+			margin: -0.6vw;
+		}
+
+		.ritual-toner .img-wrapper,
+		.ritual-travel .img-wrapper {
+			left: -3vw;
+		}
+
+		.ritual-serum .img-wrapper {
+			right: -3vw;
+			width: 44%;
+		}
+
+		.ritual-toner img,
+		.ritual-travel img {
+			padding-left: 0;
+		}
+
+		.ritual-serum img {
+			padding-right: 0;
+			padding-left: 0vw;
+		}
+
+		.ritual-serum p {
+			width: 65%;
+		}
+
+		.ritual-prod {
+			margin: 10vw 0 3vw;
+		}
+
+		.ritual-prod h1 {
+			font-size: 4.4vw !important;
+			margin: 0 !important;
+		}
+
+		.ritual-travel h1::before {
+			width: 8vw;
+			height: 5.6vw;
+			background-size: 8vw 5.6vw;
+			left: 4vw;
+			top: -5vw;
+			position: absolute;
+		}
+
+		.ritual-prod h2 {
+			font-size: 3.3vw !important;
+			margin: 0.5vw 0 0;
+		}
+
+		/*Toner Pury Margin Exception*/
+		.ritual-toner > div:nth-child(2) > h2:nth-child(2) {
+			margin-top: 0;
+		}
+
+		.ritual-prod h3 {
+			font-size: 2.7vw !important;
+			margin: 1vw 0 0.5vw !important;
+			font-weight: normal;
+		}
+
+		.ritual-prod p {
+			font-size: 2.8vw !important;
+			text-align: center;
+			margin: 0 auto;
+			word-break: keep-all;
+		}
+
+		.ritual-prod a {
+			font-size: 2.1vw;
+			display: inline-block;
+			color: #986C6E;
+			padding: 1.3vw 4.2vw;
+			margin: 2.5vw 0;
+			background-color: transparent;
+			border: 1px solid #986c6e;
+			border-radius: 3px;
+			letter-spacing: 0.5px;
+		}
+
+		/*Ritual Travel Button Exception*/
+		div.ritual-travel div.content-wrapper a {
+			margin: 3.5vw 0;
+		}
+
+		/*Margin Adjust*/
+		.ritual-toner > div:nth-child(2) > h2:nth-child(2) {
+			margin-bottom: 1.5vw;
+		}
+
+		div.content-wrapper:nth-child(1) > h1:nth-child(1) {
+			margin-bottom: 1.5vw !important;
+		}
+
+		.ritual-travel > div:nth-child(2) > h1:nth-child(1) {
+			margin-bottom: 1.5vw !important;
+		}
+
+	}
+
+	/*Pc*/
+	@media all and (min-width: 1280px) {
+		.ritual-top {
+			background-image: url("/web/upload/detail/ritual-set/ritual-top-pc.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 1875px;
+		}
+
+		.ritual-content > img:nth-child(1) /*top-banner-pc*/,
+		.ritual-toner > div:nth-child(1) > img:nth-child(1) /*toner-img-pc*/
+		{
+			display: block;
+		}
+
+		.ritual-content > img:nth-child(2) /*top-banner-mo*/,
+		.ritual-toner > div:nth-child(1) > img:nth-child(2) /*toner-img-pc*/
+		{
+			display: none;
+		}
+
+		/*Margin Adjust*/
+		div.content-wrapper:nth-child(1) > h1:nth-child(1) {
+			margin-bottom: 10px;
+		}
+
+		.ritual-toner > div:nth-child(2) > h2:nth-child(2) {
+			margin-bottom: 10px;
+		}
+
+		.ritual-travel > div:nth-child(2) > h1:nth-child(1) {
+			margin-bottom: 10px;
+		}
+
+	}
+
+</style>
+<!--
+<div class="ritual-top"></div>
+<div class="ritual-content">
+	<img class="gift-pc" src="/web/upload/detail/ritual-set/gift.jpg"/>
+	<img class="gift-mo" src="/web/upload/detail/ritual-set/gift-mo.jpg"/>
+	<div class="ritual-prod">
+		<div class="ritual-toner">
+			<div class="img-wrapper">
+				<img src="/web/upload/detail/ritual-set/ritual-toner.jpg"/>
+				<img src="/web/upload/detail/ritual-set/ritual-toner-mo.jpg"/>
+			</div>
+			<div class="content-wrapper">
+				<h1>TONER BLEND</h1>
+				&lt;!&ndash;<h2>PURIFYING<br />토너 블렌드 퓨리파잉</h2>&ndash;&gt;
+				<h2 style="font-weight: normal">PURIFYING</h2>
+				<h2>토너 블렌드 퓨리파잉</h2>
+				<h3>130ml</h3>
+				<p>각질 케어 및 피부 진정 효과과<br />탁월한 저자극 토너</p>
+				<a class="-mov" href="/product/detail.html?product_no=10">LEARN MORE</a>
+			</div>
+		</div>
+
+		<div class="ritual-serum">
+			<div class="content-wrapper">
+				<h1>SERUM BLEND</h1>
+				<h2>세럼 블렌드</h2>
+				<h3>30ml</h3>
+				<p>매일 찾아가는 보습 세럼</p>
+				<a class="-mov" href="/product/detail.html?product_no=11">LEARN MORE</a>
+			</div>
+			<div class="img-wrapper">
+				<img src="/web/upload/detail/ritual-set/ritual-serum.jpg"/>
+			</div>
+		</div>
+
+		<div class="ritual-travel">
+			<div class="img-wrapper">
+				<img src="/web/upload/detail/ritual-set/ritual-travel.jpg"/>
+			</div>
+			<div class="content-wrapper">
+				<h1 style="line-height: 1.1">2021 LIMITED<br />TRAVEL KIT</h1>
+				<h2>2021 한정판 트래블 키트</h2>
+				<h3>토너 5ml / 세럼 5ml / 크림 5ml</h3>
+				&lt;!&ndash;<p>각질 케어 및 피부 진정 효과과<br />탁월한 저자극 토너</p>&ndash;&gt;
+				<a class="-mov" href="/product/detail.html?product_no=10">LEARN MORE</a>
+			</div>
+		</div>
+
+	</div>
+</div>-->
+
+<div style="width:100%; margin:0 auto;">
+	<img src="/web/upload/detail/ritual-set/en/pc/top.jpg" width="100%">
+	<a href="/product/toner-blend-purifying/72/" style="display:inline-block; box-sizing:border-box; padding:10px 10px 0 10px;"><img src="/web/upload/detail/ritual-set/en/pc/toner.jpg" width="100%"></a>
+	<a href="/product/serum-blend/58/" style="display:inline-block; box-sizing:border-box; padding:10px 10px 0 10px;"><img src="/web/upload/detail/ritual-set/en/pc/serum.jpg" width="100%"></a>
+	<a href="/product/travel-kit/71/" style="display:inline-block; box-sizing:border-box; padding:10px 10px 0 10px;"><img src="/web/upload/detail/ritual-set/en/pc/travel.jpg" width="100%"></a>
+</div>

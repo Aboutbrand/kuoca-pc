@@ -1,0 +1,21 @@
+/*공구 첫번째 1행 2번째*/
+.ec-base-product ul.grid3 > li:nth-child(n+2):nth-child(-n+3) {
+	/*background: red;*/
+}
+
+.ec-base-product ul.grid3 li:nth-child(n+2):nth-child(-n+3) ul {
+	margin: 0 auto 10px;
+	width: 100%;
+	min-height: 116px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.ec-base-product ul.grid3 li:nth-child(n+2):nth-child(-n+3) .spec li[rel="상품목록 효과"] {
+	margin-top: 6%;
+}
+
+.ec-base-product ul.grid3 li:nth-child(n+2):nth-child(-n+3) .spec li[rel="용량"] {
+	margin-bottom: auto;
+}

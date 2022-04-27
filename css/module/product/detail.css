@@ -30,7 +30,11 @@
 */
 .xans-product-detail .imgArea .keyImg .thumbnail { display:inline-block; position:relative; max-width:100%; }
 .xans-product-detail .imgArea .keyImg .prdIcon { position:absolute; top:0; left:0; width:100%; height:100%; background-repeat:no-repeat; }
-.xans-product-detail .imgArea .keyImg img { max-width:630px; border:1px solid #ececec; }
+
+.xans-product-detail .imgArea .keyImg img {
+    max-width: 630px;
+    border: 1px solid #ececec;
+}
 /*
 .xans-product-detail .imgArea .listImg { overflow:hidden; width:346px; margin:30px auto 0; }
 .xans-product-detail .imgArea .listImg ul { min-width:400px; height:77px; margin:0 0 0 2px; font-size:0; line-height:0; }

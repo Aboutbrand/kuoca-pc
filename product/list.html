@@ -1,20 +1,4 @@
 <!--@layout(/layout/basic/layout.html)-->
-<script>
-	$(document).ready(function () {
-		$('.ec-base-product .spec').each(function () {
-
-			if ($(this).find('li[rel="용량"]').length === 0) {
-				$(this).find('li[rel="판매가"]').addClass('noCapa')
-			}
-			if ($(this).find('li[rel="할인판매가"]').length === 1) {
-				$(this).find('li[rel="할인판매가"]').addClass('discount')
-				// $(this).find('li[rel="판매가"]').addClass('discount').removeClass('noCapa')
-				$(this).find('li[rel="판매가"] span').hide();
-			}
-		})
-	});
-</script>
-<!--js(/layout/basic/js/list_script.js)-->
 <script type="text/javascript" src="/layout/basic/js/list_script.js"></script>
 <style>
 	.ec-base-paginate {
@@ -480,7 +464,7 @@
 				} else {
 					items = productList
 				}
-				console.log(items)
+				// console.log(items)
 
 
 				dataLayer.push({

@@ -21,6 +21,6 @@
         });
     });
 
-	$('.delv_price_B').text("전 제품 무료");
+	// $('.delv_price_B').text("전 제품 무료");
 	$('.xans-product-detail .infoArea table tbody:nth-child(3) tr th').append('<a id="pdpDonation" href="/love.html"><i class="xi-help" style="font-size:16px;"></i></a>')
 })(aboutbrandScript);

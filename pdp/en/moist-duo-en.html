@@ -1,0 +1,271 @@
+<style>
+	.ritual-top {
+		background-image: url("/web/upload/detail/moist-duo/moist-top-re.jpg");
+		height: 747px;
+	}
+
+	.moist-content {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.moist-prod {
+		display: flex;
+		flex-direction: column;
+		margin: 75px 0;
+		color: #585757;
+		font-family: "Marcellus", "Nanum Myeongjo";
+	}
+
+	.moist-prod h1 {
+		font-size: 35px !important;
+		font-weight: normal;
+	}
+
+	.moist-prod h2 {
+		font-size: 28px !important;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	.moist-prod h3 {
+		font-size: 18px !important;
+		margin: 5px 0 10px !important;
+		font-weight: normal;
+	}
+
+	.moist-prod p {
+		font-size: 19px !important;
+	}
+
+	.moist-prod a {
+		font-size: 12px;
+		display: inline-block;
+		color: #986C6E;
+		padding: 10px 30px;
+		margin: 30px 0 0;
+		background-color: transparent;
+		border: 1px solid #986c6e;
+		border-radius: 3px;
+	}
+	.moist-prod a:hover {
+		background-color: #986c6e;
+		color: #ffffff;
+		border: 1px solid #986c6e;
+		border-radius: 3px;
+	}
+
+	.content-wrapper {
+		display: inline-block;
+		margin: 80px 0 0;
+		width: 630px;
+		height: 366px;
+	}
+
+	.img-wrapper {
+		display: inline-block;
+		width: 630px;
+		height: 366px;
+	}
+
+	.moist-serum, .moist-cream {
+		display: block;
+	}
+
+	.moist-cream {
+		position: relative;
+		top: -30px;
+	}
+
+	.moist-serum .content-wrapper {
+		float: right;
+		position: relative;
+		top: -5px;
+		right: 60px;
+	}
+	.moist-cream .content-wrapper {
+		float: left;
+		position: relative;
+		top: 8px;
+		left: 69px;
+	}
+	.moist-serum img {
+		padding-left: 90px;
+	}
+	.moist-cream img {
+		padding-right: 80px;
+	}
+
+	/*Pc*/
+	@media all and (min-width: 1280px) {
+		.ritual-top {
+			background-image: url("/web/upload/detail/moist-duo/moist-top-re.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		.moist-content > img:nth-child(1) {
+			display: block;
+		}
+
+		.moist-content > img:nth-child(2) {
+			display: none;
+		}
+	}
+
+	/*Mobile*/
+	@media all and (max-width: 1280px) {
+		.ritual-top {
+			display: block;
+			width: 100%;
+			height: 116vw;
+			background-image: url("/web/upload/detail/moist-duo/moist-top-mo-re.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		.moist-content > img:nth-child(2) {
+			display: block;
+		}
+
+		.moist-content > img:nth-child(1) {
+			display: none;
+		}
+		.content-wrapper {
+			display: inline-block;
+			margin: 0;
+			width: 45%;
+			height: unset;
+		}
+
+		.img-wrapper {
+			display: inline-block;
+			position: relative;
+			width: 43%;
+			height: unset;
+		}
+
+		.moist-serum, .moist-cream {
+			display: block;
+		}
+
+		.moist-cream {
+			position: relative;
+			top: -1vw;
+		}
+
+		.moist-serum .content-wrapper {
+			float: unset;
+			position: relative;
+			top: 10vw;
+			right: -2vw;
+		}
+		.moist-cream .content-wrapper {
+			float: unset;
+			position: relative;
+			top: 12vw;
+			left: 1vw;
+		}
+
+		.moist-serum .img-wrapper {
+			left: -2vw;
+		}
+
+		.moist-cream .img-wrapper {
+			right: -3vw;
+			width: 48%;
+		}
+
+		.moist-serum img {
+			padding-left: 0;
+		}
+		.moist-cream img {
+			padding-right: 0;
+			padding-left: 0vw;
+		}
+
+		.moist-cream p {
+			width: 65%;
+		}
+
+		.moist-prod {
+			margin: 5vw 0 3vw;
+		}
+
+		.moist-prod h1 {
+			font-size: 4.4vw !important;
+			margin: 0 !important;
+		}
+
+		.moist-prod h2 {
+			font-size: 3.3vw !important;
+			margin: 0.5vw 0 0;
+		}
+
+		.moist-prod h3 {
+			font-size: 2.7vw !important;
+			margin: 1vw 0 0.5vw !important;
+			font-weight: normal;
+		}
+
+		.moist-prod p {
+			font-size: 2.8vw !important;
+			text-align: center;
+			margin: 0 auto;
+			word-break: keep-all;
+		}
+
+		.moist-prod a {
+			font-size: 2.1vw;
+			display: inline-block;
+			color: #986C6E;
+			padding: 1.3vw 4.2vw;
+			margin: 2.5vw 0;
+			background-color: transparent;
+			border: 1px solid #986c6e;
+			border-radius: 3px;
+			letter-spacing: 0.5px;
+		}
+	}
+
+</style>
+<!--
+<div class="moist-top"></div>
+<div class="moist-content">
+  <img class="gift-pc" src="/web/upload/detail/moist-duo/gift-re.jpg" />
+  <img class="gift-mo" src="/web/upload/detail/moist-duo/gift-mo-re.jpg" />
+  <div class="moist-prod">
+	<div class="moist-serum">
+	  <div class="img-wrapper">
+		<img src="/web/upload/detail/moist-duo/moist-serum.jpg"/>
+	  </div>
+	  <div class="content-wrapper">
+		<h1>SERUM BLEND</h1>
+		<h2>세럼 블렌드</h2>
+		<h3>30ml</h3>
+		<p>매일 찾아가는 보습 세럼</p>
+		<a class="-mov" href="/product/detail.html?product_no=10">LEARN MORE</a>
+	  </div>
+	</div>
+	<div class="moist-cream">
+	  <div class="content-wrapper">
+		<h1>CREAM BLEND</h1>
+		<h2>크림 블렌드</h2>
+		<h3>40ml</h3>
+		<p>탄력 개선에 효과적인 안티에이징 크림</p>
+		<a class="-mov" href="/product/detail.html?product_no=11">LEARN MORE</a>
+	  </div>
+	  <div class="img-wrapper">
+		<img src="/web/upload/detail/moist-duo/moist-cream.jpg"/>
+	  </div>
+	</div>
+  </div>
+</div>-->
+
+
+<div style="width:100%; margin:0 auto;">
+	<img src="/web/upload/detail/moist-duo/en/pc/top.jpg" width="100%">
+	<a href="/product/serum-blend/58/" style="display:inline-block; box-sizing:border-box; padding:10px 10px 0 10px;"><img src="/web/upload/detail/moist-duo/en/pc/serum.jpg" width="100%"></a>
+	<a href="/product/cream-blend/59/" style="display:inline-block; box-sizing:border-box; padding:10px 10px 0 10px;"><img src="/web/upload/detail/moist-duo/en/pc/cream.jpg" width="100%"></a>
+<!--	<a href="/product/detail.html?product_no=55" style="display:inline-block; box-sizing:border-box; padding:10px 10px 0 10px;"><img src="/web/upload/detail/moist-duo/en/pc/travel.jpg" width="100%"></a>-->
+</div>

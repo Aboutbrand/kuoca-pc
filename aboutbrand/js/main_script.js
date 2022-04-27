@@ -68,10 +68,13 @@
 
             var topSlide = new Swiper('.jsTopSlide', {
                 loop: true,
-                speed: 1400,
+                speed: 1500,
                 effect: 'fade',
+                /*fadeEffect: {
+                    crossFade: true
+                }*/
                 autoplay: {
-                    delay: 2000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 },
             });
