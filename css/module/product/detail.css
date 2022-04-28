@@ -292,6 +292,10 @@
     width: 750px;
 }
 
+.product-desc-mobile {
+    display: none !important;
+}
+
 .product-desc {
     width: 750px;
     display: block;
