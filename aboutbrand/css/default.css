@@ -2,10 +2,10 @@
 
 :root {
 	/*메인 폰트*/
-	--main-font: 'Noto Sans KR', sans-serif;
+	--main-font: 'HelveticaNeueLTStd', 'Pretendard', sans-serif;
 
 	/*한글 폰트*/
-	--kr-font: 'Noto Sans KR', sans-serif;
+	--kr-font: 'Pretendard', sans-serif;
 
 	/*배경 이미지*/
 	--bg-color: #fff;
@@ -358,6 +358,16 @@ a:active {
 	position: absolute;
 	top: -5px;;
 	right: -5px;
+}
+
+
+/*TODO 5월 공구를 위한 임시 비활성화*/
+.right_area > div.icon_menber > div {
+	display: none !important;
+}
+
+.right_area .icon_menber > div {
+	display: none !important;
 }
 
 .right_area .icon_menber {

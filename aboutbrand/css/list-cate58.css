@@ -1,0 +1,19 @@
+/*공구 첫번째 1행 2번째*/
+.ec-base-product ul.grid3 > li:nth-child(n+2):nth-child(-n+3) {
+	/*background: red;*/
+}
+
+/*
+.ec-base-product ul.grid3 li:nth-child(n+2):nth-child(-n+3) ul {
+	margin: 0 auto 10px;
+	width: 100%;
+	min-height: 121px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+*/
+
+.ec-base-product ul.grid3 li:nth-child(1) li[rel="구성품 및 설명"] {
+	min-height: 60px;
+}

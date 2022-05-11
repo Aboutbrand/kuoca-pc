@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'HelveticaNeueLTStd';
+	src: url('/web/upload/font/HelveticaNeueLTStdLt.woff') format('woff');
+	src: url('/web/upload/font/HelveticaNeueLTStdLt.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTStd';
+	src: url('/web/upload/font/HelveticaNeueLTStdRoman.woff') format('woff');
+	src: url('/web/upload/font/HelveticaNeueLTStdRoman.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTStd';
+	src: url('/web/upload/font/HelveticaNeueLTStdMd.woff') format('woff');
+	src: url('/web/upload/font/HelveticaNeueLTStdMd.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('/web/upload/font/Pretendard-Light.woff') format('woff');
+	src: url('/web/upload/font/Pretendard-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('/web/upload/font/Pretendard-Regular.woff') format('woff');
+	src: url('/web/upload/font/Pretendard-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('/web/upload/font/Pretendard-Medium.woff') format('woff');
+	src: url('/web/upload/font/Pretendard-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}

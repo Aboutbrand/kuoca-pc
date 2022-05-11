@@ -328,13 +328,10 @@ span.mayPublic {
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: auto;
+  image-rendering: optimizeQuality;
   -ms-interpolation-mode: nearest-neighbor;
 }
 
-.ec-base-product .prdList .thumbnail a img:hover {
-  opacity: 0.8;
-}
 
 .ec-base-product .prdList .thumbnail .wish {
   position: absolute;

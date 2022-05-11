@@ -1322,10 +1322,6 @@ ul.xans-layout-multishoplistitem li {
 	transition: all 0.5s;
 }
 
-.ec-base-product .prdList .thumbnail a img:hover {
-	opacity: 0.8;
-}
-
 .ec-base-product .prdList .thumbnail .wish {
 	position: absolute;
 	right: 3px;

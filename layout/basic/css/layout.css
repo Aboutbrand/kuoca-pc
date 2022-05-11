@@ -129,7 +129,7 @@ ul.xans-layout-multishoplistitem li {float:left;margin:3px 0 0 5px;}
 .ec-base-product .prdList .thumbnail { position:relative; margin:0 auto;text-align:center; }
 .ec-base-product .prdList .thumbnail .prdImg { position:relative; }
 .ec-base-product .prdList .thumbnail a img { max-width:100%; box-sizing:border-box;-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s;  transition: all 0.5s;}
-.ec-base-product .prdList .thumbnail a img:hover {opacity:0.8;}
+/*.ec-base-product .prdList .thumbnail a img:hover {opacity:0.8;}*/
 .ec-base-product .prdList .thumbnail .wish { position:absolute; right:3px; bottom:4px; z-index:1; cursor:pointer; }
 .ec-base-product .prdList .thumbnail .prdIcon { position:absolute; top:0; left:0; width:100%; height:100%; background-repeat:no-repeat; }
 .ec-base-product .prdList .description {margin:0 auto; padding:20px 0;text-align:left;position:relative;}
