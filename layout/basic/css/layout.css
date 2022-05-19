@@ -256,7 +256,7 @@ ul.xans-layout-multishoplistitem li {float:left;margin:3px 0 0 5px;}
 #contents .xans-product-detail {padding:0;margin-top:50px;}
 .xans-product-detail .detailArea {padding:0;}
 .xans-product-detail .headingArea { position:relative; margin:0; border-bottom:1px solid #e7e7e7;padding:0 0 15px 0;text-align:left;}
-.xans-product-detail .headingArea h2 {font-size:16px; color:#222;display:block; margin-bottom:5px;font-weight:700;line-height:25px;}
+.xans-product-detail .headingArea h2 {font-size:16px; color:#222;display:block; margin-bottom:5px;font-weight:700;line-height:1.5;}
 .xans-product-detail .headingArea .icon {clear:both; padding-bottom:4px;}
 .xans-product-detail .headingArea .icon img { margin:0 2px 0 0; vertical-align:middle; }
 .xans-product-detail .summary_desc {line-height:20px;font-size:13px;color:#888;padding:0;margin:0 0 5px;font-weight:300;}

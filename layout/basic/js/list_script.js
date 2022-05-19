@@ -23,6 +23,9 @@
         } if(currentListUrl === "list.html?cate_no=58"){
             console.log('세트 상품 목록 페이지')
             $('head').append('<link rel="stylesheet" type="text/css" href="/aboutbrand/css/list-cate58.css">');
+        } if(currentListUrl === "list.html?cate_no=59") {
+            console.log('세트 상품 목록 페이지')
+            $('head').append('<link rel="stylesheet" type="text/css" href="/aboutbrand/css/list-cate59.css">');
         }
     })
 })(aboutbrandScript);
