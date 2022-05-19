@@ -2253,7 +2253,7 @@ input[type="checkbox"] {
 	color: #3D3A39;
 	vertical-align: middle;
 	font-weight: normal;
-	background: #F0E7DE;
+	background: #EBEBEB;
 	font-size: 14px;
 }
 
@@ -2477,7 +2477,7 @@ input[type="checkbox"] {
 	display: inline-block;
 	box-sizing: border-box;
 	padding: 2px 8px;
-	border: 1px solid #d1d1d1;
+	border: 1px solid #4C3434;
 	border-radius: 0;
 	font-size: 12px;
 	line-height: 18px;
@@ -2488,7 +2488,7 @@ input[type="checkbox"] {
 	letter-spacing: 0;
 	text-align: center;
 	white-space: nowrap;
-	color: #3D3A39;
+	color: #4C3434;
 	background-color: #fff;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -2513,7 +2513,7 @@ input[type="checkbox"] {
 	text-align: center;
 	white-space: nowrap;
 	color: #fff;
-	background-color: #BC8383;
+	background-color: #4C3434;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -2525,7 +2525,7 @@ input[type="checkbox"] {
 	display: inline-block;
 	box-sizing: border-box;
 	padding: 2px 8px;
-	border: 1px solid #BC8383;
+	border: 1px solid #4C3434;
 	border-radius: 0;
 	font-size: 12px;
 	line-height: 18px;
@@ -2536,7 +2536,7 @@ input[type="checkbox"] {
 	letter-spacing: 0;
 	text-align: center;
 	white-space: nowrap;
-	color: #BC8383;
+	color: #4C3434;
 	background-color: transparent;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -2661,7 +2661,7 @@ input[type="checkbox"] {
 	margin: 0 0 20px;
 	border: solid #bfbfbf !important;
 	border-width: 0 !important;
-	background: #F8F4ED !important;
+	/*background: #EBEBEB !important;*/
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -2694,11 +2694,11 @@ input[type="checkbox"] {
 	top: 0;
 	left: 0;
 	margin: 0;
-	border: solid #BC838375;
+	border: solid #EBEBEB;
 	border-width: 0 0 1px 0;
 	color: #333;
 	font-weight: 500;
-	background: #F0E7DE;
+	background: #EBEBEB;
 }
 
 .ec-base-tab.typeLight .menu li.selected a {
@@ -3665,7 +3665,7 @@ div.ec-base-help > h3 {
 .xans-member-edit h3 {
 	font-size: 14px;
 	color: #3D3A39 !important;
-	background: #F0E7DE !important;
+	background: #EBEBEB !important;
 	padding: 15px 10px;
 	border: solid #d5d5d5;
 	border-width: 1px 1px 0 1px;
