@@ -363,14 +363,14 @@ div.layerProgress {
 
 .red-btn {
 	color: #fff;
-	background: #BC8383;
-	border: 1px solid #BC8383;
+	background: var(--main-color);
+	border: 1px solid var(--main-color);
 }
 
 .red-btn:hover {
-	border: 1px solid #BC8383;
+	border: 1px solid var(--main-color);
 	background: transparent;
-	color: #BC8383;
+	color: var(--main-color);
 }
 
 .bb-box {
@@ -2214,7 +2214,7 @@ ul.xans-layout-multishoplistitem li {
 }
 
 .detail_tab_area a.on {
-	color: #BC8383 !important;
+	color: var(--main-color) !important;
 }
 
 .detail_tab_area a:hover {
@@ -3720,9 +3720,9 @@ div.ec-base-help > h3 {
 	font-size: 13px;
 	line-height: 30px;
 	padding: 20px 15px !important;
-	background: #EADCCF50;
-	border: 1px solid #BC838350;
-	color: #BC8383 !important;
+	background: #fff;
+	border: 1px solid var(--txt-color);
+	color: var(--txt-color);
 	box-sizing: border-box;
 }
 
@@ -3781,7 +3781,7 @@ div.ec-base-help > h3 {
 	line-height: 50px;
 	font-size: 14px;
 	display: block;
-	background-color: #BC8383;
+	background-color: var(--main-color);
 	color: #fff;
 	text-align: center;
 	-webkit-transition: all 0.5s;

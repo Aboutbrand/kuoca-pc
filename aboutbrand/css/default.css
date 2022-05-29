@@ -376,18 +376,18 @@ a:active {
 }
 
 .right_area .icon_menber:hover {
-	color: var(--sub-color-second) !important;
+	color: var(--main-color) !important;
 }
 
 .right_area .icon_menber:hover .pointicon {
-	border: 1px solid var(--sub-color-second) !important;
+	border: 1px solid var(--main-color) !important;
 }
 
 .right_area a {
 }
 
 .right_area a:hover {
-	color: var(--sub-color-second) !important;
+	color: var(--main-color) !important;
 }
 
 .right_area .icon_menber ul {
@@ -851,7 +851,7 @@ div.layerProgress {
 }
 
 .txtEm {
-	color: var(--sub-color-second) !important;
+	color: var(--main-color) !important;
 }
 
 /* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */
@@ -999,14 +999,14 @@ div.layerProgress {
 
 .red-btn {
 	color: #fff;
-	background: #BC8383;
-	border: 1px solid #BC8383;
+	background: var(--main-color);
+	border: 1px solid var(--main-color);
 }
 
 .red-btn:hover {
-	border: 1px solid #BC8383;
+	border: 1px solid var(--main-color);
 	background: transparent;
-	color: #BC8383;
+	color: var(--main-color);
 }
 
 .bb-box {
@@ -1724,7 +1724,7 @@ input[type="checkbox"] {
 }
 
 .detail_tab_area a.on {
-	color: #BC8383 !important;
+	color: var(--main-color) !important;
 }
 
 .detail_tab_area a:hover {
@@ -2284,7 +2284,7 @@ input[type="checkbox"] {
 }
 
 .ec-base-table.typeList tfoot td {
-	padding: 15px 10px 17px;
+	padding: 15px 10px 15px;
 	background: #fafafa;
 }
 
@@ -2575,12 +2575,12 @@ input[type="checkbox"] {
 }
 
 [class^='btnSubmit']:not(.disabled):hover {
-	background-color: rgba(188, 131, 131, 0.75);
+	/*background-color: rgba(188, 131, 131, 0.75);*/
 }
 
 [class^='btnEm']:not(.disabled):hover {
-	background-color: #BC8383;
-	color: #fff;
+	/*background-color: #BC8383;*/
+	/*color: #fff;*/
 }
 
 [class^='btnBasic']:not(.disabled):hover {
@@ -3235,9 +3235,9 @@ div.ec-base-help > h3 {
 	font-size: 13px;
 	line-height: 30px;
 	padding: 20px 15px !important;
-	background: #EADCCF50;
-	border: 1px solid #BC838350;
-	color: #BC8383 !important;
+	background: #fff;
+	border: 1px solid var(--txt-color);
+	color: var(--txt-color) !important;
 	box-sizing: border-box;
 }
 
@@ -3288,15 +3288,16 @@ div.ec-base-help > h3 {
 
 .xans-member-login .login input::placeholder,
 .xans-member-login .login textarea::placeholder {
-	color: #BC838350 !important;
+	color: #ACA29E !important;
 }
 
 .btnLogin_bk {
 	height: 50px;
 	line-height: 50px;
 	font-size: 14px;
+	font-weight: 400;
 	display: block;
-	background-color: #BC8383;
+	background-color: var(--main-color);
 	color: #fff;
 	text-align: center;
 	-webkit-transition: all 0.5s;
@@ -3307,7 +3308,7 @@ div.ec-base-help > h3 {
 }
 
 .btnLogin_bk:hover {
-	background-color: rgba(188, 131, 131, 0.75);
+	background-color: #4c343495;
 }
 
 .join_box {
@@ -3316,13 +3317,15 @@ div.ec-base-help > h3 {
 }
 
 .btnLogin_wh {
-	padding: 10px 30px;
+	height: 50px;
+	line-height: 50px;
 	font-size: 14px;
+	font-weight: 400;
 	display: block;
 	background-color: transparent;
-	color: #BC8383;
+	color: var(--main-color);
 	text-align: center;
-	border: 1px solid #BC8383;
+	border: 1px solid var(--main-color);
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -3331,8 +3334,8 @@ div.ec-base-help > h3 {
 }
 
 .btnLogin_wh:hover {
-	border: 1px solid #BC8383;
-	background: #BC8383;
+	border: 1px solid var(--main-color);
+	background: var(--main-color);
 	color: #fff;
 }
 
@@ -3777,9 +3780,10 @@ div.ec-base-help > h3 {
 .top-banner__item a {
 	display: block;
 	font-size: 14px;
+	line-height: 1;
 	color: #fff;
 	text-align: center;
-	padding: 2px 0;
+	padding: 10px 0 9px;
 	font-weight: 400;
 }
 

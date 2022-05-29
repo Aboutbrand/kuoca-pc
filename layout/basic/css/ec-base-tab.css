@@ -4,7 +4,7 @@
     box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
 }
 .ec-base-tab .menu:after { content:""; display:block; clear:both; }
-.ec-base-tab .menu li { float:left; border: 1px solid #EBEBEB !important; border-left:1px solid #cbcdce; background: white !important; }
+.ec-base-tab .menu li { float:left; border: 1px solid #EBEBEB !important; border-left:1px solid #EBEBEB; background: white !important; }
 /*
 .ec-base-tab .menu li a { display:block; min-width:187px; margin:0 0 0 -1px; padding:12px 5px 11px; border-right:1px solid #cbcdce; color:#707070; text-decoration:none; outline:0; text-align:center; background:#f2f2f2; }
 .ec-base-tab .menu li:first-child a { margin-left:0; }
@@ -15,7 +15,7 @@
 .ec-base-tab > .right { position:absolute; top:8px; right:10px; line-height:24px; color:#909090; }
 */
   /* typeLight */
-  .ec-base-tab.typeLight .menu li.selected a { margin:0 0 -2px; border-bottom:1px solid #fff; color:#3e3a39; background:#fff; }
+  .ec-base-tab.typeLight .menu li.selected a { margin:0 0 -2px; border-bottom:1px solid #eee; color:#3e3a39; background:#fff; }
   /* grid (2~7) */
   .ec-base-tab[class*="grid"] .menu { display:table; table-layout:fixed; width:100%; }
   .ec-base-tab[class*="grid"] .menu li { float:none; display:table-cell; vertical-align:middle; }

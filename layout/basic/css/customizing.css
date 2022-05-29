@@ -19,7 +19,7 @@
 .ec-base-table tbody th { padding:15px 0 15px 18px; border:1px solid #dfdfdf;border-right:0; border-bottom-width:0; color:#353535; text-align:left; font-weight:normal; background-color:#fff;font-size:14px;}
 .ec-base-table td { padding:11px 10px 10px; border-top:1px solid #dfdfdf; color:#353535; vertical-align:middle; word-break:break-all; word-wrap:break-word;font-size:14px;}
 .ec-base-table.typeList td { padding:15px 10px; }
-.ec-base-table.typeList tfoot td { padding:15px 10px 17px; background:#fafafa; }
+.ec-base-table.typeList tfoot td { padding:15px 10px 15px; background:#fafafa; }
 .ec-base-table .message { border:0; padding:50px 0; text-align:center; color:#757575; font-weight:400;font-size:14px;}
 .ec-base-table.gBorder td { border-left:0; }
 .ec-base-table.typeWrite td { padding:8px 0 7px; }
@@ -99,7 +99,7 @@
 .ec-base-tab .menu li {border-left:0;background:#fff;}
 .ec-base-tab .menu li a { display: block; min-width: 187px; margin: 0 0 0 -1px; padding: 12px 5px 11px; border-right:0; color: #707070; text-decoration: none; outline: 0; text-align: center; background: #fff; }
 .ec-base-tab .menu li.selected a { position: relative; top: -0px; left: -2px; margin: 0 0 -1px; border: 1px solid #202020; border-bottom:1px solid #fff; color: #333; font-weight: 500; background: #fff; border-left:1px solid #e5e5e5; border-right:1px solid #e5e5e5; }
-.ec-base-tab.typeLight .menu li.selected a { margin: 0 0 -2px; border-bottom: 1px solid #fff; color: #404040; background: #fff; }
+.ec-base-tab.typeLight .menu li.selected a { margin: 0 0 -2px; border-bottom: 1px solid #fff; color: #404040; background: #EBEBEB; }
 .xans-order-basketpackage .xans-order-empty p {margin:130px 0;font-weight:400;}
 .xans-order-basketpackage .orderListArea .title { height: 40px; margin: 20px 0 0; padding: 0; border: 0; border-bottom: 0; line-height: 40px; background: #fff; }
 .xans-order-basketpackage .orderListArea .title h3 {font-weight:500;}

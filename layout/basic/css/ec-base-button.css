@@ -4,7 +4,7 @@
   [class^='btnEm'], a[class^='btnEm'] { display:inline-block; box-sizing:border-box; padding:2px 8px; border:1px solid transparent; border-radius:2px;  font-size:12px; line-height:18px; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#fff; background-color:#84868b; }
   [class^='btnBasic'], a[class^='btnBasic'] { display:inline-block; box-sizing:border-box; padding:2px 8px; border:1px solid #d1d1d1; border-radius:2px;  font-size:12px; line-height:18px; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#222; background-color:#f0f0f0; }
     [class^='btnNormal']:not(.disabled):hover { background-color:#f3f3f3; }
-    [class^='btnSubmit']:not(.disabled):hover { background-color:##ef6d3; }
+    [class^='btnSubmit']:not(.disabled):hover { background-color:#ef6d3; }
     [class^='btnEm']:not(.disabled):hover { background-color:#77797d; }
     [class^='btnBasic']:not(.disabled):hover { background-color:#e5e5e5; }
     [class^='btnNormal'].disabled { border-color:#e3e3e3; color:#999; }

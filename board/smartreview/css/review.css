@@ -2,7 +2,7 @@ body.ec-board-body { overflow:hidden; }
 .reviewArea { color:#3D3A39; }
 .reviewArea .btnArea { padding:15px 0 30px; border-top:1px solid #e0e0e0; text-align:center; }
 .reviewArea .btnMore {
-    width:100%; padding:12px 0; margin:25px 0; outline:0; font-size:12px; color: #fff; background:#BC8383;
+    width:100%; padding:12px 0; margin:25px 0; outline:0; font-size:12px; color: #fff; background:var(--main-color);
     box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
   }
 .reviewArea .btnMore > span { padding:0 18px 0 0; font-family: "Marcellus", "Nanum Myeongjo";}
@@ -63,7 +63,7 @@ body.ec-board-body { overflow:hidden; }
 
 /* 상태 표시 */
   .reviewArea .reviewState { padding:18px 30px; border:1px solid #bfbfbf50; font-size:13px; }
-  .reviewArea .reviewState .identify { font-size:16px; color: #B86A6A; }
+  .reviewArea .reviewState .identify { font-size:16px; color: var(--main-color); }
   .reviewArea .reviewState dl,
   .reviewArea .reviewState dt,
   .reviewArea .reviewState dd,
@@ -574,7 +574,7 @@ body.ec-board-body { overflow:hidden; }
 
   .reviewArea .boardList > ul > li {display: table;table-layout: fixed;width: 100%;border-top: 1px solid #BFBFBF;}
   /* 상품정보 */
-  .reviewArea .boardList .prdInfo {display: table-cell;width: 210px;padding: 0 15px 0 30px;font-size: 14px;color: #848484;vertical-align: middle;background: #F0E7DE;}
+  .reviewArea .boardList .prdInfo {display: table-cell;width: 210px;padding: 0 15px 0 30px;font-size: 14px;color: #848484;vertical-align: middle;background: #ebebeb;}
 
   .reviewArea .boardList .prdInfo .reviewThumb {text-align: left;display: table-cell;height: 100%;}
   .reviewArea .boardList .prdInfo .reviewThumb img {width: 100px;height: 100px;border-radius: 60px;-webkit-border-radius: 60px;-moz-border-radius: 60px;}
@@ -695,7 +695,7 @@ body.ec-board-body { overflow:hidden; }
       .reviewArea .boardList .reviewInfo .detail .miniButton .left { float:left; }
       .reviewArea .boardList .reviewInfo .detail .commentWrite { padding:16px 15px; border:1px solid #c1c1c1; background:#fafafa; }
       .reviewArea .boardList .reviewInfo .detail .commentWrite .count { margin:0 0 0 6px; }
-      .reviewArea .boardList .reviewInfo .detail .commentWrite .count strong { color:#B86A6A; }
+      .reviewArea .boardList .reviewInfo .detail .commentWrite .count strong { color:var(--main-color); }
       .reviewArea .boardList .reviewInfo .detail .commentWrite.noRight { padding:10px; border:0; border-bottom:1px solid #e0e0e0; background:none; }
       .reviewArea .boardList .reviewInfo .detail .commentWrite.noRight .count { margin:0; }
       .reviewArea .boardList .reviewInfo .detail .writeForm { position:relative; margin:7px 0 0; padding:0 90px 0 0; }

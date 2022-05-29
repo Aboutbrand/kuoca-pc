@@ -14,7 +14,7 @@
 		content: '[필수]';
 		font-size: 14px;
 		display: inline-block;
-		color: var(--sub-color-first);
+		color: var(--main-color);
 	}
 
 
@@ -30,7 +30,7 @@
 	}
 
 	.xans-product-detail .summary_desc {
-		color: #B86A6A !important;
+		color: var(--main-color) !important;
 		font-size: 14px !important;
 		padding: 0;
 	}
@@ -57,7 +57,7 @@
 	/*필수 옵션 선택 안내 문구 삭제*/
 	.xans-product-detail .infoArea .xans-product-option .value {
 		display: none;
-		color: #BC8383;
+		color: var(--main-color);
 		margin-top: 5px;
 	}
 
@@ -156,22 +156,22 @@
 
 	.sub_buy {
 		color: #fff;
-		background: #bc8383;
-		border: 1px solid #BC8383;
+		background: var(--main-color);
+		border: 1px solid var(--main-color);
 		font-size: 13px;
 	}
 
 	.sub_buy:hover {
 		color: #fff;
-		background: #BC8383;
-		border: 1px solid #BC8383;
+		background: var(--main-color);
+		border: 1px solid var(--main-color);
 	}
 
 	.sub_cart,
 	.sub_wish {
-		color: #BC8383;
+		color: var(--main-color);
 		background: transparent;
-		border: 1px solid #BC8383;
+		border: 1px solid var(--main-color);
 		font-size: 13px;
 
 	}
@@ -179,8 +179,8 @@
 	.sub_cart:hover,
 	.sub_wish:hover {
 		color: #fff;
-		background: #BC8383;
-		border: 1px solid #BC8383;
+		background: var(--main-color);
+		border: 1px solid var(--main-color);
 	}
 
 
@@ -1408,7 +1408,7 @@
 						<span id="{$btn_reserve_id}" class="{$btn_reserve_class|display}">예약주문</span>
 					</a>
 					<a id="cartBtn" href="#none" class="move sub_cart {$basket_display|display}" onclick="{$action_basket}">장바구니</a>
-					<a id="wishBtn" href="#none" onclick="{$action_wishlist}" class="move sub_wish {$wishlist_display|display}">관심상품</a>
+					<!--<a id="wishBtn" href="#none" onclick="{$action_wishlist}" class="move sub_wish {$wishlist_display|display}">관심상품</a>-->
 					<span class="sub_wish {$soldout_display|display}">품절</span>
 				</div>
 
@@ -1509,7 +1509,7 @@
 </div>
 
 <!-- 쿠폰 다운로드 -->
-<div class="ec-product-coupon"></div>
+<!--<div class="ec-product-coupon"></div>-->
 
 <!-- ADN 상품패널 설치 start -->
 <div id="suggestad_wrap_container"></div>
